@@ -87,6 +87,46 @@
 		DE18FE5E2E26530B008F207C /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE18FE5D2E26530B008F207C /* IBMPlexSans-Medium.ttf */; };
 		DE18FE602E265310008F207C /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE18FE5F2E265310008F207C /* IBMPlexSans-Regular.ttf */; };
 		DE18FE622E265316008F207C /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE18FE612E265316008F207C /* IBMPlexSans-SemiBold.ttf */; };
+		DE18FE662E265B8F008F207C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE652E265B8F008F207C /* Profile.swift */; };
+		DE18FE682E265D9C008F207C /* SetProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE672E265D9C008F207C /* SetProfileRequest.swift */; };
+		DE18FE6A2E265E71008F207C /* ObtainProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE692E265E71008F207C /* ObtainProfileRequest.swift */; };
+		DE18FE6C2E265EB6008F207C /* ProfileMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE6B2E265EB6008F207C /* ProfileMediator.swift */; };
+		DE18FE722E26636C008F207C /* PushNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE702E26636C008F207C /* PushNotificationsManager.swift */; };
+		DE18FE732E26636C008F207C /* PushNotificationsAuthorizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE6D2E26636C008F207C /* PushNotificationsAuthorizationStatus.swift */; };
+		DE18FE742E26636C008F207C /* PushNotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE6E2E26636C008F207C /* PushNotificationsModel.swift */; };
+		DE18FE792E2666BC008F207C /* AuroraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE782E2666BC008F207C /* AuroraManager.swift */; };
+		DE18FE7B2E2666CF008F207C /* AuroraNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE7A2E2666CF008F207C /* AuroraNow.swift */; };
+		DE18FE7D2E26691D008F207C /* ObtainAuroraNowRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE7C2E26691D008F207C /* ObtainAuroraNowRequest.swift */; };
+		DE18FE7F2E266AB4008F207C /* ObtainAuroraMapDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE7E2E266AB4008F207C /* ObtainAuroraMapDetailsRequest.swift */; };
+		DE18FE812E266AF0008F207C /* AuroraMapDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE802E266AF0008F207C /* AuroraMapDetails.swift */; };
+		DE18FE832E266B2B008F207C /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE822E266B2B008F207C /* Coordinate.swift */; };
+		DE18FE852E266CB8008F207C /* ObtainAuroraMapOvalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE842E266CB8008F207C /* ObtainAuroraMapOvalRequest.swift */; };
+		DE18FE872E266CD7008F207C /* AuroraMapOval.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE862E266CD7008F207C /* AuroraMapOval.swift */; };
+		DE18FE892E266DFA008F207C /* ObtainAuroraTopsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE882E266DFA008F207C /* ObtainAuroraTopsRequest.swift */; };
+		DE18FE8B2E266E25008F207C /* AuroraTopLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE8A2E266E25008F207C /* AuroraTopLocation.swift */; };
+		DE18FE8D2E266E41008F207C /* PeakTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE8C2E266E41008F207C /* PeakTime.swift */; };
+		DE18FE902E2682D7008F207C /* ForecastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE8F2E2682D7008F207C /* ForecastManager.swift */; };
+		DE18FE942E2682F5008F207C /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE932E2682F5008F207C /* Forecast.swift */; };
+		DE18FE962E268340008F207C /* ForecastAurora.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE952E268340008F207C /* ForecastAurora.swift */; };
+		DE18FE982E2683E7008F207C /* ForecastKP.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE972E2683E7008F207C /* ForecastKP.swift */; };
+		DE18FE9A2E268537008F207C /* ForecastCloudCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE992E268537008F207C /* ForecastCloudCover.swift */; };
+		DE18FE9C2E2685D9008F207C /* ForecastMoonPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE9B2E2685D9008F207C /* ForecastMoonPhase.swift */; };
+		DE18FE9E2E268630008F207C /* ForecastSolarWind.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE9D2E268630008F207C /* ForecastSolarWind.swift */; };
+		DE18FEA02E2686A0008F207C /* ForecastHemisphericPower.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FE9F2E2686A0008F207C /* ForecastHemisphericPower.swift */; };
+		DE18FEA22E2686E7008F207C /* ForecastPlanetaryA.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEA12E2686E7008F207C /* ForecastPlanetaryA.swift */; };
+		DE18FEA42E26881A008F207C /* ObtainForecastRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEA32E26881A008F207C /* ObtainForecastRequest.swift */; };
+		DE18FEA62E268938008F207C /* SolarTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEA52E268938008F207C /* SolarTemplate.swift */; };
+		DE18FEA82E2689FE008F207C /* ObtainSolarTemplatesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEA72E2689FE008F207C /* ObtainSolarTemplatesRequest.swift */; };
+		DE18FEAA2E268A47008F207C /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEA92E268A47008F207C /* Solar.swift */; };
+		DE18FEAC2E268A69008F207C /* SolarFAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEAB2E268A69008F207C /* SolarFAQ.swift */; };
+		DE18FEB02E268B4F008F207C /* ObtainSolarRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEAF2E268B4F008F207C /* ObtainSolarRequest.swift */; };
+		DE18FEB52E268BC8008F207C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEB42E268BC8008F207C /* LocationManager.swift */; };
+		DE18FEB72E268C0E008F207C /* PageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEB62E268C0E008F207C /* PageInfo.swift */; };
+		DE18FEB92E268C1E008F207C /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEB82E268C1E008F207C /* Page.swift */; };
+		DE18FEBB2E268C33008F207C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEBA2E268C33008F207C /* Location.swift */; };
+		DE18FEBD2E268D04008F207C /* SearchLocationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEBC2E268D04008F207C /* SearchLocationsRequest.swift */; };
+		DE18FEBF2E268D7E008F207C /* ObtainLocationHistoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEBE2E268D7E008F207C /* ObtainLocationHistoryRequest.swift */; };
+		DE18FEC12E268D99008F207C /* LocationHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEC02E268D99008F207C /* LocationHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -173,6 +213,46 @@
 		DE18FE5D2E26530B008F207C /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
 		DE18FE5F2E265310008F207C /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
 		DE18FE612E265316008F207C /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		DE18FE652E265B8F008F207C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		DE18FE672E265D9C008F207C /* SetProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetProfileRequest.swift; sourceTree = "<group>"; };
+		DE18FE692E265E71008F207C /* ObtainProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainProfileRequest.swift; sourceTree = "<group>"; };
+		DE18FE6B2E265EB6008F207C /* ProfileMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMediator.swift; sourceTree = "<group>"; };
+		DE18FE6D2E26636C008F207C /* PushNotificationsAuthorizationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsAuthorizationStatus.swift; sourceTree = "<group>"; };
+		DE18FE6E2E26636C008F207C /* PushNotificationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsModel.swift; sourceTree = "<group>"; };
+		DE18FE702E26636C008F207C /* PushNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsManager.swift; sourceTree = "<group>"; };
+		DE18FE782E2666BC008F207C /* AuroraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraManager.swift; sourceTree = "<group>"; };
+		DE18FE7A2E2666CF008F207C /* AuroraNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraNow.swift; sourceTree = "<group>"; };
+		DE18FE7C2E26691D008F207C /* ObtainAuroraNowRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainAuroraNowRequest.swift; sourceTree = "<group>"; };
+		DE18FE7E2E266AB4008F207C /* ObtainAuroraMapDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainAuroraMapDetailsRequest.swift; sourceTree = "<group>"; };
+		DE18FE802E266AF0008F207C /* AuroraMapDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraMapDetails.swift; sourceTree = "<group>"; };
+		DE18FE822E266B2B008F207C /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		DE18FE842E266CB8008F207C /* ObtainAuroraMapOvalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainAuroraMapOvalRequest.swift; sourceTree = "<group>"; };
+		DE18FE862E266CD7008F207C /* AuroraMapOval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraMapOval.swift; sourceTree = "<group>"; };
+		DE18FE882E266DFA008F207C /* ObtainAuroraTopsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainAuroraTopsRequest.swift; sourceTree = "<group>"; };
+		DE18FE8A2E266E25008F207C /* AuroraTopLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTopLocation.swift; sourceTree = "<group>"; };
+		DE18FE8C2E266E41008F207C /* PeakTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakTime.swift; sourceTree = "<group>"; };
+		DE18FE8F2E2682D7008F207C /* ForecastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastManager.swift; sourceTree = "<group>"; };
+		DE18FE932E2682F5008F207C /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		DE18FE952E268340008F207C /* ForecastAurora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastAurora.swift; sourceTree = "<group>"; };
+		DE18FE972E2683E7008F207C /* ForecastKP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastKP.swift; sourceTree = "<group>"; };
+		DE18FE992E268537008F207C /* ForecastCloudCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCloudCover.swift; sourceTree = "<group>"; };
+		DE18FE9B2E2685D9008F207C /* ForecastMoonPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastMoonPhase.swift; sourceTree = "<group>"; };
+		DE18FE9D2E268630008F207C /* ForecastSolarWind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastSolarWind.swift; sourceTree = "<group>"; };
+		DE18FE9F2E2686A0008F207C /* ForecastHemisphericPower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastHemisphericPower.swift; sourceTree = "<group>"; };
+		DE18FEA12E2686E7008F207C /* ForecastPlanetaryA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastPlanetaryA.swift; sourceTree = "<group>"; };
+		DE18FEA32E26881A008F207C /* ObtainForecastRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainForecastRequest.swift; sourceTree = "<group>"; };
+		DE18FEA52E268938008F207C /* SolarTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTemplate.swift; sourceTree = "<group>"; };
+		DE18FEA72E2689FE008F207C /* ObtainSolarTemplatesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainSolarTemplatesRequest.swift; sourceTree = "<group>"; };
+		DE18FEA92E268A47008F207C /* Solar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solar.swift; sourceTree = "<group>"; };
+		DE18FEAB2E268A69008F207C /* SolarFAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarFAQ.swift; sourceTree = "<group>"; };
+		DE18FEAF2E268B4F008F207C /* ObtainSolarRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainSolarRequest.swift; sourceTree = "<group>"; };
+		DE18FEB42E268BC8008F207C /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		DE18FEB62E268C0E008F207C /* PageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInfo.swift; sourceTree = "<group>"; };
+		DE18FEB82E268C1E008F207C /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		DE18FEBA2E268C33008F207C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		DE18FEBC2E268D04008F207C /* SearchLocationsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationsRequest.swift; sourceTree = "<group>"; };
+		DE18FEBE2E268D7E008F207C /* ObtainLocationHistoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainLocationHistoryRequest.swift; sourceTree = "<group>"; };
+		DE18FEC02E268D99008F207C /* LocationHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistory.swift; sourceTree = "<group>"; };
 		EB04B2FE1311D36ED8BA40F3 /* Pods-NorthernLightsTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorthernLightsTracker.release.xcconfig"; path = "Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -356,6 +436,7 @@
 		DE18FD6B2E25879F008F207C /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				DE18FE712E26636C008F207C /* PushNotifications */,
 				DE18FD3D2E25879F008F207C /* Analytics */,
 				DE18FD422E25879F008F207C /* Components */,
 				DE18FD4B2E25879F008F207C /* CustomViews */,
@@ -452,9 +533,9 @@
 			isa = PBXGroup;
 			children = (
 				DE18FDB12E25879F008F207C /* Utils */,
-				DE18FDB22E25879F008F207C /* SplashView.swift */,
 				DE18FDB32E25879F008F207C /* SplashViewController.swift */,
 				DE18FDB42E25879F008F207C /* SplashViewModel.swift */,
+				DE18FDB22E25879F008F207C /* SplashView.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -491,6 +572,7 @@
 			isa = PBXGroup;
 			children = (
 				DE18FDBB2E25879F008F207C /* RequestResult.swift */,
+				DE18FE652E265B8F008F207C /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -500,6 +582,8 @@
 			children = (
 				DE18FDBD2E25879F008F207C /* ProfileBindingRequest.swift */,
 				DE18FDBE2E25879F008F207C /* ProfileCreateRequest.swift */,
+				DE18FE672E265D9C008F207C /* SetProfileRequest.swift */,
+				DE18FE692E265E71008F207C /* ObtainProfileRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -510,6 +594,7 @@
 				DE18FDBC2E25879F008F207C /* Model */,
 				DE18FDBF2E25879F008F207C /* Request */,
 				DE18FDC02E25879F008F207C /* ProfileManager.swift */,
+				DE18FE6B2E265EB6008F207C /* ProfileMediator.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -554,6 +639,9 @@
 		DE18FDE02E25879F008F207C /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DE18FEB12E268BB4008F207C /* Location */,
+				DE18FE8E2E2682CD008F207C /* Forecast */,
+				DE18FE752E2666A5008F207C /* Aurora */,
 				DE18FDC12E25879F008F207C /* Profile */,
 				DE18FDCA2E25879F008F207C /* Purchase */,
 				DE18FDDF2E25879F008F207C /* Session */,
@@ -582,6 +670,126 @@
 			path = IBMPlexSans;
 			sourceTree = "<group>";
 		};
+		DE18FE6F2E26636C008F207C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE18FE6D2E26636C008F207C /* PushNotificationsAuthorizationStatus.swift */,
+				DE18FE6E2E26636C008F207C /* PushNotificationsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE18FE712E26636C008F207C /* PushNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				DE18FE6F2E26636C008F207C /* Models */,
+				DE18FE702E26636C008F207C /* PushNotificationsManager.swift */,
+			);
+			path = PushNotifications;
+			sourceTree = "<group>";
+		};
+		DE18FE752E2666A5008F207C /* Aurora */ = {
+			isa = PBXGroup;
+			children = (
+				DE18FE772E2666B6008F207C /* Request */,
+				DE18FE762E2666AF008F207C /* Model */,
+				DE18FE782E2666BC008F207C /* AuroraManager.swift */,
+			);
+			path = Aurora;
+			sourceTree = "<group>";
+		};
+		DE18FE762E2666AF008F207C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE18FE7A2E2666CF008F207C /* AuroraNow.swift */,
+				DE18FE802E266AF0008F207C /* AuroraMapDetails.swift */,
+				DE18FE822E266B2B008F207C /* Coordinate.swift */,
+				DE18FE862E266CD7008F207C /* AuroraMapOval.swift */,
+				DE18FE8A2E266E25008F207C /* AuroraTopLocation.swift */,
+				DE18FE8C2E266E41008F207C /* PeakTime.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE18FE772E2666B6008F207C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DE18FE7C2E26691D008F207C /* ObtainAuroraNowRequest.swift */,
+				DE18FE7E2E266AB4008F207C /* ObtainAuroraMapDetailsRequest.swift */,
+				DE18FE842E266CB8008F207C /* ObtainAuroraMapOvalRequest.swift */,
+				DE18FE882E266DFA008F207C /* ObtainAuroraTopsRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DE18FE8E2E2682CD008F207C /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				DE18FE922E2682DF008F207C /* Request */,
+				DE18FE912E2682DA008F207C /* Model */,
+				DE18FE8F2E2682D7008F207C /* ForecastManager.swift */,
+			);
+			path = Forecast;
+			sourceTree = "<group>";
+		};
+		DE18FE912E2682DA008F207C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE18FE932E2682F5008F207C /* Forecast.swift */,
+				DE18FE952E268340008F207C /* ForecastAurora.swift */,
+				DE18FE972E2683E7008F207C /* ForecastKP.swift */,
+				DE18FE992E268537008F207C /* ForecastCloudCover.swift */,
+				DE18FE9B2E2685D9008F207C /* ForecastMoonPhase.swift */,
+				DE18FE9D2E268630008F207C /* ForecastSolarWind.swift */,
+				DE18FE9F2E2686A0008F207C /* ForecastHemisphericPower.swift */,
+				DE18FEA12E2686E7008F207C /* ForecastPlanetaryA.swift */,
+				DE18FEA52E268938008F207C /* SolarTemplate.swift */,
+				DE18FEA92E268A47008F207C /* Solar.swift */,
+				DE18FEAB2E268A69008F207C /* SolarFAQ.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE18FE922E2682DF008F207C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DE18FEA32E26881A008F207C /* ObtainForecastRequest.swift */,
+				DE18FEA72E2689FE008F207C /* ObtainSolarTemplatesRequest.swift */,
+				DE18FEAF2E268B4F008F207C /* ObtainSolarRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DE18FEB12E268BB4008F207C /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				DE18FEB32E268BBE008F207C /* Request */,
+				DE18FEB22E268BBB008F207C /* Model */,
+				DE18FEB42E268BC8008F207C /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		DE18FEB22E268BBB008F207C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE18FEB62E268C0E008F207C /* PageInfo.swift */,
+				DE18FEB82E268C1E008F207C /* Page.swift */,
+				DE18FEBA2E268C33008F207C /* Location.swift */,
+				DE18FEC02E268D99008F207C /* LocationHistory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE18FEB32E268BBE008F207C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DE18FEBC2E268D04008F207C /* SearchLocationsRequest.swift */,
+				DE18FEBE2E268D7E008F207C /* ObtainLocationHistoryRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -594,6 +802,7 @@
 				DE18FCFF2E258695008F207C /* Frameworks */,
 				DE18FD002E258695008F207C /* Resources */,
 				04A9DBD4819B82F4276EDD18 /* [CP] Embed Pods Frameworks */,
+				B9373D8DA5A1605673FFC4A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -664,13 +873,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -699,6 +904,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B9373D8DA5A1605673FFC4A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -707,53 +929,83 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE18FDE22E25879F008F207C /* PaygateProductButton.swift in Sources */,
+				DE18FE8D2E266E41008F207C /* PeakTime.swift in Sources */,
 				DE18FDE32E25879F008F207C /* ContentError.swift in Sources */,
+				DE18FE982E2683E7008F207C /* ForecastKP.swift in Sources */,
+				DE18FE6A2E265E71008F207C /* ObtainProfileRequest.swift in Sources */,
+				DE18FE792E2666BC008F207C /* AuroraManager.swift in Sources */,
 				DE18FDE72E25879F008F207C /* Fonts.swift in Sources */,
 				DE18FDE82E25879F008F207C /* ProfileManager.swift in Sources */,
 				DE18FDE92E25879F008F207C /* UIApplication+Extension.swift in Sources */,
+				DE18FEBB2E268C33008F207C /* Location.swift in Sources */,
 				DE18FDEA2E25879F008F207C /* TextAttributes.swift in Sources */,
 				DE18FDEB2E25879F008F207C /* GradientView.swift in Sources */,
 				DE18FDEC2E25879F008F207C /* Currency.swift in Sources */,
 				DE18FDEE2E25879F008F207C /* PaygateInteractor.swift in Sources */,
 				DE18FDEF2E25879F008F207C /* NetworkError.swift in Sources */,
+				DE18FEA82E2689FE008F207C /* ObtainSolarTemplatesRequest.swift in Sources */,
+				DE18FE872E266CD7008F207C /* AuroraMapOval.swift in Sources */,
 				DE18FDF02E25879F008F207C /* GlobalDefinitions.swift in Sources */,
+				DE18FEB02E268B4F008F207C /* ObtainSolarRequest.swift in Sources */,
 				DE18FDF32E25879F008F207C /* TryAgainViewController.swift in Sources */,
 				DE18FDF42E25879F008F207C /* PaygateInfoView.swift in Sources */,
 				DE18FDF52E25879F008F207C /* OPageIndicatorView.swift in Sources */,
+				DE18FEBD2E268D04008F207C /* SearchLocationsRequest.swift in Sources */,
 				DE18FDF72E25879F008F207C /* PurchaseValidationObserver.swift in Sources */,
 				DE18FDF82E25879F008F207C /* APIFormDataRequestBody.swift in Sources */,
+				DE18FEAA2E268A47008F207C /* Solar.swift in Sources */,
 				DE18FDF92E25879F008F207C /* Appearance.swift in Sources */,
 				DE18FDFA2E25879F008F207C /* PaddingLabel.swift in Sources */,
 				DE18FDFD2E25879F008F207C /* SplashReceiptValidationObserver.swift in Sources */,
 				DE18FE022E25879F008F207C /* String+Extension.swift in Sources */,
 				DE18FE032E25879F008F207C /* LocationAuthorizationQuery.swift in Sources */,
+				DE18FE8B2E266E25008F207C /* AuroraTopLocation.swift in Sources */,
 				DE18FE042E25879F008F207C /* PaygateView.swift in Sources */,
 				DE18FE052E25879F008F207C /* AmplitudeManager.swift in Sources */,
+				DE18FE962E268340008F207C /* ForecastAurora.swift in Sources */,
 				DE18FE062E25879F008F207C /* IAPProduct.swift in Sources */,
+				DE18FEB52E268BC8008F207C /* LocationManager.swift in Sources */,
 				DE18FE072E25879F008F207C /* IAPError.swift in Sources */,
 				DE18FE082E25879F008F207C /* IAPManager.swift in Sources */,
+				DE18FE682E265D9C008F207C /* SetProfileRequest.swift in Sources */,
+				DE18FE892E266DFA008F207C /* ObtainAuroraTopsRequest.swift in Sources */,
 				DE18FE092E25879F008F207C /* UIColor+Extension.swift in Sources */,
 				DE18FE0A2E25879F008F207C /* RequestResult.swift in Sources */,
 				DE18FE0D2E25879F008F207C /* RxActivityIndicator.swift in Sources */,
+				DE18FE942E2682F5008F207C /* Forecast.swift in Sources */,
 				DE18FE132E25879F008F207C /* ObservableRetrySingle.swift in Sources */,
 				DE18FE172E25879F008F207C /* TryAgainView.swift in Sources */,
+				DE18FE7B2E2666CF008F207C /* AuroraNow.swift in Sources */,
 				DE18FE182E25879F008F207C /* XOREncryption.swift in Sources */,
 				DE18FE192E25879F008F207C /* PaygateInfoCell.swift in Sources */,
 				DE18FE1C2E25879F008F207C /* APIRequestBody.swift in Sources */,
 				DE18FE1D2E25879F008F207C /* ProfileCreateRequest.swift in Sources */,
+				DE18FEB92E268C1E008F207C /* Page.swift in Sources */,
+				DE18FEA02E2686A0008F207C /* ForecastHemisphericPower.swift in Sources */,
+				DE18FE722E26636C008F207C /* PushNotificationsManager.swift in Sources */,
+				DE18FEAC2E268A69008F207C /* SolarFAQ.swift in Sources */,
+				DE18FE732E26636C008F207C /* PushNotificationsAuthorizationStatus.swift in Sources */,
+				DE18FE742E26636C008F207C /* PushNotificationsModel.swift in Sources */,
 				DE18FE1E2E25879F008F207C /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				DE18FE1F2E25879F008F207C /* NavigationControllerSettings.swift in Sources */,
+				DE18FE9E2E268630008F207C /* ForecastSolarWind.swift in Sources */,
+				DE18FE9C2E2685D9008F207C /* ForecastMoonPhase.swift in Sources */,
 				DE18FE202E25879F008F207C /* Scalable.swift in Sources */,
+				DE18FE9A2E268537008F207C /* ForecastCloudCover.swift in Sources */,
 				DE18FE232E25879F008F207C /* TakePhoto.swift in Sources */,
 				DE18FE242E25879F008F207C /* PaygateViewController.swift in Sources */,
 				DE18FE2C2E25879F008F207C /* PaygateViewModel.swift in Sources */,
 				DE18FE2D2E25879F008F207C /* UIView+RxExtension.swift in Sources */,
+				DE18FE832E266B2B008F207C /* Coordinate.swift in Sources */,
 				DE18FE2E2E25879F008F207C /* ObservableAndSingle+Extension.swift in Sources */,
+				DE18FEB72E268C0E008F207C /* PageInfo.swift in Sources */,
 				DE18FE2F2E25879F008F207C /* IAPActionResult.swift in Sources */,
 				DE18FE322E25879F008F207C /* ProfileBindingRequest.swift in Sources */,
 				DE18FE342E25879F008F207C /* OnboardingViewController.swift in Sources */,
 				DE18FE352E25879F008F207C /* Collection+Extension.swift in Sources */,
+				DE18FEC12E268D99008F207C /* LocationHistory.swift in Sources */,
 				DE18FE362E25879F008F207C /* RequestReview.swift in Sources */,
+				DE18FE7F2E266AB4008F207C /* ObtainAuroraMapDetailsRequest.swift in Sources */,
 				DE18FE372E25879F008F207C /* ChoosePhotoFromGallery.swift in Sources */,
 				DE18FE382E25879F008F207C /* IAPErrorHelper.swift in Sources */,
 				DE18FE392E25879F008F207C /* ScreenSize.swift in Sources */,
@@ -763,21 +1015,31 @@
 				DE18FE3F2E25879F008F207C /* SessionManager.swift in Sources */,
 				DE18FE402E25879F008F207C /* PaygateEnableTrialButton.swift in Sources */,
 				DE18FE412E25879F008F207C /* PaygateActionsView.swift in Sources */,
+				DE18FEA62E268938008F207C /* SolarTemplate.swift in Sources */,
 				DE18FE422E25879F008F207C /* SplashViewModel.swift in Sources */,
 				DE18FE442E25879F008F207C /* PaygateBestOfferView.swift in Sources */,
+				DE18FE852E266CB8008F207C /* ObtainAuroraMapOvalRequest.swift in Sources */,
 				DE18FE462E25879F008F207C /* OnboardingView.swift in Sources */,
 				DE18FE472E25879F008F207C /* NavigationController.swift in Sources */,
 				DE18FE482E25879F008F207C /* OnstructionView.swift in Sources */,
+				DE18FEA22E2686E7008F207C /* ForecastPlanetaryA.swift in Sources */,
 				DE18FE492E25879F008F207C /* RestAPITransport.swift in Sources */,
 				DE18FE4B2E25879F008F207C /* UIDevice+Extension.swift in Sources */,
+				DE18FE7D2E26691D008F207C /* ObtainAuroraNowRequest.swift in Sources */,
 				DE18FE4C2E25879F008F207C /* NumberLaunches.swift in Sources */,
+				DE18FE902E2682D7008F207C /* ForecastManager.swift in Sources */,
 				DE18FE4D2E25879F008F207C /* SplashView.swift in Sources */,
 				DE18FE4E2E25879F008F207C /* PaddingTextField.swift in Sources */,
 				DE18FE512E25879F008F207C /* UITapGestureRecognizer+Extension.swift in Sources */,
+				DE18FE6C2E265EB6008F207C /* ProfileMediator.swift in Sources */,
+				DE18FE662E265B8F008F207C /* Profile.swift in Sources */,
 				DE18FE522E25879F008F207C /* AppDelegate.swift in Sources */,
+				DE18FEBF2E268D7E008F207C /* ObtainLocationHistoryRequest.swift in Sources */,
 				DE18FE552E25879F008F207C /* UIEdgeInsets+Extension.swift in Sources */,
 				DE18FE572E25879F008F207C /* TapAreaButton.swift in Sources */,
 				DE18FE582E25879F008F207C /* SignError.swift in Sources */,
+				DE18FE812E266AF0008F207C /* AuroraMapDetails.swift in Sources */,
+				DE18FEA42E26881A008F207C /* ObtainForecastRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,6 +1078,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NorthernLightsTracker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Northern lights tracker";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We’ll use your location to show visibility forecasts in your area.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -852,6 +1115,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NorthernLightsTracker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Northern lights tracker";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We’ll use your location to show visibility forecasts in your area.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

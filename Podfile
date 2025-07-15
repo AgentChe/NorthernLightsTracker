@@ -7,6 +7,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'NorthernLightsTracker' do
   pod 'Kingfisher'
   pod 'Toast-Swift'
+  pod 'RiveRuntime'
   
   pod 'RxSwift'
   pod 'RxCocoa'
@@ -18,6 +19,8 @@ target 'NorthernLightsTracker' do
   pod 'OtterScaleiOS', :git => "https://github.com/AgentChe/OtterScaleiOS.git"
   
   pod 'Amplitude-iOS'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
 end
 
 post_install do |installer|
