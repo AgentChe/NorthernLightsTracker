@@ -209,7 +209,7 @@ private extension PaygateView {
     func makeBuyButton() -> UIButton {
         let view = UIButton()
         view.layer.cornerRadius = 8.scale
-        view.backgroundColor = Appearance.main100
+        view.backgroundColor = Appearance.mono100
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
@@ -232,7 +232,7 @@ private extension PaygateView {
     func makePreloader() -> UIActivityIndicatorView {
         let view = UIActivityIndicatorView(style: .large)
         view.hidesWhenStopped = true
-        view.color = Appearance.main100
+        view.color = Appearance.mono100
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

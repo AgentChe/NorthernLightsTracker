@@ -23,8 +23,7 @@
 "TryAgain.Contact" = "Contact support";
 
 // MARK: Splash
-"Splash.Title.1" = "‍GIS";
-"Splash.Title.2" = "REAL ESTATE";
+"Splash.Title" = "‍Northern\nlights tracker";
 
 // MARK: Paygate
 "Paygate.Error.Title" = "Error";

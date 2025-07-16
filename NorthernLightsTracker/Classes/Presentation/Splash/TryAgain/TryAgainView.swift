@@ -151,7 +151,7 @@ private extension TryAgainView {
         
         let view = UIButton()
         view.setAttributedTitle("TryAgain.Button".localized.attributed(with: attrs), for: .normal)
-        view.backgroundColor = Appearance.main100
+        view.backgroundColor = Appearance.mono100
         view.layer.cornerRadius = 8.scale
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)

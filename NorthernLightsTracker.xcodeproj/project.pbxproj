@@ -24,14 +24,12 @@
 		DE18FDF02E25879F008F207C /* GlobalDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD692E25879F008F207C /* GlobalDefinitions.swift */; };
 		DE18FDF32E25879F008F207C /* TryAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FDB72E25879F008F207C /* TryAgainViewController.swift */; };
 		DE18FDF42E25879F008F207C /* PaygateInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FDA92E25879F008F207C /* PaygateInfoView.swift */; };
-		DE18FDF52E25879F008F207C /* OPageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD9B2E25879F008F207C /* OPageIndicatorView.swift */; };
 		DE18FDF72E25879F008F207C /* PurchaseValidationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FDC92E25879F008F207C /* PurchaseValidationObserver.swift */; };
 		DE18FDF82E25879F008F207C /* APIFormDataRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD562E25879F008F207C /* APIFormDataRequestBody.swift */; };
 		DE18FDF92E25879F008F207C /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD682E25879F008F207C /* Appearance.swift */; };
 		DE18FDFA2E25879F008F207C /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD482E25879F008F207C /* PaddingLabel.swift */; };
 		DE18FDFD2E25879F008F207C /* SplashReceiptValidationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FDB02E25879F008F207C /* SplashReceiptValidationObserver.swift */; };
 		DE18FE022E25879F008F207C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD4E2E25879F008F207C /* String+Extension.swift */; };
-		DE18FE032E25879F008F207C /* LocationAuthorizationQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD992E25879F008F207C /* LocationAuthorizationQuery.swift */; };
 		DE18FE042E25879F008F207C /* PaygateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FDAC2E25879F008F207C /* PaygateView.swift */; };
 		DE18FE052E25879F008F207C /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD3C2E25879F008F207C /* AmplitudeManager.swift */; };
 		DE18FE062E25879F008F207C /* IAPProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FDC62E25879F008F207C /* IAPProduct.swift */; };
@@ -72,7 +70,6 @@
 		DE18FE442E25879F008F207C /* PaygateBestOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FDA62E25879F008F207C /* PaygateBestOfferView.swift */; };
 		DE18FE462E25879F008F207C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD9F2E25879F008F207C /* OnboardingView.swift */; };
 		DE18FE472E25879F008F207C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD432E25879F008F207C /* NavigationController.swift */; };
-		DE18FE482E25879F008F207C /* OnstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD9D2E25879F008F207C /* OnstructionView.swift */; };
 		DE18FE492E25879F008F207C /* RestAPITransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD582E25879F008F207C /* RestAPITransport.swift */; };
 		DE18FE4B2E25879F008F207C /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD512E25879F008F207C /* UIDevice+Extension.swift */; };
 		DE18FE4C2E25879F008F207C /* NumberLaunches.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD5F2E25879F008F207C /* NumberLaunches.swift */; };
@@ -127,6 +124,7 @@
 		DE18FEBD2E268D04008F207C /* SearchLocationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEBC2E268D04008F207C /* SearchLocationsRequest.swift */; };
 		DE18FEBF2E268D7E008F207C /* ObtainLocationHistoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEBE2E268D7E008F207C /* ObtainLocationHistoryRequest.swift */; };
 		DE18FEC12E268D99008F207C /* LocationHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEC02E268D99008F207C /* LocationHistory.swift */; };
+		DE18FEC62E269140008F207C /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEC52E269140008F207C /* GradientButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,9 +174,6 @@
 		DE18FD682E25879F008F207C /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		DE18FD692E25879F008F207C /* GlobalDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefinitions.swift; sourceTree = "<group>"; };
 		DE18FD6A2E25879F008F207C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE18FD992E25879F008F207C /* LocationAuthorizationQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAuthorizationQuery.swift; sourceTree = "<group>"; };
-		DE18FD9B2E25879F008F207C /* OPageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPageIndicatorView.swift; sourceTree = "<group>"; };
-		DE18FD9D2E25879F008F207C /* OnstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnstructionView.swift; sourceTree = "<group>"; };
 		DE18FD9F2E25879F008F207C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		DE18FDA02E25879F008F207C /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		DE18FDA22E25879F008F207C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
@@ -253,6 +248,7 @@
 		DE18FEBC2E268D04008F207C /* SearchLocationsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationsRequest.swift; sourceTree = "<group>"; };
 		DE18FEBE2E268D7E008F207C /* ObtainLocationHistoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainLocationHistoryRequest.swift; sourceTree = "<group>"; };
 		DE18FEC02E268D99008F207C /* LocationHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistory.swift; sourceTree = "<group>"; };
+		DE18FEC52E269140008F207C /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		EB04B2FE1311D36ED8BA40F3 /* Pods-NorthernLightsTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorthernLightsTracker.release.xcconfig"; path = "Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -377,6 +373,7 @@
 				DE18FD482E25879F008F207C /* PaddingLabel.swift */,
 				DE18FD492E25879F008F207C /* PaddingTextField.swift */,
 				DE18FD4A2E25879F008F207C /* TapAreaButton.swift */,
+				DE18FEC52E269140008F207C /* GradientButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -451,38 +448,11 @@
 			path = Misc;
 			sourceTree = "<group>";
 		};
-		DE18FD9A2E25879F008F207C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				DE18FD992E25879F008F207C /* LocationAuthorizationQuery.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		DE18FD9C2E25879F008F207C /* Atoms */ = {
-			isa = PBXGroup;
-			children = (
-				DE18FD9B2E25879F008F207C /* OPageIndicatorView.swift */,
-			);
-			path = Atoms;
-			sourceTree = "<group>";
-		};
-		DE18FD9E2E25879F008F207C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				DE18FD9C2E25879F008F207C /* Atoms */,
-				DE18FD9D2E25879F008F207C /* OnstructionView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		DE18FDA12E25879F008F207C /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				DE18FD9A2E25879F008F207C /* Utils */,
-				DE18FD9E2E25879F008F207C /* Views */,
-				DE18FD9F2E25879F008F207C /* OnboardingView.swift */,
 				DE18FDA02E25879F008F207C /* OnboardingViewController.swift */,
+				DE18FD9F2E25879F008F207C /* OnboardingView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -873,9 +843,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -912,9 +886,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -948,8 +926,8 @@
 				DE18FDF02E25879F008F207C /* GlobalDefinitions.swift in Sources */,
 				DE18FEB02E268B4F008F207C /* ObtainSolarRequest.swift in Sources */,
 				DE18FDF32E25879F008F207C /* TryAgainViewController.swift in Sources */,
+				DE18FEC62E269140008F207C /* GradientButton.swift in Sources */,
 				DE18FDF42E25879F008F207C /* PaygateInfoView.swift in Sources */,
-				DE18FDF52E25879F008F207C /* OPageIndicatorView.swift in Sources */,
 				DE18FEBD2E268D04008F207C /* SearchLocationsRequest.swift in Sources */,
 				DE18FDF72E25879F008F207C /* PurchaseValidationObserver.swift in Sources */,
 				DE18FDF82E25879F008F207C /* APIFormDataRequestBody.swift in Sources */,
@@ -958,7 +936,6 @@
 				DE18FDFA2E25879F008F207C /* PaddingLabel.swift in Sources */,
 				DE18FDFD2E25879F008F207C /* SplashReceiptValidationObserver.swift in Sources */,
 				DE18FE022E25879F008F207C /* String+Extension.swift in Sources */,
-				DE18FE032E25879F008F207C /* LocationAuthorizationQuery.swift in Sources */,
 				DE18FE8B2E266E25008F207C /* AuroraTopLocation.swift in Sources */,
 				DE18FE042E25879F008F207C /* PaygateView.swift in Sources */,
 				DE18FE052E25879F008F207C /* AmplitudeManager.swift in Sources */,
@@ -1021,7 +998,6 @@
 				DE18FE852E266CB8008F207C /* ObtainAuroraMapOvalRequest.swift in Sources */,
 				DE18FE462E25879F008F207C /* OnboardingView.swift in Sources */,
 				DE18FE472E25879F008F207C /* NavigationController.swift in Sources */,
-				DE18FE482E25879F008F207C /* OnstructionView.swift in Sources */,
 				DE18FEA22E2686E7008F207C /* ForecastPlanetaryA.swift in Sources */,
 				DE18FE492E25879F008F207C /* RestAPITransport.swift in Sources */,
 				DE18FE4B2E25879F008F207C /* UIDevice+Extension.swift in Sources */,

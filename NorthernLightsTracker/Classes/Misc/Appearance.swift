@@ -9,16 +9,14 @@ import UIKit
 
 struct Appearance {
     static let mono100 = UIColor.white
-    static let mono200 = UIColor(integralRed: 31, green: 45, blue: 61)
-    static let main100 = UIColor(integralRed: 44, green: 90, blue: 150)
-    static let main200 = UIColor(integralRed: 76, green: 175, blue: 80)
-    static let main300 = UIColor(integralRed: 248, green: 249, blue: 251)
-    static let main400 = UIColor(integralRed: 93, green: 109, blue: 126)
-    static let main500 = UIColor(integralRed: 217, green: 221, blue: 226)
-    static let system100 = UIColor(integralRed: 248, green: 89, blue: 89)
-    
-    static let custom199_203_209 = UIColor(integralRed: 199, green: 203, blue: 209)
-    static let custom60_60_67 = UIColor(integralRed: 60, green: 60, blue: 67)
-    static let custom239_241_246 = UIColor(integralRed: 239, green: 241, blue: 246)
-    static let custom216_238_217 = UIColor(integralRed: 216, green: 238, blue: 217)
+    static let mono200 = UIColor(integralRed: 25, green: 25, blue: 25)
+    static let main100 = [
+        UIColor(integralRed: 127, green: 255, blue: 212).cgColor,
+        UIColor(integralRed: 159, green: 143, blue: 255).cgColor
+    ]
+    static let main200 = UIColor(integralRed: 127, green: 255, blue: 212)
+    static let main300 = UIColor.white.withAlphaComponent(0.1)
+    static let main400 = UIColor.white.withAlphaComponent(0.05)
+    static let main500 = UIColor(integralRed: 141, green: 216, blue: 91)
+    static let main600 = UIColor(integralRed: 53, green: 53, blue: 53)
 }

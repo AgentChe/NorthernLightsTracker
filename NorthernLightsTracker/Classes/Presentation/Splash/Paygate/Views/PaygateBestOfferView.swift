@@ -43,7 +43,7 @@ extension PaygateBestOfferView {
         let attrs = marked ? selectedAttrs : deselectedAttrs
         label.attributedText = "Paygate.BestOffer".localized.attributed(with: attrs)
         
-        backgroundColor = marked ? Appearance.main100 : Appearance.mono100
+        backgroundColor = marked ? Appearance.mono100 : Appearance.mono100
         
         layer.borderWidth = marked ? 0 : 1.scale
         layer.borderColor = marked ? UIColor.clear.cgColor : Appearance.main500.cgColor

@@ -133,9 +133,9 @@ private extension PaygateProductButton {
         markerView.image = UIImage(named: imageName)
         
         layer.borderWidth = marked ? 2.scale : 0
-        layer.borderColor = marked ? Appearance.main100.cgColor : UIColor.clear.cgColor
+        layer.borderColor = marked ? Appearance.mono100.cgColor : UIColor.clear.cgColor
         
-        backgroundColor = marked ? Appearance.main100.withAlphaComponent(0.2) : Appearance.mono100
+        backgroundColor = marked ? Appearance.mono100.withAlphaComponent(0.2) : Appearance.mono100
     }
 }
 
