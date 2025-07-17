@@ -20,7 +20,7 @@
 "TryAgain.Title" = "The app failed to perform a request";
 "TryAgain.SubTitle" = "If there’s a connection issue on your side try one more time. If the connection is fine and the error keeps on repeating please get in touch with the support";
 "TryAgain.Button" = "Try again";
-"TryAgain.Contact" = "Contact support";
+"TryAgain.Contact" = "Contact the support →";
 
 // MARK: Splash
 "Splash.Title" = "‍Northern\nlights tracker";
@@ -30,9 +30,9 @@
 "Paygate.Error.Text" = "An error occurred during execution. Try later.";
 "Paygate.Error.Button" = "OK";
 "Paygate.Title" = "Upgrade Premium";
-"Paygate.Info1" = "Access full property reports";
-"Paygate.Info2" = "View zoning, flood, and ownership data";
-"Paygate.Info3" = "Unlock detailed location and building info";
+"Paygate.Info1" = "Advanced aurora alerts, forecast insights";
+"Paygate.Info2" = "View solar imagery and KP history";
+"Paygate.Info3" = " Plan the best nights with expert tools";
 "Paygate.EnableFreeTrial" = "Enable Free Trial";
 "Paygate.FreeTrialEnabled" = "Free Trial Enabled";
 "Paygate.Yearly" = "Yearly";
@@ -48,3 +48,16 @@
 "Paygate.PrivacyPolicy" = "Privacy Policy";
 "Paygate.RestorePurchases" = "Restore Purchases";
 "Paygate.BestOffer" = "⭐ Best Offer";
+
+// MARK: Public
+"Onboarding.Aurora.Title" = "Never miss the lights again";
+"Onboarding.Aurora.Text" = "Get real-time aurora activity, cloud coverage, and visibility alerts — all in one place. Your location, your sky, your moment.";
+"Onboarding.KP.Title" = "Dive into aurora\nforecasts";
+"Onboarding.KP.Text" = "Explore interactive graphs for KP index, solar wind, cloud cover, and more. Plan the perfect viewing night — or trip.";
+"Onboarding.Sun.Title" = "Track the Sun’s\npower";
+"Onboarding.Sun.Text" = "See the latest sun images, solar flares, and space weather that trigger auroras. Science meets beauty.";
+"Onboarding.Alerts.Title" = "Smart alerts, just for\nyou";
+"Onboarding.Alerts.Text" = "Get notified when conditions are right — based on KP level, clouds, or clear skies. You set the rules.";
+"Onboarding.Location.Title" = "We couldn’t find your location";
+"Onboarding.Location.Text" = "Please choose your nearest region to get accurate forecasts";
+"Onboarding.Location.SearchPlaceholder" = "Type in new location...";

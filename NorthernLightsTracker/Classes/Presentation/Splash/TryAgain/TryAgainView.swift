@@ -8,8 +8,9 @@
 import UIKit
 
 final class TryAgainView: UIView {
+    lazy var headerView = makeHeaderView()
     lazy var closeButton = makeCloseButton()
-    lazy var imageView = makeImageView()
+    lazy var errorIconView = makeErrorIconView()
     lazy var titleLabel = makeTitleLabel()
     lazy var subTitleLabel = makeSubTitleLabel()
     lazy var tryAgainButton = makeTryAgainButton()
@@ -34,7 +35,7 @@ final class TryAgainView: UIView {
 // MARK: Private
 private extension TryAgainView {
     func initialize() {
-        backgroundColor = Appearance.main300
+        backgroundColor = Appearance.mono200
     }
     
     func errorMessage() -> String {
@@ -55,6 +56,13 @@ private extension TryAgainView {
 private extension TryAgainView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
+            headerView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            headerView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            headerView.topAnchor.constraint(equalTo: topAnchor),
+            headerView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 213.scale : 150.scale)
+        ])
+        
+        NSLayoutConstraint.activate([
             closeButton.widthAnchor.constraint(equalToConstant: 24.scale),
             closeButton.heightAnchor.constraint(equalToConstant: 24.scale),
             closeButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
@@ -62,16 +70,16 @@ private extension TryAgainView {
         ])
         
         NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalToConstant: 270.scale),
-            imageView.heightAnchor.constraint(equalToConstant: 270.scale),
-            imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            imageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 50.scale)
+            errorIconView.widthAnchor.constraint(equalToConstant: 44.scale),
+            errorIconView.heightAnchor.constraint(equalToConstant: 38.scale),
+            errorIconView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            errorIconView.topAnchor.constraint(equalTo: headerView.bottomAnchor)
         ])
         
         NSLayoutConstraint.activate([
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 28.scale),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -28.scale),
-            titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 24.scale)
+            titleLabel.topAnchor.constraint(equalTo: errorIconView.bottomAnchor, constant: 24.scale)
         ])
         
         NSLayoutConstraint.activate([
@@ -82,7 +90,7 @@ private extension TryAgainView {
         
         NSLayoutConstraint.activate([
             tryAgainButton.widthAnchor.constraint(equalToConstant: 343.scale),
-            tryAgainButton.heightAnchor.constraint(equalToConstant: 44.scale),
+            tryAgainButton.heightAnchor.constraint(equalToConstant: 55.scale),
             tryAgainButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             tryAgainButton.bottomAnchor.constraint(equalTo: contactButton.topAnchor, constant: -24.scale)
         ])
@@ -97,15 +105,24 @@ private extension TryAgainView {
 
 // MARK: Lazy initialization
 private extension TryAgainView {
-    func makeCloseButton() -> TapAreaButton {
-        let view = TapAreaButton()
-        view.setImage(UIImage(named: "Close.Black"), for: .normal)
+    func makeHeaderView() -> UIImageView {
+        let view = UIImageView()
+        view.contentMode = .scaleAspectFill
+        view.image = UIImage(named: "TryAgain.Header")
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
     }
     
-    func makeImageView() -> UIImageView {
+    func makeCloseButton() -> TapAreaButton {
+        let view = TapAreaButton()
+        view.setImage(UIImage(named: "Close.White"), for: .normal)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+        return view
+    }
+    
+    func makeErrorIconView() -> UIImageView {
         let view = UIImageView()
         view.contentMode = .scaleAspectFit
         view.image = UIImage(named: "TryAgain.Image")
@@ -116,7 +133,7 @@ private extension TryAgainView {
     
     func makeTitleLabel() -> UILabel {
         let attrs = TextAttributes()
-            .textColor(Appearance.mono200)
+            .textColor(Appearance.mono100)
             .font(Fonts.IBMPlexSans.bold(size: 24.scale))
             .lineHeight(31.scale)
             .textAlignment(.center)
@@ -131,7 +148,7 @@ private extension TryAgainView {
     
     func makeSubTitleLabel() -> UILabel {
         let attrs = TextAttributes()
-            .textColor(Appearance.mono200)
+            .textColor(Appearance.mono100)
             .font(Fonts.IBMPlexSans.regular(size: 16.scale))
             .lineHeight(24.scale)
             .textAlignment(.center)
@@ -144,15 +161,17 @@ private extension TryAgainView {
         return view
     }
     
-    func makeTryAgainButton() -> UIButton {
+    func makeTryAgainButton() -> GradientButton {
         let attrs = TextAttributes()
-            .textColor(Appearance.mono100)
-            .font(Fonts.IBMPlexSans.bold(size: 16.scale))
+            .textColor(Appearance.mono200)
+            .font(Fonts.IBMPlexSans.bold(size: 18.scale))
         
-        let view = UIButton()
+        let view = GradientButton()
         view.setAttributedTitle("TryAgain.Button".localized.attributed(with: attrs), for: .normal)
-        view.backgroundColor = Appearance.mono100
-        view.layer.cornerRadius = 8.scale
+        view.gradientLayer.colors = Appearance.main100
+        view.gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+        view.gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
+        view.layer.cornerRadius = 12.scale
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
@@ -160,8 +179,8 @@ private extension TryAgainView {
     
     func makeContactButton() -> TapAreaButton {
         let attrs = TextAttributes()
-            .textColor(Appearance.main400)
-            .font(Fonts.IBMPlexSans.bold(size: 16.scale))
+            .textColor(Appearance.mono100)
+            .font(Fonts.IBMPlexSans.bold(size: 18.scale))
         
         let view = TapAreaButton()
         view.backgroundColor = UIColor.clear

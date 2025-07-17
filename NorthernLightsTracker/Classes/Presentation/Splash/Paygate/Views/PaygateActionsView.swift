@@ -62,7 +62,7 @@ private extension PaygateActionsView {
 private extension PaygateActionsView {
     func makeActionButton(text: String) -> TapAreaButton {
         let attrs = TextAttributes()
-            .textColor(Appearance.mono200.withAlphaComponent(0.6))
+            .textColor(Appearance.mono100.withAlphaComponent(0.6))
             .font(Fonts.IBMPlexSans.regular(size: 14.scale))
         
         let view = TapAreaButton()

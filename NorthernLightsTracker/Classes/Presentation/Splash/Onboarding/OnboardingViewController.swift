@@ -6,19 +6,44 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class OnboardingViewController: UIViewController {
     struct Constants {
         static let wasViewedKey = "onboarding_view_controller_was_viewed_key"
     }
     
-    private lazy var mainView = OnboardingView { [weak self] in
-        self?.markAsViewed()
-        self?.route()
+    private lazy var mainView = OnboardingView { [weak self] data in
+        self?.didCombineDataTrigger.accept(data)
     }
+    
+    private lazy var viewModel = OnboardingViewModel()
+    
+    private lazy var disposeBag = DisposeBag()
+    
+    private lazy var didCombineDataTrigger = PublishRelay<OnboardingCombineData.CombineData>()
     
     override func loadView() {
         view = mainView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        viewModel.tryAgain = { [weak self] error -> Observable<Void> in
+            self?.open(error: error) ?? .never()
+        }
+        
+        let output = viewModel.configure(input: OnboardingViewModel.Input(
+            didCombineData: didCombineDataTrigger.asSignal()
+        ))
+        
+        output.action
+            .drive(Binder(self) { base, action in
+                base.action(action)
+            })
+            .disposed(by: disposeBag)
     }
 }
 
@@ -35,27 +60,46 @@ extension OnboardingViewController {
 
 // MARK: Private
 private extension OnboardingViewController {
-    func route() {
+    func action(_ action: OnboardingViewModel.Action) {
         guard let window = UIApplication.shared.window else {
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) { [weak self] in
-                self?.route()
+                self?.action(action)
             }
             
             return
         }
         
-        if SessionManager().hasActiveSubscriptions() {
-//            window.rootViewController = MapViewController.make(requestReview: true)
-            // TODO
-        } else {
+        switch action {
+        case .paygateTransitionMain:
+            markAsViewed()
+            
             let vc = PaygateViewController.make {
 //                window.rootViewController = MapViewController.make(requestReview: true) TODO
             }
             present(vc, animated: true)
+        case .main:
+            markAsViewed()
+            
+//            window.rootViewController = MapViewController.make(requestReview: true)
+            break // TODO
         }
     }
     
     func markAsViewed() {
         UserDefaults.standard.setValue(true, forKey: Constants.wasViewedKey)
+    }
+    
+    func open(error: Error) -> Observable<Void> {
+        Observable<Void>
+            .create { [weak self] observe in
+                guard let self else { return Disposables.create() }
+                
+                let vc = TryAgainViewController.make(error: error) {
+                    observe.onNext(())
+                }
+                self.present(vc, animated: true)
+                
+                return Disposables.create()
+            }
     }
 }

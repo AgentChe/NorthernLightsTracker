@@ -23,7 +23,7 @@ final class GlobalDefinitions {
     static let contactUsUrl = URL(string: "https://appslaunchpad.com/contact")!
     
     enum Paygate {
-        static let yearly = "com.gisrealestate.yearly"
-        static let weekly = "com.gisrealestate.weekly"
+        static let yearly = "com.northernlightstracker.yearly"
+        static let weekly = "com.northernlightstracker.weekly"
     }
 }

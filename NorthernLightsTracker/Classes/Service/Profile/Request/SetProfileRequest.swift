@@ -33,10 +33,15 @@ struct SetProfileRequest: APIRequestBody {
         [
             "anonymous_id": anonymousId,
             "internal_id": internalId,
-            "notification_token": notificationToken ?? NSNull(),
-            "kp_threshold_enabled": kpThresholdEnabled ?? NSNull(),
-            "cloud_break_enabled": cloudBreakEnabled ?? NSNull(),
-            "geo_id": geoId ?? NSNull()
+            "attrs": {
+                let attrs: Parameters = [
+                    "notification_token": notificationToken ?? NSNull(),
+                    "kp_threshold_enabled": kpThresholdEnabled ?? NSNull(),
+                    "cloud_break_enabled": cloudBreakEnabled ?? NSNull(),
+                    "geo_id": geoId ?? NSNull()
+                ]
+                return attrs
+            }()
         ]
     }
 }

@@ -125,6 +125,26 @@
 		DE18FEBF2E268D7E008F207C /* ObtainLocationHistoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEBE2E268D7E008F207C /* ObtainLocationHistoryRequest.swift */; };
 		DE18FEC12E268D99008F207C /* LocationHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEC02E268D99008F207C /* LocationHistory.swift */; };
 		DE18FEC62E269140008F207C /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FEC52E269140008F207C /* GradientButton.swift */; };
+		DE18FECF2E27B7F0008F207C /* OAuroraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FECE2E27B7F0008F207C /* OAuroraView.swift */; };
+		DE18FED22E27B970008F207C /* Onboarding.Aurora.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE18FED12E27B970008F207C /* Onboarding.Aurora.riv */; };
+		DE18FED42E27C019008F207C /* OSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FED32E27C019008F207C /* OSlideView.swift */; };
+		DE18FED62E27C322008F207C /* GradientProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FED52E27C322008F207C /* GradientProgressView.swift */; };
+		DE8C2DFE2E27CB06009F2787 /* Onboarding.KP.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE8C2DFD2E27CB06009F2787 /* Onboarding.KP.riv */; };
+		DE8C2E002E27CB10009F2787 /* OKPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2DFF2E27CB10009F2787 /* OKPView.swift */; };
+		DE8C2E042E27CBB5009F2787 /* OSunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E032E27CBB5009F2787 /* OSunView.swift */; };
+		DE8C2E062E27CC1A009F2787 /* Onboarding.Sun.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE8C2E052E27CC1A009F2787 /* Onboarding.Sun.riv */; };
+		DE8C2E092E27CE4B009F2787 /* Onboarding.Alerts.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE8C2E082E27CE4B009F2787 /* Onboarding.Alerts.riv */; };
+		DE8C2E0B2E27CE59009F2787 /* OAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E0A2E27CE59009F2787 /* OAlertsView.swift */; };
+		DE8C2E0E2E27DBE2009F2787 /* PushNotificationsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E0D2E27DBE2009F2787 /* PushNotificationsQuery.swift */; };
+		DE8C2E102E27DE72009F2787 /* LocationAuthorizationQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E0F2E27DE72009F2787 /* LocationAuthorizationQuery.swift */; };
+		DE8C2E132E27E002009F2787 /* OLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E122E27E002009F2787 /* OLocationView.swift */; };
+		DE8C2E162E27E5E2009F2787 /* OLocationSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E152E27E5E2009F2787 /* OLocationSearchField.swift */; };
+		DE8C2E182E280117009F2787 /* OLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E172E280117009F2787 /* OLocationViewModel.swift */; };
+		DE8C2E1B2E2805E6009F2787 /* OLocationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E1A2E2805E6009F2787 /* OLocationTableView.swift */; };
+		DE8C2E1D2E2805EE009F2787 /* OLocationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E1C2E2805EE009F2787 /* OLocationTableCell.swift */; };
+		DE8C2E202E2812FC009F2787 /* OnboardingCombineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E1F2E2812FC009F2787 /* OnboardingCombineData.swift */; };
+		DE8C2E222E2813D2009F2787 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E212E2813D2009F2787 /* OnboardingViewModel.swift */; };
+		DE8C2E242E28E489009F2787 /* Paygate.storekit in Resources */ = {isa = PBXBuildFile; fileRef = DE8C2E232E28E489009F2787 /* Paygate.storekit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -249,6 +269,26 @@
 		DE18FEBE2E268D7E008F207C /* ObtainLocationHistoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainLocationHistoryRequest.swift; sourceTree = "<group>"; };
 		DE18FEC02E268D99008F207C /* LocationHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistory.swift; sourceTree = "<group>"; };
 		DE18FEC52E269140008F207C /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		DE18FECE2E27B7F0008F207C /* OAuroraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuroraView.swift; sourceTree = "<group>"; };
+		DE18FED12E27B970008F207C /* Onboarding.Aurora.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.Aurora.riv; sourceTree = "<group>"; };
+		DE18FED32E27C019008F207C /* OSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSlideView.swift; sourceTree = "<group>"; };
+		DE18FED52E27C322008F207C /* GradientProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientProgressView.swift; sourceTree = "<group>"; };
+		DE8C2DFD2E27CB06009F2787 /* Onboarding.KP.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.KP.riv; sourceTree = "<group>"; };
+		DE8C2DFF2E27CB10009F2787 /* OKPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKPView.swift; sourceTree = "<group>"; };
+		DE8C2E032E27CBB5009F2787 /* OSunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSunView.swift; sourceTree = "<group>"; };
+		DE8C2E052E27CC1A009F2787 /* Onboarding.Sun.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.Sun.riv; sourceTree = "<group>"; };
+		DE8C2E082E27CE4B009F2787 /* Onboarding.Alerts.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.Alerts.riv; sourceTree = "<group>"; };
+		DE8C2E0A2E27CE59009F2787 /* OAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAlertsView.swift; sourceTree = "<group>"; };
+		DE8C2E0D2E27DBE2009F2787 /* PushNotificationsQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsQuery.swift; sourceTree = "<group>"; };
+		DE8C2E0F2E27DE72009F2787 /* LocationAuthorizationQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAuthorizationQuery.swift; sourceTree = "<group>"; };
+		DE8C2E122E27E002009F2787 /* OLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLocationView.swift; sourceTree = "<group>"; };
+		DE8C2E152E27E5E2009F2787 /* OLocationSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLocationSearchField.swift; sourceTree = "<group>"; };
+		DE8C2E172E280117009F2787 /* OLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLocationViewModel.swift; sourceTree = "<group>"; };
+		DE8C2E1A2E2805E6009F2787 /* OLocationTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLocationTableView.swift; sourceTree = "<group>"; };
+		DE8C2E1C2E2805EE009F2787 /* OLocationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLocationTableCell.swift; sourceTree = "<group>"; };
+		DE8C2E1F2E2812FC009F2787 /* OnboardingCombineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCombineData.swift; sourceTree = "<group>"; };
+		DE8C2E212E2813D2009F2787 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		DE8C2E232E28E489009F2787 /* Paygate.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Paygate.storekit; sourceTree = "<group>"; };
 		EB04B2FE1311D36ED8BA40F3 /* Pods-NorthernLightsTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorthernLightsTracker.release.xcconfig"; path = "Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -374,6 +414,7 @@
 				DE18FD492E25879F008F207C /* PaddingTextField.swift */,
 				DE18FD4A2E25879F008F207C /* TapAreaButton.swift */,
 				DE18FEC52E269140008F207C /* GradientButton.swift */,
+				DE18FED52E27C322008F207C /* GradientProgressView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -451,7 +492,10 @@
 		DE18FDA12E25879F008F207C /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				DE8C2E1E2E2812E5009F2787 /* Utils */,
+				DE18FECD2E27B79C008F207C /* Views */,
 				DE18FDA02E25879F008F207C /* OnboardingViewController.swift */,
+				DE8C2E212E2813D2009F2787 /* OnboardingViewModel.swift */,
 				DE18FD9F2E25879F008F207C /* OnboardingView.swift */,
 			);
 			path = Onboarding;
@@ -484,9 +528,9 @@
 			children = (
 				DE18FDA42E25879F008F207C /* Utils */,
 				DE18FDAB2E25879F008F207C /* Views */,
-				DE18FDAC2E25879F008F207C /* PaygateView.swift */,
 				DE18FDAD2E25879F008F207C /* PaygateViewController.swift */,
 				DE18FDAE2E25879F008F207C /* PaygateViewModel.swift */,
+				DE18FDAC2E25879F008F207C /* PaygateView.swift */,
 			);
 			path = Paygate;
 			sourceTree = "<group>";
@@ -513,8 +557,8 @@
 		DE18FDB82E25879F008F207C /* TryAgain */ = {
 			isa = PBXGroup;
 			children = (
-				DE18FDB62E25879F008F207C /* TryAgainView.swift */,
 				DE18FDB72E25879F008F207C /* TryAgainViewController.swift */,
+				DE18FDB62E25879F008F207C /* TryAgainView.swift */,
 			);
 			path = TryAgain;
 			sourceTree = "<group>";
@@ -625,6 +669,7 @@
 				DE18FD6B2E25879F008F207C /* Misc */,
 				DE18FDBA2E25879F008F207C /* Presentation */,
 				DE18FDE02E25879F008F207C /* Service */,
+				DE8C2E232E28E489009F2787 /* Paygate.storekit */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -760,6 +805,101 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		DE18FECD2E27B79C008F207C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE8C2E112E27DFF4009F2787 /* Location */,
+				DE8C2E072E27CE38009F2787 /* Alerts */,
+				DE8C2E022E27CBA9009F2787 /* Sun */,
+				DE8C2DFC2E27CAE5009F2787 /* KP */,
+				DE18FED02E27B925008F207C /* Aurora */,
+				DE18FED32E27C019008F207C /* OSlideView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE18FED02E27B925008F207C /* Aurora */ = {
+			isa = PBXGroup;
+			children = (
+				DE18FED12E27B970008F207C /* Onboarding.Aurora.riv */,
+				DE18FECE2E27B7F0008F207C /* OAuroraView.swift */,
+			);
+			path = Aurora;
+			sourceTree = "<group>";
+		};
+		DE8C2DFC2E27CAE5009F2787 /* KP */ = {
+			isa = PBXGroup;
+			children = (
+				DE8C2DFD2E27CB06009F2787 /* Onboarding.KP.riv */,
+				DE8C2DFF2E27CB10009F2787 /* OKPView.swift */,
+			);
+			path = KP;
+			sourceTree = "<group>";
+		};
+		DE8C2E022E27CBA9009F2787 /* Sun */ = {
+			isa = PBXGroup;
+			children = (
+				DE8C2E052E27CC1A009F2787 /* Onboarding.Sun.riv */,
+				DE8C2E032E27CBB5009F2787 /* OSunView.swift */,
+			);
+			path = Sun;
+			sourceTree = "<group>";
+		};
+		DE8C2E072E27CE38009F2787 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				DE8C2E0C2E27DBD2009F2787 /* Utils */,
+				DE8C2E082E27CE4B009F2787 /* Onboarding.Alerts.riv */,
+				DE8C2E0A2E27CE59009F2787 /* OAlertsView.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		DE8C2E0C2E27DBD2009F2787 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE8C2E0D2E27DBE2009F2787 /* PushNotificationsQuery.swift */,
+				DE8C2E0F2E27DE72009F2787 /* LocationAuthorizationQuery.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DE8C2E112E27DFF4009F2787 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				DE8C2E142E27E5D9009F2787 /* Views */,
+				DE8C2E122E27E002009F2787 /* OLocationView.swift */,
+				DE8C2E172E280117009F2787 /* OLocationViewModel.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		DE8C2E142E27E5D9009F2787 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE8C2E192E280537009F2787 /* TableView */,
+				DE8C2E152E27E5E2009F2787 /* OLocationSearchField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE8C2E192E280537009F2787 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE8C2E1A2E2805E6009F2787 /* OLocationTableView.swift */,
+				DE8C2E1C2E2805EE009F2787 /* OLocationTableCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DE8C2E1E2E2812E5009F2787 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE8C2E1F2E2812FC009F2787 /* OnboardingCombineData.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -824,11 +964,16 @@
 			files = (
 				DE18FE5C2E2652F3008F207C /* IBMPlexSans-Bold.ttf in Resources */,
 				DE18FD372E25879A008F207C /* Localizable.strings in Resources */,
+				DE8C2E242E28E489009F2787 /* Paygate.storekit in Resources */,
 				DE18FE622E265316008F207C /* IBMPlexSans-SemiBold.ttf in Resources */,
 				DE18FD242E25869A008F207C /* Assets.xcassets in Resources */,
 				DE18FD262E25869A008F207C /* LaunchScreen.storyboard in Resources */,
 				DE18FE602E265310008F207C /* IBMPlexSans-Regular.ttf in Resources */,
+				DE8C2E062E27CC1A009F2787 /* Onboarding.Sun.riv in Resources */,
+				DE8C2DFE2E27CB06009F2787 /* Onboarding.KP.riv in Resources */,
+				DE8C2E092E27CE4B009F2787 /* Onboarding.Alerts.riv in Resources */,
 				DE18FE5E2E26530B008F207C /* IBMPlexSans-Medium.ttf in Resources */,
+				DE18FED22E27B970008F207C /* Onboarding.Aurora.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,7 +1051,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8C2E222E2813D2009F2787 /* OnboardingViewModel.swift in Sources */,
 				DE18FDE22E25879F008F207C /* PaygateProductButton.swift in Sources */,
+				DE8C2E182E280117009F2787 /* OLocationViewModel.swift in Sources */,
 				DE18FE8D2E266E41008F207C /* PeakTime.swift in Sources */,
 				DE18FDE32E25879F008F207C /* ContentError.swift in Sources */,
 				DE18FE982E2683E7008F207C /* ForecastKP.swift in Sources */,
@@ -922,9 +1069,11 @@
 				DE18FDEE2E25879F008F207C /* PaygateInteractor.swift in Sources */,
 				DE18FDEF2E25879F008F207C /* NetworkError.swift in Sources */,
 				DE18FEA82E2689FE008F207C /* ObtainSolarTemplatesRequest.swift in Sources */,
+				DE8C2E102E27DE72009F2787 /* LocationAuthorizationQuery.swift in Sources */,
 				DE18FE872E266CD7008F207C /* AuroraMapOval.swift in Sources */,
 				DE18FDF02E25879F008F207C /* GlobalDefinitions.swift in Sources */,
 				DE18FEB02E268B4F008F207C /* ObtainSolarRequest.swift in Sources */,
+				DE8C2E1D2E2805EE009F2787 /* OLocationTableCell.swift in Sources */,
 				DE18FDF32E25879F008F207C /* TryAgainViewController.swift in Sources */,
 				DE18FEC62E269140008F207C /* GradientButton.swift in Sources */,
 				DE18FDF42E25879F008F207C /* PaygateInfoView.swift in Sources */,
@@ -948,9 +1097,12 @@
 				DE18FE892E266DFA008F207C /* ObtainAuroraTopsRequest.swift in Sources */,
 				DE18FE092E25879F008F207C /* UIColor+Extension.swift in Sources */,
 				DE18FE0A2E25879F008F207C /* RequestResult.swift in Sources */,
+				DE8C2E0B2E27CE59009F2787 /* OAlertsView.swift in Sources */,
 				DE18FE0D2E25879F008F207C /* RxActivityIndicator.swift in Sources */,
 				DE18FE942E2682F5008F207C /* Forecast.swift in Sources */,
 				DE18FE132E25879F008F207C /* ObservableRetrySingle.swift in Sources */,
+				DE8C2E162E27E5E2009F2787 /* OLocationSearchField.swift in Sources */,
+				DE8C2E002E27CB10009F2787 /* OKPView.swift in Sources */,
 				DE18FE172E25879F008F207C /* TryAgainView.swift in Sources */,
 				DE18FE7B2E2666CF008F207C /* AuroraNow.swift in Sources */,
 				DE18FE182E25879F008F207C /* XOREncryption.swift in Sources */,
@@ -967,6 +1119,8 @@
 				DE18FE1F2E25879F008F207C /* NavigationControllerSettings.swift in Sources */,
 				DE18FE9E2E268630008F207C /* ForecastSolarWind.swift in Sources */,
 				DE18FE9C2E2685D9008F207C /* ForecastMoonPhase.swift in Sources */,
+				DE8C2E0E2E27DBE2009F2787 /* PushNotificationsQuery.swift in Sources */,
+				DE8C2E202E2812FC009F2787 /* OnboardingCombineData.swift in Sources */,
 				DE18FE202E25879F008F207C /* Scalable.swift in Sources */,
 				DE18FE9A2E268537008F207C /* ForecastCloudCover.swift in Sources */,
 				DE18FE232E25879F008F207C /* TakePhoto.swift in Sources */,
@@ -976,6 +1130,7 @@
 				DE18FE832E266B2B008F207C /* Coordinate.swift in Sources */,
 				DE18FE2E2E25879F008F207C /* ObservableAndSingle+Extension.swift in Sources */,
 				DE18FEB72E268C0E008F207C /* PageInfo.swift in Sources */,
+				DE18FED42E27C019008F207C /* OSlideView.swift in Sources */,
 				DE18FE2F2E25879F008F207C /* IAPActionResult.swift in Sources */,
 				DE18FE322E25879F008F207C /* ProfileBindingRequest.swift in Sources */,
 				DE18FE342E25879F008F207C /* OnboardingViewController.swift in Sources */,
@@ -996,9 +1151,13 @@
 				DE18FE422E25879F008F207C /* SplashViewModel.swift in Sources */,
 				DE18FE442E25879F008F207C /* PaygateBestOfferView.swift in Sources */,
 				DE18FE852E266CB8008F207C /* ObtainAuroraMapOvalRequest.swift in Sources */,
+				DE18FECF2E27B7F0008F207C /* OAuroraView.swift in Sources */,
 				DE18FE462E25879F008F207C /* OnboardingView.swift in Sources */,
 				DE18FE472E25879F008F207C /* NavigationController.swift in Sources */,
+				DE8C2E1B2E2805E6009F2787 /* OLocationTableView.swift in Sources */,
 				DE18FEA22E2686E7008F207C /* ForecastPlanetaryA.swift in Sources */,
+				DE8C2E042E27CBB5009F2787 /* OSunView.swift in Sources */,
+				DE18FED62E27C322008F207C /* GradientProgressView.swift in Sources */,
 				DE18FE492E25879F008F207C /* RestAPITransport.swift in Sources */,
 				DE18FE4B2E25879F008F207C /* UIDevice+Extension.swift in Sources */,
 				DE18FE7D2E26691D008F207C /* ObtainAuroraNowRequest.swift in Sources */,
@@ -1008,6 +1167,7 @@
 				DE18FE4E2E25879F008F207C /* PaddingTextField.swift in Sources */,
 				DE18FE512E25879F008F207C /* UITapGestureRecognizer+Extension.swift in Sources */,
 				DE18FE6C2E265EB6008F207C /* ProfileMediator.swift in Sources */,
+				DE8C2E132E27E002009F2787 /* OLocationView.swift in Sources */,
 				DE18FE662E265B8F008F207C /* Profile.swift in Sources */,
 				DE18FE522E25879F008F207C /* AppDelegate.swift in Sources */,
 				DE18FEBF2E268D7E008F207C /* ObtainLocationHistoryRequest.swift in Sources */,
