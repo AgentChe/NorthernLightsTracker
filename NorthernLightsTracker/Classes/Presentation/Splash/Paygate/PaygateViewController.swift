@@ -8,17 +8,20 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import OtterScaleiOS
 
 final class PaygateViewController: UIViewController {
-    private lazy var mainView = PaygateView()
+    private lazy var mainView = PaygateView(withTrial: withTrial)
     
     private lazy var viewModel = PaygateViewModel()
     
     private lazy var disposeBag = DisposeBag()
     
+    private let withTrial: Bool
     private let didClose: (() -> Void)?
     
-    private init(didClose: (() -> Void)?) {
+    private init(withTrial: Bool, didClose: (() -> Void)?) {
+        self.withTrial = withTrial
         self.didClose = didClose
         
         super.init(nibName: nil, bundle: nil)
@@ -50,18 +53,18 @@ final class PaygateViewController: UIViewController {
                     }
             )
             .startWith((false, true))
-            .bind(to: Binder(mainView) { base, args in
-                base.product1Button.marked = args.0
-                base.product2Button.marked = args.1
-                base.enableTrialButton.isEnable = args.1
+            .bind(to: Binder(self) { base, args in
+                base.mainView.product1Button.marked = args.0
+                base.mainView.product2Button.marked = args.1
+                base.mainView.enableTrialButton.isEnable = args.1
                 
-                let buyTitle = args.0 ? "Paygate.Continue".localized : "Paygate.TryFreeSubscribe".localized
-                base.setup(buyTitle: buyTitle)
+                let buyTitle = (args.0 || !base.withTrial) ? "Paygate.Continue".localized : "Paygate.TryFreeSubscribe".localized
+                base.mainView.setup(buyTitle: buyTitle)
                 
-                let info = args.0 ? "Paygate.CancelAnytime".localized : "Paygate.NoPaymentNow".localized
-                base.infoView.setup(text: info.uppercased())
+                let info = (args.0 || !base.withTrial) ? "Paygate.CancelAnytime".localized : "Paygate.NoPaymentNow".localized
+                base.mainView.infoView.setup(text: info.uppercased())
                 
-                base.bestOfferView.update(marked: args.0)
+                base.mainView.bestOfferView.update(marked: args.0)
             })
             .disposed(by: disposeBag)
         
@@ -101,9 +104,9 @@ final class PaygateViewController: UIViewController {
             .disposed(by: disposeBag)
         
         output.products
-            .drive(Binder(mainView) { base, products in
-                base.product1Button.product = products.yearly
-                base.product2Button.product = products.weekly
+            .drive(Binder(self) { base, products in
+                base.mainView.product1Button.setup(product: products.yearly, withTrial: false)
+                base.mainView.product2Button.setup(product: products.weekly, withTrial: base.withTrial)
             })
             .disposed(by: disposeBag)
     }
@@ -112,7 +115,12 @@ final class PaygateViewController: UIViewController {
 // MARK: Public
 extension PaygateViewController {
     static func make(didClose: (() -> Void)? = nil) -> PaygateViewController {
-        let vc = PaygateViewController(didClose: didClose)
+        let usedProducts = OtterScale.shared
+            .getUsedProducts()
+            .map { $0.appleAppStore } ?? []
+        let withTrial = !usedProducts.contains(GlobalDefinitions.Paygate.weekly)
+        
+        let vc = PaygateViewController(withTrial: withTrial, didClose: didClose)
         vc.modalPresentationStyle = .fullScreen
         return vc
     }
@@ -131,7 +139,10 @@ private extension PaygateViewController {
             mainView.actionsView,
             mainView.closeButton,
             mainView.bestOfferView
-        ].forEach { $0.isHidden = activity }
+        ].forEach {
+            $0.alpha = activity ? 0 : 1
+            $0.isUserInteractionEnabled = !activity
+        }
     }
     
     func route(_ route: PaygateViewModel.Route) {

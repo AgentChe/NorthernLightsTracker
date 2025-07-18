@@ -11,15 +11,11 @@ import RxCocoa
 final class PaygateProductButton: UIButton {
     var marked: Bool = false {
         didSet {
-            update()
+            updateAppearance()
         }
     }
     
-    var product: IAPProduct? {
-        didSet {
-            update()
-        }
-    }
+    private(set) var product: IAPProduct?
     
     lazy var leftLabel = makeLabel()
     lazy var rigthLabel = makeLabel()
@@ -30,11 +26,22 @@ final class PaygateProductButton: UIButton {
         
         makeConstraints()
         initialize()
-        update()
+        updateAppearance()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+// MARK: Public
+extension PaygateProductButton {
+    func setup(product: IAPProduct, withTrial: Bool) {
+        self.product = product
+        
+        updateLeft(product: product, withTrial: withTrial)
+        updateRight(product: product)
+        updateAppearance()
     }
 }
 
@@ -45,15 +52,7 @@ private extension PaygateProductButton {
         layer.cornerRadius = 10.scale
     }
     
-    func update() {
-        updateLeft()
-        updateRight()
-        updateAppearance()
-    }
-    
-    func updateLeft() {
-        guard let product else { return }
-        
+    func updateLeft(product: IAPProduct, withTrial: Bool) {
         let isYearly = isYearly()
         
         let result = NSMutableAttributedString()
@@ -79,15 +78,14 @@ private extension PaygateProductButton {
                 .textColor(Appearance.mono100)
                 .font(Fonts.IBMPlexSans.bold(size: 16.scale))
                 .lineHeight(22.scale)
-            result.append("Paygate.FreeTrialDays".localized.uppercased().attributed(with: attrs))
+            let name = withTrial ? "Paygate.FreeTrialDays".localized.uppercased() : "Paygate.Weekly".localized
+            result.append(name.attributed(with: attrs))
         }
         
         leftLabel.attributedText = result
     }
     
-    func updateRight() {
-        guard let product else { return }
-        
+    func updateRight(product: IAPProduct) {
         let isYearly = isYearly()
         
         let result = NSMutableAttributedString()
