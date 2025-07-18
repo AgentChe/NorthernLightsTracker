@@ -78,8 +78,7 @@ private extension SplashViewController {
         case .onboarding:
             window.rootViewController = OnboardingViewController.make()
         case .main:
-//             window.rootViewController = MapViewController.make(requestReview: false)
-            break // TODO
+            window.rootViewController = MainViewController.make(requestReview: false)
         }
     }
     

@@ -74,14 +74,13 @@ private extension OnboardingViewController {
             markAsViewed()
             
             let vc = PaygateViewController.make {
-//                window.rootViewController = MapViewController.make(requestReview: true) TODO
+                window.rootViewController = MainViewController.make(requestReview: true)
             }
             present(vc, animated: true)
         case .main:
             markAsViewed()
             
-//            window.rootViewController = MapViewController.make(requestReview: true)
-            break // TODO
+            window.rootViewController = MainViewController.make(requestReview: true)
         }
     }
     

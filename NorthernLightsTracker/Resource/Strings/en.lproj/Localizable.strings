@@ -62,3 +62,9 @@
 "Onboarding.Location.Title" = "We couldn’t find your location";
 "Onboarding.Location.Text" = "Please choose your nearest region to get accurate forecasts";
 "Onboarding.Location.SearchPlaceholder" = "Type in new location...";
+
+// MARK: Main
+"Main.Now" = "Now";
+"Main.Map" = "Map";
+"Main.Forecast" = "Forecast";
+"Main.Solar" = "Solar data";
