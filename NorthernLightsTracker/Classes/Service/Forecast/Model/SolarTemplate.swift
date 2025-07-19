@@ -15,9 +15,9 @@ struct SolarTemplate {
     init?(json: [String: Any]) {
         guard
             let id = json["id"] as? String,
-            let name = json["name"] as? String,
+            let name = json["title"] as? String,
             let image: URL = {
-                guard let string = json["image"] as? String else { return nil }
+                guard let string = json["image_url"] as? String else { return nil }
                 return URL(string: string)
             }()
         else { return nil }

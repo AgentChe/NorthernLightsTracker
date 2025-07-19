@@ -30,7 +30,7 @@ struct ObtainSolarRequest: APIRequestBody {
         [
             "anonymous_id": anonymousId,
             "internal_id": internalId,
-            "sun_id": id
+            "item_id": id
         ]
     }
 }

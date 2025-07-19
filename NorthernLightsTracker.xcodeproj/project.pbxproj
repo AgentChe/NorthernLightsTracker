@@ -150,6 +150,22 @@
 		DED150EA2E2A7FEC00155B13 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED150E92E2A7FEC00155B13 /* MainCoordinator.swift */; };
 		DED150EE2E2A7FFC00155B13 /* MainTabItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED150ED2E2A7FFC00155B13 /* MainTabItemButton.swift */; };
 		DED150F02E2A800400155B13 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED150EF2E2A800400155B13 /* MainTabView.swift */; };
+		DED150F42E2A9E2100155B13 /* SolarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED150F32E2A9E2100155B13 /* SolarListViewController.swift */; };
+		DED150F62E2A9E2A00155B13 /* SolarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED150F52E2A9E2A00155B13 /* SolarListViewModel.swift */; };
+		DED150F82E2A9E2E00155B13 /* SolarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED150F72E2A9E2E00155B13 /* SolarListView.swift */; };
+		DED150FC2E2A9F2D00155B13 /* SolarListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED150FB2E2A9F2D00155B13 /* SolarListCollectionView.swift */; };
+		DED150FE2E2A9F3A00155B13 /* SolarListCollectionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED150FD2E2A9F3A00155B13 /* SolarListCollectionElement.swift */; };
+		DED151012E2A9F5300155B13 /* SolarListCollectionTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151002E2A9F5300155B13 /* SolarListCollectionTitleCell.swift */; };
+		DED151032E2A9F5E00155B13 /* SolarListCollectionTemplateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151022E2A9F5E00155B13 /* SolarListCollectionTemplateCell.swift */; };
+		DED151062E2AABD100155B13 /* SolarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151052E2AABD100155B13 /* SolarViewController.swift */; };
+		DED151082E2AABD900155B13 /* SolarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151072E2AABD900155B13 /* SolarViewModel.swift */; };
+		DED1510A2E2AABDD00155B13 /* SolarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151092E2AABDD00155B13 /* SolarView.swift */; };
+		DED1510E2E2BC85500155B13 /* SolarTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1510D2E2BC85500155B13 /* SolarTableView.swift */; };
+		DED151102E2BC85D00155B13 /* SolarTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1510F2E2BC85D00155B13 /* SolarTableElement.swift */; };
+		DED151132E2BC87200155B13 /* SolarTableTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151122E2BC87200155B13 /* SolarTableTitleCell.swift */; };
+		DED151152E2BC87D00155B13 /* SolarTableImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151142E2BC87D00155B13 /* SolarTableImageCell.swift */; };
+		DED151172E2BC8D200155B13 /* SolarTableQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151162E2BC8D200155B13 /* SolarTableQuestionCell.swift */; };
+		DED151192E2BC8DE00155B13 /* SolarTableAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151182E2BC8DE00155B13 /* SolarTableAnswerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -299,6 +315,22 @@
 		DED150E92E2A7FEC00155B13 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		DED150ED2E2A7FFC00155B13 /* MainTabItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabItemButton.swift; sourceTree = "<group>"; };
 		DED150EF2E2A800400155B13 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		DED150F32E2A9E2100155B13 /* SolarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarListViewController.swift; sourceTree = "<group>"; };
+		DED150F52E2A9E2A00155B13 /* SolarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarListViewModel.swift; sourceTree = "<group>"; };
+		DED150F72E2A9E2E00155B13 /* SolarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarListView.swift; sourceTree = "<group>"; };
+		DED150FB2E2A9F2D00155B13 /* SolarListCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarListCollectionView.swift; sourceTree = "<group>"; };
+		DED150FD2E2A9F3A00155B13 /* SolarListCollectionElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarListCollectionElement.swift; sourceTree = "<group>"; };
+		DED151002E2A9F5300155B13 /* SolarListCollectionTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarListCollectionTitleCell.swift; sourceTree = "<group>"; };
+		DED151022E2A9F5E00155B13 /* SolarListCollectionTemplateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarListCollectionTemplateCell.swift; sourceTree = "<group>"; };
+		DED151052E2AABD100155B13 /* SolarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarViewController.swift; sourceTree = "<group>"; };
+		DED151072E2AABD900155B13 /* SolarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarViewModel.swift; sourceTree = "<group>"; };
+		DED151092E2AABDD00155B13 /* SolarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarView.swift; sourceTree = "<group>"; };
+		DED1510D2E2BC85500155B13 /* SolarTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTableView.swift; sourceTree = "<group>"; };
+		DED1510F2E2BC85D00155B13 /* SolarTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTableElement.swift; sourceTree = "<group>"; };
+		DED151122E2BC87200155B13 /* SolarTableTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTableTitleCell.swift; sourceTree = "<group>"; };
+		DED151142E2BC87D00155B13 /* SolarTableImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTableImageCell.swift; sourceTree = "<group>"; };
+		DED151162E2BC8D200155B13 /* SolarTableQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTableQuestionCell.swift; sourceTree = "<group>"; };
+		DED151182E2BC8DE00155B13 /* SolarTableAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTableAnswerCell.swift; sourceTree = "<group>"; };
 		EB04B2FE1311D36ED8BA40F3 /* Pods-NorthernLightsTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorthernLightsTracker.release.xcconfig"; path = "Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -587,6 +619,7 @@
 		DE18FDBA2E25879F008F207C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DED150F12E2A9E0900155B13 /* Solar */,
 				DED150E42E2A7FC300155B13 /* Main */,
 				DE18FDB92E25879F008F207C /* Splash */,
 			);
@@ -939,6 +972,93 @@
 			path = Tab;
 			sourceTree = "<group>";
 		};
+		DED150F12E2A9E0900155B13 /* Solar */ = {
+			isa = PBXGroup;
+			children = (
+				DED151042E2AABC900155B13 /* Solar */,
+				DED150F22E2A9E1400155B13 /* List */,
+			);
+			path = Solar;
+			sourceTree = "<group>";
+		};
+		DED150F22E2A9E1400155B13 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				DED150F92E2A9F1A00155B13 /* Views */,
+				DED150F32E2A9E2100155B13 /* SolarListViewController.swift */,
+				DED150F52E2A9E2A00155B13 /* SolarListViewModel.swift */,
+				DED150F72E2A9E2E00155B13 /* SolarListView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		DED150F92E2A9F1A00155B13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED150FA2E2A9F2000155B13 /* CollectionView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED150FA2E2A9F2000155B13 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DED150FF2E2A9F3C00155B13 /* Cells */,
+				DED150FB2E2A9F2D00155B13 /* SolarListCollectionView.swift */,
+				DED150FD2E2A9F3A00155B13 /* SolarListCollectionElement.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DED150FF2E2A9F3C00155B13 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DED151002E2A9F5300155B13 /* SolarListCollectionTitleCell.swift */,
+				DED151022E2A9F5E00155B13 /* SolarListCollectionTemplateCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DED151042E2AABC900155B13 /* Solar */ = {
+			isa = PBXGroup;
+			children = (
+				DED1510B2E2BC84000155B13 /* Views */,
+				DED151052E2AABD100155B13 /* SolarViewController.swift */,
+				DED151072E2AABD900155B13 /* SolarViewModel.swift */,
+				DED151092E2AABDD00155B13 /* SolarView.swift */,
+			);
+			path = Solar;
+			sourceTree = "<group>";
+		};
+		DED1510B2E2BC84000155B13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED1510C2E2BC84500155B13 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED1510C2E2BC84500155B13 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DED151112E2BC86400155B13 /* Cells */,
+				DED1510D2E2BC85500155B13 /* SolarTableView.swift */,
+				DED1510F2E2BC85D00155B13 /* SolarTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DED151112E2BC86400155B13 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DED151122E2BC87200155B13 /* SolarTableTitleCell.swift */,
+				DED151142E2BC87D00155B13 /* SolarTableImageCell.swift */,
+				DED151162E2BC8D200155B13 /* SolarTableQuestionCell.swift */,
+				DED151182E2BC8DE00155B13 /* SolarTableAnswerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1092,15 +1212,19 @@
 			files = (
 				DE8C2E222E2813D2009F2787 /* OnboardingViewModel.swift in Sources */,
 				DE18FDE22E25879F008F207C /* PaygateProductButton.swift in Sources */,
+				DED151192E2BC8DE00155B13 /* SolarTableAnswerCell.swift in Sources */,
 				DE8C2E182E280117009F2787 /* OLocationViewModel.swift in Sources */,
 				DE18FE8D2E266E41008F207C /* PeakTime.swift in Sources */,
 				DE18FDE32E25879F008F207C /* ContentError.swift in Sources */,
 				DE18FE982E2683E7008F207C /* ForecastKP.swift in Sources */,
 				DE18FE6A2E265E71008F207C /* ObtainProfileRequest.swift in Sources */,
+				DED150F42E2A9E2100155B13 /* SolarListViewController.swift in Sources */,
 				DE18FE792E2666BC008F207C /* AuroraManager.swift in Sources */,
 				DE18FDE72E25879F008F207C /* Fonts.swift in Sources */,
+				DED151172E2BC8D200155B13 /* SolarTableQuestionCell.swift in Sources */,
 				DE18FDE82E25879F008F207C /* ProfileManager.swift in Sources */,
 				DE18FDE92E25879F008F207C /* UIApplication+Extension.swift in Sources */,
+				DED150F82E2A9E2E00155B13 /* SolarListView.swift in Sources */,
 				DE18FEBB2E268C33008F207C /* Location.swift in Sources */,
 				DE18FDEA2E25879F008F207C /* TextAttributes.swift in Sources */,
 				DE18FDEB2E25879F008F207C /* GradientView.swift in Sources */,
@@ -1124,16 +1248,20 @@
 				DE18FDF92E25879F008F207C /* Appearance.swift in Sources */,
 				DE18FDFA2E25879F008F207C /* PaddingLabel.swift in Sources */,
 				DE18FDFD2E25879F008F207C /* SplashReceiptValidationObserver.swift in Sources */,
+				DED150FE2E2A9F3A00155B13 /* SolarListCollectionElement.swift in Sources */,
 				DE18FE022E25879F008F207C /* String+Extension.swift in Sources */,
 				DE18FE8B2E266E25008F207C /* AuroraTopLocation.swift in Sources */,
 				DE18FE042E25879F008F207C /* PaygateView.swift in Sources */,
+				DED151012E2A9F5300155B13 /* SolarListCollectionTitleCell.swift in Sources */,
 				DE18FE052E25879F008F207C /* AmplitudeManager.swift in Sources */,
 				DE18FE962E268340008F207C /* ForecastAurora.swift in Sources */,
 				DE18FE062E25879F008F207C /* IAPProduct.swift in Sources */,
 				DE18FEB52E268BC8008F207C /* LocationManager.swift in Sources */,
 				DE18FE072E25879F008F207C /* IAPError.swift in Sources */,
 				DE18FE082E25879F008F207C /* IAPManager.swift in Sources */,
+				DED151102E2BC85D00155B13 /* SolarTableElement.swift in Sources */,
 				DE18FE682E265D9C008F207C /* SetProfileRequest.swift in Sources */,
+				DED150FC2E2A9F2D00155B13 /* SolarListCollectionView.swift in Sources */,
 				DE18FE892E266DFA008F207C /* ObtainAuroraTopsRequest.swift in Sources */,
 				DE18FE092E25879F008F207C /* UIColor+Extension.swift in Sources */,
 				DE18FE0A2E25879F008F207C /* RequestResult.swift in Sources */,
@@ -1150,6 +1278,7 @@
 				DE18FE1C2E25879F008F207C /* APIRequestBody.swift in Sources */,
 				DE18FE1D2E25879F008F207C /* ProfileCreateRequest.swift in Sources */,
 				DED150F02E2A800400155B13 /* MainTabView.swift in Sources */,
+				DED151082E2AABD900155B13 /* SolarViewModel.swift in Sources */,
 				DE18FEB92E268C1E008F207C /* Page.swift in Sources */,
 				DE18FEA02E2686A0008F207C /* ForecastHemisphericPower.swift in Sources */,
 				DE18FE722E26636C008F207C /* PushNotificationsManager.swift in Sources */,
@@ -1158,10 +1287,12 @@
 				DE18FE742E26636C008F207C /* PushNotificationsModel.swift in Sources */,
 				DED150EE2E2A7FFC00155B13 /* MainTabItemButton.swift in Sources */,
 				DE18FE1E2E25879F008F207C /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
+				DED151032E2A9F5E00155B13 /* SolarListCollectionTemplateCell.swift in Sources */,
 				DE18FE1F2E25879F008F207C /* NavigationControllerSettings.swift in Sources */,
 				DE18FE9E2E268630008F207C /* ForecastSolarWind.swift in Sources */,
 				DE18FE9C2E2685D9008F207C /* ForecastMoonPhase.swift in Sources */,
 				DE8C2E0E2E27DBE2009F2787 /* PushNotificationsQuery.swift in Sources */,
+				DED151152E2BC87D00155B13 /* SolarTableImageCell.swift in Sources */,
 				DE8C2E202E2812FC009F2787 /* OnboardingCombineData.swift in Sources */,
 				DE18FE202E25879F008F207C /* Scalable.swift in Sources */,
 				DE18FE9A2E268537008F207C /* ForecastCloudCover.swift in Sources */,
@@ -1175,6 +1306,7 @@
 				DE18FED42E27C019008F207C /* OSlideView.swift in Sources */,
 				DE18FE2F2E25879F008F207C /* IAPActionResult.swift in Sources */,
 				DE18FE322E25879F008F207C /* ProfileBindingRequest.swift in Sources */,
+				DED1510E2E2BC85500155B13 /* SolarTableView.swift in Sources */,
 				DE18FE342E25879F008F207C /* OnboardingViewController.swift in Sources */,
 				DE18FE352E25879F008F207C /* Collection+Extension.swift in Sources */,
 				DE18FEC12E268D99008F207C /* LocationHistory.swift in Sources */,
@@ -1197,9 +1329,11 @@
 				DE18FE462E25879F008F207C /* OnboardingView.swift in Sources */,
 				DE18FE472E25879F008F207C /* NavigationController.swift in Sources */,
 				DE8C2E1B2E2805E6009F2787 /* OLocationTableView.swift in Sources */,
+				DED150F62E2A9E2A00155B13 /* SolarListViewModel.swift in Sources */,
 				DE18FEA22E2686E7008F207C /* ForecastPlanetaryA.swift in Sources */,
 				DED150E62E2A7FE000155B13 /* MainViewController.swift in Sources */,
 				DE8C2E042E27CBB5009F2787 /* OSunView.swift in Sources */,
+				DED151132E2BC87200155B13 /* SolarTableTitleCell.swift in Sources */,
 				DE18FED62E27C322008F207C /* GradientProgressView.swift in Sources */,
 				DE18FE492E25879F008F207C /* RestAPITransport.swift in Sources */,
 				DE18FE4B2E25879F008F207C /* UIDevice+Extension.swift in Sources */,
@@ -1212,7 +1346,9 @@
 				DE18FE6C2E265EB6008F207C /* ProfileMediator.swift in Sources */,
 				DE8C2E132E27E002009F2787 /* OLocationView.swift in Sources */,
 				DE18FE662E265B8F008F207C /* Profile.swift in Sources */,
+				DED1510A2E2AABDD00155B13 /* SolarView.swift in Sources */,
 				DE18FE522E25879F008F207C /* AppDelegate.swift in Sources */,
+				DED151062E2AABD100155B13 /* SolarViewController.swift in Sources */,
 				DED150EA2E2A7FEC00155B13 /* MainCoordinator.swift in Sources */,
 				DE18FEBF2E268D7E008F207C /* ObtainLocationHistoryRequest.swift in Sources */,
 				DE18FE552E25879F008F207C /* UIEdgeInsets+Extension.swift in Sources */,
@@ -1261,6 +1397,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We’ll use your location to show visibility forecasts in your area.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -1298,6 +1435,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We’ll use your location to show visibility forecasts in your area.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;

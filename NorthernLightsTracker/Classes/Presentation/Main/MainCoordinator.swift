@@ -11,7 +11,7 @@ final class MainViewCoordinator {
     lazy var nowVC = UIViewController()
     lazy var mapVC = UIViewController()
     lazy var forecastVC = UIViewController()
-    lazy var solarVC = UIViewController()
+    lazy var solarVC = SolarListViewController.make()
     
     private weak var parentVC: UIViewController?
     private weak var container: UIView?

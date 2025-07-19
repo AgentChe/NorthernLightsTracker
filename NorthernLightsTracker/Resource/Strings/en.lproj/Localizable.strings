@@ -68,3 +68,7 @@
 "Main.Map" = "Map";
 "Main.Forecast" = "Forecast";
 "Main.Solar" = "Solar data";
+
+// MARK: SolarList
+"SolarList.Title" = "Solar data";
+"SolarList.Text" = "Explore real-time images of the Sun in different wavelengths. Tap any image to learn what it shows and how it helps forecast auroras.";
