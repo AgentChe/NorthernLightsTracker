@@ -16,17 +16,20 @@ struct ForecastKP {
     let current: Double
     let advice: String
     let level: String
+    let description: String
     let forecast: [KPTimeValue]
     
     init?(json: [String: Any]) {
         guard
             let current = json["current"] as? Double,
             let advice = json["advice"] as? String,
-            let level = json["level"] as? String
+            let level = json["level"] as? String,
+            let description = json["description"] as? String
         else { return nil }
         
         self.current = current
         self.advice = advice
+        self.description = description
         self.level = level
         self.forecast = {
             guard let array = json["forecast"] as? [[String: Any]] else { return [] }

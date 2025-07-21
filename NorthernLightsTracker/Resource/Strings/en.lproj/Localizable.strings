@@ -72,3 +72,18 @@
 // MARK: SolarList
 "SolarList.Title" = "Solar data";
 "SolarList.Text" = "Explore real-time images of the Sun in different wavelengths. Tap any image to learn what it shows and how it helps forecast auroras.";
+
+// MARK: Forecast
+"Forecast.Aurora.Title" = "Aurora probability";
+"Forecast.Aurora.Probability" = " in your location";
+"Forecast.Aurora.BestViewTime" = "Excellent viewing conditions between %@ and %@.";
+"Forecast.KP.Title" = "KP Index";
+"Forecast.CloudCover.Title" = "Cloud cover forecast";
+"Forecast.MoonPhase.Title" = "Moon phase";
+"Forecast.SolarWind.Title" = "Solar Wind Conditions";
+"Forecast.SolarWind.Formula" = "%d km/s · %.1f p/cm³ · Bz: %.1f nT";
+"Forecast.HemisphericPower.Title" = "Hemispheric power";
+"Forecast.HemisphericPower.Power" = "%i GW";
+"Forecast.HemisphericPower.Region" = " in the %@";
+"Forecast.PlanetaryA.Title" = "Planetary A index";
+"Forecast.PlanetaryA.AP" = "AP: %i ";

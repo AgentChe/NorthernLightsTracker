@@ -166,6 +166,22 @@
 		DED151152E2BC87D00155B13 /* SolarTableImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151142E2BC87D00155B13 /* SolarTableImageCell.swift */; };
 		DED151172E2BC8D200155B13 /* SolarTableQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151162E2BC8D200155B13 /* SolarTableQuestionCell.swift */; };
 		DED151192E2BC8DE00155B13 /* SolarTableAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151182E2BC8DE00155B13 /* SolarTableAnswerCell.swift */; };
+		DED1511C2E2CFE2000155B13 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1511B2E2CFE2000155B13 /* ForecastViewController.swift */; };
+		DED1511E2E2CFE2500155B13 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1511D2E2CFE2500155B13 /* ForecastViewModel.swift */; };
+		DED151202E2CFE2900155B13 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1511F2E2CFE2900155B13 /* ForecastView.swift */; };
+		DED151242E2CFF6C00155B13 /* ForecastTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151232E2CFF6C00155B13 /* ForecastTableView.swift */; };
+		DED151262E2CFF7200155B13 /* ForecastTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151252E2CFF7200155B13 /* ForecastTableElement.swift */; };
+		DED151292E2CFFBC00155B13 /* ForecastAuroraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151282E2CFFBC00155B13 /* ForecastAuroraCell.swift */; };
+		DED1512B2E2E2DE800155B13 /* ForecastKPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1512A2E2E2DE800155B13 /* ForecastKPCell.swift */; };
+		DED1512E2E2E2E9400155B13 /* ForecastExpandableTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1512D2E2E2E9400155B13 /* ForecastExpandableTitleView.swift */; };
+		DED151302E2E395C00155B13 /* ForecastExpandableTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1512F2E2E395C00155B13 /* ForecastExpandableTitleCell.swift */; };
+		DED151332E2E447D00155B13 /* ForecastKPChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151322E2E447D00155B13 /* ForecastKPChartView.swift */; };
+		DED151362E2E6C8000155B13 /* ForecastCloudCoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151352E2E6C8000155B13 /* ForecastCloudCoverCell.swift */; };
+		DED151382E2E6C8D00155B13 /* ForecastCloudCoverChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151372E2E6C8D00155B13 /* ForecastCloudCoverChartView.swift */; };
+		DED1513A2E2E710B00155B13 /* ForecastMoonPhaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151392E2E710B00155B13 /* ForecastMoonPhaseCell.swift */; };
+		DED1513C2E2E766800155B13 /* ForecastSolarWindCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1513B2E2E766800155B13 /* ForecastSolarWindCell.swift */; };
+		DED1513E2E2E791D00155B13 /* ForecastHemisphericPowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1513D2E2E791D00155B13 /* ForecastHemisphericPowerCell.swift */; };
+		DED151402E2E7BDA00155B13 /* ForecastPlanetaryACell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1513F2E2E7BDA00155B13 /* ForecastPlanetaryACell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -331,6 +347,22 @@
 		DED151142E2BC87D00155B13 /* SolarTableImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTableImageCell.swift; sourceTree = "<group>"; };
 		DED151162E2BC8D200155B13 /* SolarTableQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTableQuestionCell.swift; sourceTree = "<group>"; };
 		DED151182E2BC8DE00155B13 /* SolarTableAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTableAnswerCell.swift; sourceTree = "<group>"; };
+		DED1511B2E2CFE2000155B13 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		DED1511D2E2CFE2500155B13 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
+		DED1511F2E2CFE2900155B13 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		DED151232E2CFF6C00155B13 /* ForecastTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableView.swift; sourceTree = "<group>"; };
+		DED151252E2CFF7200155B13 /* ForecastTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableElement.swift; sourceTree = "<group>"; };
+		DED151282E2CFFBC00155B13 /* ForecastAuroraCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastAuroraCell.swift; sourceTree = "<group>"; };
+		DED1512A2E2E2DE800155B13 /* ForecastKPCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastKPCell.swift; sourceTree = "<group>"; };
+		DED1512D2E2E2E9400155B13 /* ForecastExpandableTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastExpandableTitleView.swift; sourceTree = "<group>"; };
+		DED1512F2E2E395C00155B13 /* ForecastExpandableTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastExpandableTitleCell.swift; sourceTree = "<group>"; };
+		DED151322E2E447D00155B13 /* ForecastKPChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastKPChartView.swift; sourceTree = "<group>"; };
+		DED151352E2E6C8000155B13 /* ForecastCloudCoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCloudCoverCell.swift; sourceTree = "<group>"; };
+		DED151372E2E6C8D00155B13 /* ForecastCloudCoverChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCloudCoverChartView.swift; sourceTree = "<group>"; };
+		DED151392E2E710B00155B13 /* ForecastMoonPhaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastMoonPhaseCell.swift; sourceTree = "<group>"; };
+		DED1513B2E2E766800155B13 /* ForecastSolarWindCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastSolarWindCell.swift; sourceTree = "<group>"; };
+		DED1513D2E2E791D00155B13 /* ForecastHemisphericPowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastHemisphericPowerCell.swift; sourceTree = "<group>"; };
+		DED1513F2E2E7BDA00155B13 /* ForecastPlanetaryACell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastPlanetaryACell.swift; sourceTree = "<group>"; };
 		EB04B2FE1311D36ED8BA40F3 /* Pods-NorthernLightsTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorthernLightsTracker.release.xcconfig"; path = "Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -619,6 +651,7 @@
 		DE18FDBA2E25879F008F207C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DED1511A2E2CFE1300155B13 /* Forecast */,
 				DED150F12E2A9E0900155B13 /* Solar */,
 				DED150E42E2A7FC300155B13 /* Main */,
 				DE18FDB92E25879F008F207C /* Splash */,
@@ -1059,6 +1092,77 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		DED1511A2E2CFE1300155B13 /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				DED151212E2CFF5F00155B13 /* Views */,
+				DED1511B2E2CFE2000155B13 /* ForecastViewController.swift */,
+				DED1511D2E2CFE2500155B13 /* ForecastViewModel.swift */,
+				DED1511F2E2CFE2900155B13 /* ForecastView.swift */,
+			);
+			path = Forecast;
+			sourceTree = "<group>";
+		};
+		DED151212E2CFF5F00155B13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED151222E2CFF6300155B13 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED151222E2CFF6300155B13 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DED151272E2CFF7400155B13 /* Cells */,
+				DED151232E2CFF6C00155B13 /* ForecastTableView.swift */,
+				DED151252E2CFF7200155B13 /* ForecastTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DED151272E2CFF7400155B13 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DED151342E2E6C5D00155B13 /* CloudCover */,
+				DED151312E2E447100155B13 /* KP */,
+				DED1512C2E2E2DF700155B13 /* ExpandableTitle */,
+				DED151282E2CFFBC00155B13 /* ForecastAuroraCell.swift */,
+				DED151392E2E710B00155B13 /* ForecastMoonPhaseCell.swift */,
+				DED1513B2E2E766800155B13 /* ForecastSolarWindCell.swift */,
+				DED1513D2E2E791D00155B13 /* ForecastHemisphericPowerCell.swift */,
+				DED1513F2E2E7BDA00155B13 /* ForecastPlanetaryACell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DED1512C2E2E2DF700155B13 /* ExpandableTitle */ = {
+			isa = PBXGroup;
+			children = (
+				DED1512D2E2E2E9400155B13 /* ForecastExpandableTitleView.swift */,
+				DED1512F2E2E395C00155B13 /* ForecastExpandableTitleCell.swift */,
+			);
+			path = ExpandableTitle;
+			sourceTree = "<group>";
+		};
+		DED151312E2E447100155B13 /* KP */ = {
+			isa = PBXGroup;
+			children = (
+				DED1512A2E2E2DE800155B13 /* ForecastKPCell.swift */,
+				DED151322E2E447D00155B13 /* ForecastKPChartView.swift */,
+			);
+			path = KP;
+			sourceTree = "<group>";
+		};
+		DED151342E2E6C5D00155B13 /* CloudCover */ = {
+			isa = PBXGroup;
+			children = (
+				DED151352E2E6C8000155B13 /* ForecastCloudCoverCell.swift */,
+				DED151372E2E6C8D00155B13 /* ForecastCloudCoverChartView.swift */,
+			);
+			path = CloudCover;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1219,11 +1323,13 @@
 				DE18FE982E2683E7008F207C /* ForecastKP.swift in Sources */,
 				DE18FE6A2E265E71008F207C /* ObtainProfileRequest.swift in Sources */,
 				DED150F42E2A9E2100155B13 /* SolarListViewController.swift in Sources */,
+				DED1513E2E2E791D00155B13 /* ForecastHemisphericPowerCell.swift in Sources */,
 				DE18FE792E2666BC008F207C /* AuroraManager.swift in Sources */,
 				DE18FDE72E25879F008F207C /* Fonts.swift in Sources */,
 				DED151172E2BC8D200155B13 /* SolarTableQuestionCell.swift in Sources */,
 				DE18FDE82E25879F008F207C /* ProfileManager.swift in Sources */,
 				DE18FDE92E25879F008F207C /* UIApplication+Extension.swift in Sources */,
+				DED151262E2CFF7200155B13 /* ForecastTableElement.swift in Sources */,
 				DED150F82E2A9E2E00155B13 /* SolarListView.swift in Sources */,
 				DE18FEBB2E268C33008F207C /* Location.swift in Sources */,
 				DE18FDEA2E25879F008F207C /* TextAttributes.swift in Sources */,
@@ -1231,12 +1337,15 @@
 				DE18FDEC2E25879F008F207C /* Currency.swift in Sources */,
 				DE18FDEE2E25879F008F207C /* PaygateInteractor.swift in Sources */,
 				DE18FDEF2E25879F008F207C /* NetworkError.swift in Sources */,
+				DED1512E2E2E2E9400155B13 /* ForecastExpandableTitleView.swift in Sources */,
 				DE18FEA82E2689FE008F207C /* ObtainSolarTemplatesRequest.swift in Sources */,
 				DE8C2E102E27DE72009F2787 /* LocationAuthorizationQuery.swift in Sources */,
 				DE18FE872E266CD7008F207C /* AuroraMapOval.swift in Sources */,
 				DE18FDF02E25879F008F207C /* GlobalDefinitions.swift in Sources */,
+				DED1511E2E2CFE2500155B13 /* ForecastViewModel.swift in Sources */,
 				DE18FEB02E268B4F008F207C /* ObtainSolarRequest.swift in Sources */,
 				DE8C2E1D2E2805EE009F2787 /* OLocationTableCell.swift in Sources */,
+				DED151382E2E6C8D00155B13 /* ForecastCloudCoverChartView.swift in Sources */,
 				DED150E82E2A7FE400155B13 /* MainView.swift in Sources */,
 				DE18FDF32E25879F008F207C /* TryAgainViewController.swift in Sources */,
 				DE18FEC62E269140008F207C /* GradientButton.swift in Sources */,
@@ -1255,11 +1364,14 @@
 				DED151012E2A9F5300155B13 /* SolarListCollectionTitleCell.swift in Sources */,
 				DE18FE052E25879F008F207C /* AmplitudeManager.swift in Sources */,
 				DE18FE962E268340008F207C /* ForecastAurora.swift in Sources */,
+				DED151242E2CFF6C00155B13 /* ForecastTableView.swift in Sources */,
 				DE18FE062E25879F008F207C /* IAPProduct.swift in Sources */,
 				DE18FEB52E268BC8008F207C /* LocationManager.swift in Sources */,
 				DE18FE072E25879F008F207C /* IAPError.swift in Sources */,
+				DED1512B2E2E2DE800155B13 /* ForecastKPCell.swift in Sources */,
 				DE18FE082E25879F008F207C /* IAPManager.swift in Sources */,
 				DED151102E2BC85D00155B13 /* SolarTableElement.swift in Sources */,
+				DED1511C2E2CFE2000155B13 /* ForecastViewController.swift in Sources */,
 				DE18FE682E265D9C008F207C /* SetProfileRequest.swift in Sources */,
 				DED150FC2E2A9F2D00155B13 /* SolarListCollectionView.swift in Sources */,
 				DE18FE892E266DFA008F207C /* ObtainAuroraTopsRequest.swift in Sources */,
@@ -1267,8 +1379,10 @@
 				DE18FE0A2E25879F008F207C /* RequestResult.swift in Sources */,
 				DE8C2E0B2E27CE59009F2787 /* OAlertsView.swift in Sources */,
 				DE18FE0D2E25879F008F207C /* RxActivityIndicator.swift in Sources */,
+				DED1513C2E2E766800155B13 /* ForecastSolarWindCell.swift in Sources */,
 				DE18FE942E2682F5008F207C /* Forecast.swift in Sources */,
 				DE18FE132E25879F008F207C /* ObservableRetrySingle.swift in Sources */,
+				DED151302E2E395C00155B13 /* ForecastExpandableTitleCell.swift in Sources */,
 				DE8C2E162E27E5E2009F2787 /* OLocationSearchField.swift in Sources */,
 				DE8C2E002E27CB10009F2787 /* OKPView.swift in Sources */,
 				DE18FE172E25879F008F207C /* TryAgainView.swift in Sources */,
@@ -1279,6 +1393,7 @@
 				DE18FE1D2E25879F008F207C /* ProfileCreateRequest.swift in Sources */,
 				DED150F02E2A800400155B13 /* MainTabView.swift in Sources */,
 				DED151082E2AABD900155B13 /* SolarViewModel.swift in Sources */,
+				DED151362E2E6C8000155B13 /* ForecastCloudCoverCell.swift in Sources */,
 				DE18FEB92E268C1E008F207C /* Page.swift in Sources */,
 				DE18FEA02E2686A0008F207C /* ForecastHemisphericPower.swift in Sources */,
 				DE18FE722E26636C008F207C /* PushNotificationsManager.swift in Sources */,
@@ -1294,9 +1409,12 @@
 				DE8C2E0E2E27DBE2009F2787 /* PushNotificationsQuery.swift in Sources */,
 				DED151152E2BC87D00155B13 /* SolarTableImageCell.swift in Sources */,
 				DE8C2E202E2812FC009F2787 /* OnboardingCombineData.swift in Sources */,
+				DED151402E2E7BDA00155B13 /* ForecastPlanetaryACell.swift in Sources */,
 				DE18FE202E25879F008F207C /* Scalable.swift in Sources */,
+				DED151202E2CFE2900155B13 /* ForecastView.swift in Sources */,
 				DE18FE9A2E268537008F207C /* ForecastCloudCover.swift in Sources */,
 				DE18FE232E25879F008F207C /* TakePhoto.swift in Sources */,
+				DED1513A2E2E710B00155B13 /* ForecastMoonPhaseCell.swift in Sources */,
 				DE18FE242E25879F008F207C /* PaygateViewController.swift in Sources */,
 				DE18FE2C2E25879F008F207C /* PaygateViewModel.swift in Sources */,
 				DE18FE2D2E25879F008F207C /* UIView+RxExtension.swift in Sources */,
@@ -1305,6 +1423,7 @@
 				DE18FEB72E268C0E008F207C /* PageInfo.swift in Sources */,
 				DE18FED42E27C019008F207C /* OSlideView.swift in Sources */,
 				DE18FE2F2E25879F008F207C /* IAPActionResult.swift in Sources */,
+				DED151292E2CFFBC00155B13 /* ForecastAuroraCell.swift in Sources */,
 				DE18FE322E25879F008F207C /* ProfileBindingRequest.swift in Sources */,
 				DED1510E2E2BC85500155B13 /* SolarTableView.swift in Sources */,
 				DE18FE342E25879F008F207C /* OnboardingViewController.swift in Sources */,
@@ -1340,6 +1459,7 @@
 				DE18FE7D2E26691D008F207C /* ObtainAuroraNowRequest.swift in Sources */,
 				DE18FE4C2E25879F008F207C /* NumberLaunches.swift in Sources */,
 				DE18FE902E2682D7008F207C /* ForecastManager.swift in Sources */,
+				DED151332E2E447D00155B13 /* ForecastKPChartView.swift in Sources */,
 				DE18FE4D2E25879F008F207C /* SplashView.swift in Sources */,
 				DE18FE4E2E25879F008F207C /* PaddingTextField.swift in Sources */,
 				DE18FE512E25879F008F207C /* UITapGestureRecognizer+Extension.swift in Sources */,

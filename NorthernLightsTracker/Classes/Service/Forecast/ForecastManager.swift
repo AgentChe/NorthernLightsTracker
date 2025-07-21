@@ -22,7 +22,7 @@ final class ForecastManager {
 // MARK: ForecastManagerProtocol
 extension ForecastManager: ForecastManagerProtocol {
     func obtainForecast() -> Single<Forecast?> {
-        let request = ObtainProfileRequest(
+        let request = ObtainForecastRequest(
             anonymousId: sessionManager.anonymousId,
             internalId: sessionManager.internalId
         )

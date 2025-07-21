@@ -9,7 +9,7 @@ import Foundation
 
 struct ForecastCloudCover {
     struct KPTimeCover {
-        let time: TimeInterval
+        let time: Int
         let cover: Int
     }
     
@@ -29,10 +29,10 @@ struct ForecastCloudCover {
         self.description = description
         self.advice = advice
         self.forecast = {
-            guard let array = json["forecast"] as? [[String: Any]] else { return [] }
+            guard let array = json["hourly_forecast"] as? [[String: Any]] else { return [] }
             return array.compactMap { json -> KPTimeCover? in
                 guard
-                    let time = json["time"] as? TimeInterval,
+                    let time = json["time"] as? Int,
                     let cover = json["cover"] as? Int
                 else { return nil }
                 

@@ -8,6 +8,7 @@ target 'NorthernLightsTracker' do
   pod 'Kingfisher'
   pod 'Toast-Swift'
   pod 'RiveRuntime'
+  pod 'DGCharts'
   
   pod 'RxSwift'
   pod 'RxCocoa'
