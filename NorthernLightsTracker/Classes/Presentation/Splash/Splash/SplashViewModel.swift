@@ -33,17 +33,18 @@ extension SplashViewModel {
     
     func configure(input: Input) -> Output {
         let login = login(didSDKConfigured: input.didSDKConfigured)
+        let library = library(login: login)
         
         return Output(
-            route: makeRoute(login: login)
+            route: makeRoute(library: library)
         )
     }
 }
 
 // MARK: Private
 private extension SplashViewModel {
-    func makeRoute(login: Signal<Void>) -> Driver<Route> {
-        login
+    func makeRoute(library: Signal<Void>) -> Driver<Route> {
+        library
             .compactMap { [weak self] void -> Route? in
                 guard let self else { return nil }
                 
@@ -56,6 +57,30 @@ private extension SplashViewModel {
                 return .main
             }
             .asDriver(onErrorDriveWith: .never())
+    }
+    
+    func library(login: Signal<Void>) -> Signal<Void> {
+        login
+            .flatMapLatest { [weak self] void -> Signal<Void> in
+                guard let self else { return .never() }
+                
+                func source() -> Single<Void> {
+                    profileManager
+                        .obtainProfile(forceUpdate: true)
+                        .mapToVoid()
+                }
+                
+                func trigger(error: Error) -> Observable<Void> {
+                    tryAgain?(error) ?? .empty()
+                }
+                
+                return observableRetrySingle
+                    .retry(
+                        source: { source() },
+                        trigger: { trigger(error: $0) }
+                    )
+                    .asSignal(onErrorSignalWith: .never())
+            }
     }
     
     func login(didSDKConfigured: Signal<Void>) -> Signal<Void> {

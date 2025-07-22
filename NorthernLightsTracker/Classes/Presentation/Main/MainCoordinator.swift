@@ -8,7 +8,7 @@
 import UIKit
 
 final class MainViewCoordinator {
-    lazy var nowVC = UIViewController()
+    lazy var nowVC = NowViewController.make()
     lazy var mapVC = UIViewController()
     lazy var forecastVC = ForecastViewController.make()
     lazy var solarVC = SolarListViewController.make()

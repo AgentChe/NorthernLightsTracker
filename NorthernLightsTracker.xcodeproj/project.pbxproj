@@ -182,6 +182,18 @@
 		DED1513C2E2E766800155B13 /* ForecastSolarWindCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1513B2E2E766800155B13 /* ForecastSolarWindCell.swift */; };
 		DED1513E2E2E791D00155B13 /* ForecastHemisphericPowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1513D2E2E791D00155B13 /* ForecastHemisphericPowerCell.swift */; };
 		DED151402E2E7BDA00155B13 /* ForecastPlanetaryACell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1513F2E2E7BDA00155B13 /* ForecastPlanetaryACell.swift */; };
+		DED151442E2F877000155B13 /* NowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151432E2F877000155B13 /* NowViewController.swift */; };
+		DED151462E2F877800155B13 /* NowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151452E2F877800155B13 /* NowViewModel.swift */; };
+		DED151482E2F877E00155B13 /* NowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151472E2F877E00155B13 /* NowView.swift */; };
+		DED1514B2E2F887B00155B13 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1514A2E2F887B00155B13 /* SettingsViewController.swift */; };
+		DED1514D2E2F887F00155B13 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1514C2E2F887F00155B13 /* SettingsViewModel.swift */; };
+		DED1514F2E2F888300155B13 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1514E2E2F888300155B13 /* SettingsView.swift */; };
+		DED151532E2F8CA000155B13 /* NowTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151522E2F8CA000155B13 /* NowTitleView.swift */; };
+		DED151562E2F8ED900155B13 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151552E2F8ED900155B13 /* SettingsButton.swift */; };
+		DED151592E2F965900155B13 /* SettingsAlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151582E2F965900155B13 /* SettingsAlertsViewController.swift */; };
+		DED1515B2E2F965E00155B13 /* SettingsAlertsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1515A2E2F965E00155B13 /* SettingsAlertsViewModel.swift */; };
+		DED1515D2E2F966100155B13 /* SettingsAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1515C2E2F966100155B13 /* SettingsAlertsView.swift */; };
+		DED151602E2F985B00155B13 /* SettingsAlertsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1515F2E2F985B00155B13 /* SettingsAlertsButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -363,6 +375,18 @@
 		DED1513B2E2E766800155B13 /* ForecastSolarWindCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastSolarWindCell.swift; sourceTree = "<group>"; };
 		DED1513D2E2E791D00155B13 /* ForecastHemisphericPowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastHemisphericPowerCell.swift; sourceTree = "<group>"; };
 		DED1513F2E2E7BDA00155B13 /* ForecastPlanetaryACell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastPlanetaryACell.swift; sourceTree = "<group>"; };
+		DED151432E2F877000155B13 /* NowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowViewController.swift; sourceTree = "<group>"; };
+		DED151452E2F877800155B13 /* NowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowViewModel.swift; sourceTree = "<group>"; };
+		DED151472E2F877E00155B13 /* NowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowView.swift; sourceTree = "<group>"; };
+		DED1514A2E2F887B00155B13 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DED1514C2E2F887F00155B13 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		DED1514E2E2F888300155B13 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DED151522E2F8CA000155B13 /* NowTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTitleView.swift; sourceTree = "<group>"; };
+		DED151552E2F8ED900155B13 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		DED151582E2F965900155B13 /* SettingsAlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAlertsViewController.swift; sourceTree = "<group>"; };
+		DED1515A2E2F965E00155B13 /* SettingsAlertsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAlertsViewModel.swift; sourceTree = "<group>"; };
+		DED1515C2E2F966100155B13 /* SettingsAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAlertsView.swift; sourceTree = "<group>"; };
+		DED1515F2E2F985B00155B13 /* SettingsAlertsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAlertsButton.swift; sourceTree = "<group>"; };
 		EB04B2FE1311D36ED8BA40F3 /* Pods-NorthernLightsTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorthernLightsTracker.release.xcconfig"; path = "Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -651,6 +675,7 @@
 		DE18FDBA2E25879F008F207C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DED151412E2F876000155B13 /* Now */,
 				DED1511A2E2CFE1300155B13 /* Forecast */,
 				DED150F12E2A9E0900155B13 /* Solar */,
 				DED150E42E2A7FC300155B13 /* Main */,
@@ -1163,6 +1188,73 @@
 			path = CloudCover;
 			sourceTree = "<group>";
 		};
+		DED151412E2F876000155B13 /* Now */ = {
+			isa = PBXGroup;
+			children = (
+				DED151572E2F964600155B13 /* SettingsAlerts */,
+				DED151492E2F886300155B13 /* Settings */,
+				DED151422E2F876700155B13 /* Now */,
+			);
+			path = Now;
+			sourceTree = "<group>";
+		};
+		DED151422E2F876700155B13 /* Now */ = {
+			isa = PBXGroup;
+			children = (
+				DED151512E2F8C9900155B13 /* Views */,
+				DED151432E2F877000155B13 /* NowViewController.swift */,
+				DED151452E2F877800155B13 /* NowViewModel.swift */,
+				DED151472E2F877E00155B13 /* NowView.swift */,
+			);
+			path = Now;
+			sourceTree = "<group>";
+		};
+		DED151492E2F886300155B13 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DED151542E2F8ECD00155B13 /* Views */,
+				DED1514A2E2F887B00155B13 /* SettingsViewController.swift */,
+				DED1514C2E2F887F00155B13 /* SettingsViewModel.swift */,
+				DED1514E2E2F888300155B13 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DED151512E2F8C9900155B13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED151522E2F8CA000155B13 /* NowTitleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED151542E2F8ECD00155B13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED151552E2F8ED900155B13 /* SettingsButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED151572E2F964600155B13 /* SettingsAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				DED1515E2E2F984D00155B13 /* Views */,
+				DED151582E2F965900155B13 /* SettingsAlertsViewController.swift */,
+				DED1515A2E2F965E00155B13 /* SettingsAlertsViewModel.swift */,
+				DED1515C2E2F966100155B13 /* SettingsAlertsView.swift */,
+			);
+			path = SettingsAlerts;
+			sourceTree = "<group>";
+		};
+		DED1515E2E2F984D00155B13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED1515F2E2F985B00155B13 /* SettingsAlertsButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1318,10 +1410,12 @@
 				DE18FDE22E25879F008F207C /* PaygateProductButton.swift in Sources */,
 				DED151192E2BC8DE00155B13 /* SolarTableAnswerCell.swift in Sources */,
 				DE8C2E182E280117009F2787 /* OLocationViewModel.swift in Sources */,
+				DED151442E2F877000155B13 /* NowViewController.swift in Sources */,
 				DE18FE8D2E266E41008F207C /* PeakTime.swift in Sources */,
 				DE18FDE32E25879F008F207C /* ContentError.swift in Sources */,
 				DE18FE982E2683E7008F207C /* ForecastKP.swift in Sources */,
 				DE18FE6A2E265E71008F207C /* ObtainProfileRequest.swift in Sources */,
+				DED151462E2F877800155B13 /* NowViewModel.swift in Sources */,
 				DED150F42E2A9E2100155B13 /* SolarListViewController.swift in Sources */,
 				DED1513E2E2E791D00155B13 /* ForecastHemisphericPowerCell.swift in Sources */,
 				DE18FE792E2666BC008F207C /* AuroraManager.swift in Sources */,
@@ -1353,6 +1447,8 @@
 				DE18FEBD2E268D04008F207C /* SearchLocationsRequest.swift in Sources */,
 				DE18FDF72E25879F008F207C /* PurchaseValidationObserver.swift in Sources */,
 				DE18FDF82E25879F008F207C /* APIFormDataRequestBody.swift in Sources */,
+				DED151482E2F877E00155B13 /* NowView.swift in Sources */,
+				DED151562E2F8ED900155B13 /* SettingsButton.swift in Sources */,
 				DE18FEAA2E268A47008F207C /* Solar.swift in Sources */,
 				DE18FDF92E25879F008F207C /* Appearance.swift in Sources */,
 				DE18FDFA2E25879F008F207C /* PaddingLabel.swift in Sources */,
@@ -1416,7 +1512,9 @@
 				DE18FE232E25879F008F207C /* TakePhoto.swift in Sources */,
 				DED1513A2E2E710B00155B13 /* ForecastMoonPhaseCell.swift in Sources */,
 				DE18FE242E25879F008F207C /* PaygateViewController.swift in Sources */,
+				DED1514F2E2F888300155B13 /* SettingsView.swift in Sources */,
 				DE18FE2C2E25879F008F207C /* PaygateViewModel.swift in Sources */,
+				DED1515B2E2F965E00155B13 /* SettingsAlertsViewModel.swift in Sources */,
 				DE18FE2D2E25879F008F207C /* UIView+RxExtension.swift in Sources */,
 				DE18FE832E266B2B008F207C /* Coordinate.swift in Sources */,
 				DE18FE2E2E25879F008F207C /* ObservableAndSingle+Extension.swift in Sources */,
@@ -1425,6 +1523,7 @@
 				DE18FE2F2E25879F008F207C /* IAPActionResult.swift in Sources */,
 				DED151292E2CFFBC00155B13 /* ForecastAuroraCell.swift in Sources */,
 				DE18FE322E25879F008F207C /* ProfileBindingRequest.swift in Sources */,
+				DED1515D2E2F966100155B13 /* SettingsAlertsView.swift in Sources */,
 				DED1510E2E2BC85500155B13 /* SolarTableView.swift in Sources */,
 				DE18FE342E25879F008F207C /* OnboardingViewController.swift in Sources */,
 				DE18FE352E25879F008F207C /* Collection+Extension.swift in Sources */,
@@ -1438,6 +1537,7 @@
 				DE18FE3B2E25879F008F207C /* SplashViewController.swift in Sources */,
 				DE18FE3C2E25879F008F207C /* SceneDelegate.swift in Sources */,
 				DE18FE3F2E25879F008F207C /* SessionManager.swift in Sources */,
+				DED151602E2F985B00155B13 /* SettingsAlertsButton.swift in Sources */,
 				DE18FE402E25879F008F207C /* PaygateEnableTrialButton.swift in Sources */,
 				DE18FE412E25879F008F207C /* PaygateActionsView.swift in Sources */,
 				DE18FEA62E268938008F207C /* SolarTemplate.swift in Sources */,
@@ -1448,16 +1548,20 @@
 				DE18FE462E25879F008F207C /* OnboardingView.swift in Sources */,
 				DE18FE472E25879F008F207C /* NavigationController.swift in Sources */,
 				DE8C2E1B2E2805E6009F2787 /* OLocationTableView.swift in Sources */,
+				DED151532E2F8CA000155B13 /* NowTitleView.swift in Sources */,
 				DED150F62E2A9E2A00155B13 /* SolarListViewModel.swift in Sources */,
 				DE18FEA22E2686E7008F207C /* ForecastPlanetaryA.swift in Sources */,
+				DED1514B2E2F887B00155B13 /* SettingsViewController.swift in Sources */,
 				DED150E62E2A7FE000155B13 /* MainViewController.swift in Sources */,
 				DE8C2E042E27CBB5009F2787 /* OSunView.swift in Sources */,
 				DED151132E2BC87200155B13 /* SolarTableTitleCell.swift in Sources */,
+				DED1514D2E2F887F00155B13 /* SettingsViewModel.swift in Sources */,
 				DE18FED62E27C322008F207C /* GradientProgressView.swift in Sources */,
 				DE18FE492E25879F008F207C /* RestAPITransport.swift in Sources */,
 				DE18FE4B2E25879F008F207C /* UIDevice+Extension.swift in Sources */,
 				DE18FE7D2E26691D008F207C /* ObtainAuroraNowRequest.swift in Sources */,
 				DE18FE4C2E25879F008F207C /* NumberLaunches.swift in Sources */,
+				DED151592E2F965900155B13 /* SettingsAlertsViewController.swift in Sources */,
 				DE18FE902E2682D7008F207C /* ForecastManager.swift in Sources */,
 				DED151332E2E447D00155B13 /* ForecastKPChartView.swift in Sources */,
 				DE18FE4D2E25879F008F207C /* SplashView.swift in Sources */,

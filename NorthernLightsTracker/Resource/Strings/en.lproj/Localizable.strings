@@ -87,3 +87,16 @@
 "Forecast.HemisphericPower.Region" = " in the %@";
 "Forecast.PlanetaryA.Title" = "Planetary A index";
 "Forecast.PlanetaryA.AP" = "AP: %i ";
+
+// MARK: Settings
+"Settings.Title" = "Menu";
+"Settings.AuroraAlerts" = "Aurora alerts";
+"Settings.Location" = "Location";
+"Settings.TermsOfUse" = "Terms of use";
+"Settings.PrivacyPolicy" = "Privacy policy";
+"Settings.Support" = "Support";
+
+// MARK: SettingsAlerts
+"SettingsAlerts.Title" = "Aurora alerts";
+"SettingsAlerts.KP" = "KP threshold";
+"SettingsAlerts.CloudBreak" = "Cloud break";
