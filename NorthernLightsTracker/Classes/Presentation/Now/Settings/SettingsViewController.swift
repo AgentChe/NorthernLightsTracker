@@ -56,7 +56,8 @@ private extension SettingsViewController {
             let vc = SettingsAlertsViewController.make()
             navigationController?.pushViewController(vc, animated: true)
         case .openLocation:
-            break // TODO
+            let vc = SettingsLocationViewController.make()
+            navigationController?.pushViewController(vc, animated: true)
         case .openUrl(let url):
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }

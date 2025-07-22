@@ -100,3 +100,9 @@
 "SettingsAlerts.Title" = "Aurora alerts";
 "SettingsAlerts.KP" = "KP threshold";
 "SettingsAlerts.CloudBreak" = "Cloud break";
+
+// MARK: SettingsLocation
+"SettingsLocation.Title" = "Location";
+"SettingsLocation.CurrentLocation.Title" = "Your current location";
+"SettingsLocation.Recent.Title" = "Your recent searches";
+"SettingsLocation.Search.Placeholder" = "Type in new location...";

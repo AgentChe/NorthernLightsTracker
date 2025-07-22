@@ -194,6 +194,15 @@
 		DED1515B2E2F965E00155B13 /* SettingsAlertsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1515A2E2F965E00155B13 /* SettingsAlertsViewModel.swift */; };
 		DED1515D2E2F966100155B13 /* SettingsAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1515C2E2F966100155B13 /* SettingsAlertsView.swift */; };
 		DED151602E2F985B00155B13 /* SettingsAlertsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1515F2E2F985B00155B13 /* SettingsAlertsButton.swift */; };
+		DED151632E2FA57700155B13 /* SettingsLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151622E2FA57700155B13 /* SettingsLocationViewController.swift */; };
+		DED151652E2FA57D00155B13 /* SettingsLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151642E2FA57D00155B13 /* SettingsLocationViewModel.swift */; };
+		DED151672E2FA58100155B13 /* SettingsLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151662E2FA58100155B13 /* SettingsLocationView.swift */; };
+		DED1516B2E2FA78300155B13 /* SettingsLocationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1516A2E2FA78300155B13 /* SettingsLocationTableView.swift */; };
+		DED1516D2E2FA78A00155B13 /* SettingsLocationTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1516C2E2FA78A00155B13 /* SettingsLocationTableElement.swift */; };
+		DED151702E2FA91B00155B13 /* SettingsLocationTableCurrentLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1516F2E2FA91B00155B13 /* SettingsLocationTableCurrentLocationCell.swift */; };
+		DED151722E2FA92F00155B13 /* SettingsLocationTableRecentTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151712E2FA92F00155B13 /* SettingsLocationTableRecentTitleCell.swift */; };
+		DED151762E2FA94F00155B13 /* SettingsLocationTableLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151752E2FA94F00155B13 /* SettingsLocationTableLocationCell.swift */; };
+		DED151782E2FAEF300155B13 /* SettingsLocationSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151772E2FAEF300155B13 /* SettingsLocationSearchField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -387,6 +396,15 @@
 		DED1515A2E2F965E00155B13 /* SettingsAlertsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAlertsViewModel.swift; sourceTree = "<group>"; };
 		DED1515C2E2F966100155B13 /* SettingsAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAlertsView.swift; sourceTree = "<group>"; };
 		DED1515F2E2F985B00155B13 /* SettingsAlertsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAlertsButton.swift; sourceTree = "<group>"; };
+		DED151622E2FA57700155B13 /* SettingsLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocationViewController.swift; sourceTree = "<group>"; };
+		DED151642E2FA57D00155B13 /* SettingsLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocationViewModel.swift; sourceTree = "<group>"; };
+		DED151662E2FA58100155B13 /* SettingsLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocationView.swift; sourceTree = "<group>"; };
+		DED1516A2E2FA78300155B13 /* SettingsLocationTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocationTableView.swift; sourceTree = "<group>"; };
+		DED1516C2E2FA78A00155B13 /* SettingsLocationTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocationTableElement.swift; sourceTree = "<group>"; };
+		DED1516F2E2FA91B00155B13 /* SettingsLocationTableCurrentLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocationTableCurrentLocationCell.swift; sourceTree = "<group>"; };
+		DED151712E2FA92F00155B13 /* SettingsLocationTableRecentTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocationTableRecentTitleCell.swift; sourceTree = "<group>"; };
+		DED151752E2FA94F00155B13 /* SettingsLocationTableLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocationTableLocationCell.swift; sourceTree = "<group>"; };
+		DED151772E2FAEF300155B13 /* SettingsLocationSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocationSearchField.swift; sourceTree = "<group>"; };
 		EB04B2FE1311D36ED8BA40F3 /* Pods-NorthernLightsTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorthernLightsTracker.release.xcconfig"; path = "Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1191,6 +1209,7 @@
 		DED151412E2F876000155B13 /* Now */ = {
 			isa = PBXGroup;
 			children = (
+				DED151612E2FA56A00155B13 /* SettingsLocation */,
 				DED151572E2F964600155B13 /* SettingsAlerts */,
 				DED151492E2F886300155B13 /* Settings */,
 				DED151422E2F876700155B13 /* Now */,
@@ -1253,6 +1272,46 @@
 				DED1515F2E2F985B00155B13 /* SettingsAlertsButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DED151612E2FA56A00155B13 /* SettingsLocation */ = {
+			isa = PBXGroup;
+			children = (
+				DED151682E2FA6FA00155B13 /* Views */,
+				DED151622E2FA57700155B13 /* SettingsLocationViewController.swift */,
+				DED151642E2FA57D00155B13 /* SettingsLocationViewModel.swift */,
+				DED151662E2FA58100155B13 /* SettingsLocationView.swift */,
+			);
+			path = SettingsLocation;
+			sourceTree = "<group>";
+		};
+		DED151682E2FA6FA00155B13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED151692E2FA70300155B13 /* TableView */,
+				DED151772E2FAEF300155B13 /* SettingsLocationSearchField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED151692E2FA70300155B13 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DED1516E2E2FA8FD00155B13 /* Cells */,
+				DED1516A2E2FA78300155B13 /* SettingsLocationTableView.swift */,
+				DED1516C2E2FA78A00155B13 /* SettingsLocationTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DED1516E2E2FA8FD00155B13 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DED1516F2E2FA91B00155B13 /* SettingsLocationTableCurrentLocationCell.swift */,
+				DED151712E2FA92F00155B13 /* SettingsLocationTableRecentTitleCell.swift */,
+				DED151752E2FA94F00155B13 /* SettingsLocationTableLocationCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1424,9 +1483,11 @@
 				DE18FDE82E25879F008F207C /* ProfileManager.swift in Sources */,
 				DE18FDE92E25879F008F207C /* UIApplication+Extension.swift in Sources */,
 				DED151262E2CFF7200155B13 /* ForecastTableElement.swift in Sources */,
+				DED151702E2FA91B00155B13 /* SettingsLocationTableCurrentLocationCell.swift in Sources */,
 				DED150F82E2A9E2E00155B13 /* SolarListView.swift in Sources */,
 				DE18FEBB2E268C33008F207C /* Location.swift in Sources */,
 				DE18FDEA2E25879F008F207C /* TextAttributes.swift in Sources */,
+				DED151632E2FA57700155B13 /* SettingsLocationViewController.swift in Sources */,
 				DE18FDEB2E25879F008F207C /* GradientView.swift in Sources */,
 				DE18FDEC2E25879F008F207C /* Currency.swift in Sources */,
 				DE18FDEE2E25879F008F207C /* PaygateInteractor.swift in Sources */,
@@ -1452,6 +1513,7 @@
 				DE18FEAA2E268A47008F207C /* Solar.swift in Sources */,
 				DE18FDF92E25879F008F207C /* Appearance.swift in Sources */,
 				DE18FDFA2E25879F008F207C /* PaddingLabel.swift in Sources */,
+				DED1516B2E2FA78300155B13 /* SettingsLocationTableView.swift in Sources */,
 				DE18FDFD2E25879F008F207C /* SplashReceiptValidationObserver.swift in Sources */,
 				DED150FE2E2A9F3A00155B13 /* SolarListCollectionElement.swift in Sources */,
 				DE18FE022E25879F008F207C /* String+Extension.swift in Sources */,
@@ -1468,6 +1530,7 @@
 				DE18FE082E25879F008F207C /* IAPManager.swift in Sources */,
 				DED151102E2BC85D00155B13 /* SolarTableElement.swift in Sources */,
 				DED1511C2E2CFE2000155B13 /* ForecastViewController.swift in Sources */,
+				DED151762E2FA94F00155B13 /* SettingsLocationTableLocationCell.swift in Sources */,
 				DE18FE682E265D9C008F207C /* SetProfileRequest.swift in Sources */,
 				DED150FC2E2A9F2D00155B13 /* SolarListCollectionView.swift in Sources */,
 				DE18FE892E266DFA008F207C /* ObtainAuroraTopsRequest.swift in Sources */,
@@ -1482,6 +1545,7 @@
 				DE8C2E162E27E5E2009F2787 /* OLocationSearchField.swift in Sources */,
 				DE8C2E002E27CB10009F2787 /* OKPView.swift in Sources */,
 				DE18FE172E25879F008F207C /* TryAgainView.swift in Sources */,
+				DED151782E2FAEF300155B13 /* SettingsLocationSearchField.swift in Sources */,
 				DE18FE7B2E2666CF008F207C /* AuroraNow.swift in Sources */,
 				DE18FE182E25879F008F207C /* XOREncryption.swift in Sources */,
 				DE18FE192E25879F008F207C /* PaygateInfoCell.swift in Sources */,
@@ -1491,6 +1555,7 @@
 				DED151082E2AABD900155B13 /* SolarViewModel.swift in Sources */,
 				DED151362E2E6C8000155B13 /* ForecastCloudCoverCell.swift in Sources */,
 				DE18FEB92E268C1E008F207C /* Page.swift in Sources */,
+				DED151672E2FA58100155B13 /* SettingsLocationView.swift in Sources */,
 				DE18FEA02E2686A0008F207C /* ForecastHemisphericPower.swift in Sources */,
 				DE18FE722E26636C008F207C /* PushNotificationsManager.swift in Sources */,
 				DE18FEAC2E268A69008F207C /* SolarFAQ.swift in Sources */,
@@ -1498,6 +1563,7 @@
 				DE18FE742E26636C008F207C /* PushNotificationsModel.swift in Sources */,
 				DED150EE2E2A7FFC00155B13 /* MainTabItemButton.swift in Sources */,
 				DE18FE1E2E25879F008F207C /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
+				DED1516D2E2FA78A00155B13 /* SettingsLocationTableElement.swift in Sources */,
 				DED151032E2A9F5E00155B13 /* SolarListCollectionTemplateCell.swift in Sources */,
 				DE18FE1F2E25879F008F207C /* NavigationControllerSettings.swift in Sources */,
 				DE18FE9E2E268630008F207C /* ForecastSolarWind.swift in Sources */,
@@ -1533,6 +1599,7 @@
 				DE18FE372E25879F008F207C /* ChoosePhotoFromGallery.swift in Sources */,
 				DE18FE382E25879F008F207C /* IAPErrorHelper.swift in Sources */,
 				DE18FE392E25879F008F207C /* ScreenSize.swift in Sources */,
+				DED151652E2FA57D00155B13 /* SettingsLocationViewModel.swift in Sources */,
 				DE18FE3A2E25879F008F207C /* Weak.swift in Sources */,
 				DE18FE3B2E25879F008F207C /* SplashViewController.swift in Sources */,
 				DE18FE3C2E25879F008F207C /* SceneDelegate.swift in Sources */,
@@ -1578,6 +1645,7 @@
 				DE18FE552E25879F008F207C /* UIEdgeInsets+Extension.swift in Sources */,
 				DE18FE572E25879F008F207C /* TapAreaButton.swift in Sources */,
 				DE18FE582E25879F008F207C /* SignError.swift in Sources */,
+				DED151722E2FA92F00155B13 /* SettingsLocationTableRecentTitleCell.swift in Sources */,
 				DE18FE812E266AF0008F207C /* AuroraMapDetails.swift in Sources */,
 				DE18FEA42E26881A008F207C /* ObtainForecastRequest.swift in Sources */,
 			);
