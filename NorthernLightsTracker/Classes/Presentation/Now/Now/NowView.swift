@@ -10,6 +10,7 @@ import UIKit
 final class NowView: UIView {
     lazy var headerView = makeHeaderView()
     lazy var titleView = makeTitleView()
+    lazy var tableView = makeTableView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -46,6 +47,13 @@ private extension NowView {
             titleView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 14.scale),
             titleView.heightAnchor.constraint(equalToConstant: 30.scale)
         ])
+        
+        NSLayoutConstraint.activate([
+            tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            tableView.topAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 2.scale),
+            tableView.bottomAnchor.constraint(equalTo: bottomAnchor)
+        ])
     }
 }
 
@@ -62,6 +70,13 @@ private extension NowView {
     
     func makeTitleView() -> NowTitleView {
         let view = NowTitleView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+        return view
+    }
+    
+    func makeTableView() -> NowTableView {
+        let view = NowTableView()
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

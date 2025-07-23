@@ -9,18 +9,18 @@ struct Profile {
     let notificationToken: String?
     let kpThresholdEnabled: Bool?
     let cloudBreakEnabled: Bool?
-    let geoId: String?
+    let location: Location?
     
     init(
         notificationToken: String?,
         kpThresholdEnabled: Bool?,
         cloudBreakEnabled: Bool?,
-        geoId: String?
+        location: Location?
     ) {
         self.notificationToken = notificationToken
         self.kpThresholdEnabled = kpThresholdEnabled
         self.cloudBreakEnabled = cloudBreakEnabled
-        self.geoId = geoId
+        self.location = location
     }
     
     init?(response: Any) {
@@ -32,9 +32,20 @@ struct Profile {
         notificationToken = body["notification_token"] as? String
         kpThresholdEnabled = body["kp_threshold_enabled"] as? Bool
         cloudBreakEnabled = body["cloud_break_enabled"] as? Bool
-        geoId = {
-            guard let geo = body["geo"] as? [String: Any] else { return nil }
-            return geo["id"] as? String
+        location = {
+            guard
+                let geo = body["geo"] as? [String: Any],
+                let id = geo["id"] as? String,
+                let address = geo["address"] as? String,
+                let lat = geo["lat"] as? Double,
+                let lon = geo["lon"] as? Double
+            else { return nil }
+            
+            return Location(
+                id: id,
+                address: address,
+                coordinate: Coordinate(lat: lat, lon: lon)
+            )
         }()
     }
 }

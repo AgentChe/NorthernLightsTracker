@@ -8,11 +8,11 @@
 final class OnboardingCombineData {
     struct CombineData {
         let notificationsToken: String?
-        let geoId: String
+        let location: Location
     }
     
     private var notificationsToken: String?
-    private var geoId: String?
+    private var location: Location?
 }
 
 // MARK: Public
@@ -21,16 +21,16 @@ extension OnboardingCombineData {
         self.notificationsToken = notificationsToken
     }
     
-    func setup(geoId: String) {
-        self.geoId = geoId
+    func setup(location: Location) {
+        self.location = location
     }
     
     func make() -> CombineData? {
-        guard let geoId else { return nil }
+        guard let location else { return nil }
         
         return CombineData(
             notificationsToken: notificationsToken,
-            geoId: geoId
+            location: location
         )
     }
 }

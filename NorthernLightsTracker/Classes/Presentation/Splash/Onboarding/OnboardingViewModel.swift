@@ -49,7 +49,7 @@ private extension OnboardingViewModel {
                         notificationToken: data.notificationsToken,
                         kpThresholdEnabled: false,
                         cloudBreakEnabled: false,
-                        geoId: data.geoId
+                        location: data.location
                     )
                     
                     return profileManager

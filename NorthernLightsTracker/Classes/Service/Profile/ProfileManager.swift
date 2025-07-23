@@ -15,7 +15,7 @@ protocol ProfileManagerProtocol: AnyObject {
     func update(notificationToken: String) -> Single<RequestResult>
     func update(kpThresholdEnabled: Bool) -> Single<RequestResult>
     func update(cloudBreakEnabled: Bool) -> Single<RequestResult>
-    func update(geoId: String) -> Single<RequestResult>
+    func update(location: Location) -> Single<RequestResult>
     func obtainProfile(forceUpdate: Bool) -> Single<Profile?>
 }
 
@@ -56,7 +56,7 @@ extension ProfileManager: ProfileManagerProtocol {
             notificationToken: profile.notificationToken,
             kpThresholdEnabled: profile.kpThresholdEnabled,
             cloudBreakEnabled: profile.cloudBreakEnabled,
-            geoId: profile.geoId
+            geoId: profile.location?.id
         )
         
         return restApiTransport
@@ -80,7 +80,7 @@ extension ProfileManager: ProfileManagerProtocol {
                     notificationToken: notificationToken,
                     kpThresholdEnabled: profile.kpThresholdEnabled,
                     cloudBreakEnabled: profile.cloudBreakEnabled,
-                    geoId: profile.geoId
+                    geoId: profile.location?.id
                 )
                 
                 return restApiTransport
@@ -100,7 +100,7 @@ extension ProfileManager: ProfileManagerProtocol {
                     notificationToken: PushNotificationsManager.shared.fcmToken,
                     kpThresholdEnabled: kpThresholdEnabled,
                     cloudBreakEnabled: profile.cloudBreakEnabled,
-                    geoId: profile.geoId
+                    geoId: profile.location?.id
                 )
                 
                 return restApiTransport
@@ -125,7 +125,7 @@ extension ProfileManager: ProfileManagerProtocol {
                     notificationToken: PushNotificationsManager.shared.fcmToken,
                     kpThresholdEnabled: profile.kpThresholdEnabled,
                     cloudBreakEnabled: cloudBreakEnabled,
-                    geoId: profile.geoId
+                    geoId: profile.location?.id
                 )
                 
                 return restApiTransport
@@ -139,7 +139,7 @@ extension ProfileManager: ProfileManagerProtocol {
             }
     }
     
-    func update(geoId: String) -> Single<RequestResult> {
+    func update(location: Location) -> Single<RequestResult> {
         cachedProfile()
             .flatMap { [weak self] profile -> Single<RequestResult> in
                 guard let self else { return .never() }
@@ -150,7 +150,7 @@ extension ProfileManager: ProfileManagerProtocol {
                     notificationToken: PushNotificationsManager.shared.fcmToken,
                     kpThresholdEnabled: profile.kpThresholdEnabled,
                     cloudBreakEnabled: profile.cloudBreakEnabled,
-                    geoId: geoId
+                    geoId: location.id
                 )
                 
                 return restApiTransport
@@ -159,7 +159,7 @@ extension ProfileManager: ProfileManagerProtocol {
                     .do(onSuccess: { [weak self] result in
                         guard result.success else { return }
                         
-                        self?.store(geoId: geoId)
+                        self?.store(location: location)
                     })
             }
     }
@@ -174,7 +174,7 @@ private extension ProfileManager {
     enum Constants {
         static let kpThresholdEnabledKey = "profile_manager_kpThresholdEnabled"
         static let cloudBreakEnabledKey = "profile_manager_cloudBreakEnabled"
-        static let geoIdKey = "profile_manager_geoId"
+        static let locationKey = "profile_manager_location"
     }
     
     func store(profile: Profile, notify: Bool) {
@@ -186,14 +186,14 @@ private extension ProfileManager {
             guard let kpThresholdEnabled = profile.kpThresholdEnabled else { return nil }
             return try? JSONEncoder().encode(kpThresholdEnabled)
         }()
-        let geoIdData: Data? = {
-            guard let geoId = profile.geoId else { return nil }
-            return try? JSONEncoder().encode(geoId)
+        let locationData: Data? = {
+            guard let location = profile.location else { return nil }
+            return try? JSONEncoder().encode(location)
         }()
         
         UserDefaults.standard.set(cloudBreakEnabledData, forKey: Constants.cloudBreakEnabledKey)
         UserDefaults.standard.set(kpThresholdEnabledData, forKey: Constants.kpThresholdEnabledKey)
-        UserDefaults.standard.set(geoIdData, forKey: Constants.geoIdKey)
+        UserDefaults.standard.set(locationData, forKey: Constants.locationKey)
         
         if notify {
             ProfileMediator.shared.update(profile: profile)
@@ -222,15 +222,15 @@ private extension ProfileManager {
         ProfileMediator.shared.update(cloudBreakEnabled: cloudBreakEnabled)
     }
     
-    func store(geoId: String?) {
+    func store(location: Location?) {
         let data: Data? = {
-            guard let geoId else { return nil }
-            return try? JSONEncoder().encode(geoId)
+            guard let location else { return nil }
+            return try? JSONEncoder().encode(location)
         }()
         
-        UserDefaults.standard.set(data, forKey: Constants.geoIdKey)
+        UserDefaults.standard.set(data, forKey: Constants.locationKey)
         
-        ProfileMediator.shared.update(geoId: geoId)
+        ProfileMediator.shared.update(location: location)
     }
     
     func loadProfile() -> Single<Profile?> {
@@ -261,16 +261,16 @@ private extension ProfileManager {
                 return try? JSONDecoder().decode(Bool.self, from: data)
             }()
             
-            let geoId: String? = {
-                guard let data = UserDefaults.standard.data(forKey: Constants.geoIdKey) else { return nil }
-                return try? JSONDecoder().decode(String.self, from: data)
+            let location: Location? = {
+                guard let data = UserDefaults.standard.data(forKey: Constants.locationKey) else { return nil }
+                return try? JSONDecoder().decode(Location.self, from: data)
             }()
             
             let profile = Profile(
                 notificationToken: PushNotificationsManager.shared.fcmToken,
                 kpThresholdEnabled: kpThresholdEnabled,
                 cloudBreakEnabled: cloudBreakEnabled,
-                geoId: geoId
+                location: location
             )
             
             single(.success(profile))

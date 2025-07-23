@@ -61,6 +61,10 @@ final class MainViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
+        coordinator.nowVC.didOpenFullMap = { [weak self] in
+            self?.update(selectedTab: .map)
+        }
+        
         rx.methodInvoked(#selector(UIViewController.viewDidLayoutSubviews))
             .take(1)
             .bind(to: Binder(self) { base, void in

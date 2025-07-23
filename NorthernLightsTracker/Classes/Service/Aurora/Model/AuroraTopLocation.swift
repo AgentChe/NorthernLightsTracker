@@ -20,7 +20,9 @@ struct AuroraTopLocation {
             let name = json["name"] as? String,
             let lat = json["lat"] as? Double,
             let lon = json["lon"] as? Double
-        else { return nil }
+        else {
+            return nil
+        }
         
         self.name = name
         self.cloudCover = json["cloud_cover"] as? Int
@@ -44,10 +46,9 @@ extension AuroraTopLocation {
     static func map(response: Any) -> [AuroraTopLocation] {
         guard
             let json = response as? [String: Any],
-            let body = json["body"] as? [String: Any],
-            let items = body["items"] as? [[String: Any]]
+            let body = json["body"] as? [[String: Any]]
         else { return [] }
         
-        return items.compactMap { AuroraTopLocation(json: $0) }
+        return body.compactMap { AuroraTopLocation(json: $0) }
     }
 }

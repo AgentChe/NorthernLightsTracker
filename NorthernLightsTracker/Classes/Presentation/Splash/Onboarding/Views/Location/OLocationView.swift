@@ -21,9 +21,9 @@ final class OLocationView: OSlideView {
     
     private lazy var disposeBag = DisposeBag()
     
-    private let didNext: ((String) -> Void)
+    private let didNext: ((Location) -> Void)
     
-    init(didNext: @escaping ((String) -> Void)) {
+    init(didNext: @escaping ((Location) -> Void)) {
         self.didNext = didNext
         
         super.init(frame: .zero)
@@ -68,7 +68,7 @@ private extension OLocationView {
     func action(_ action: OLocationViewModel.Action) {
         switch action {
         case .next(let location):
-            didNext(location.id)
+            didNext(location)
         }
     }
 }

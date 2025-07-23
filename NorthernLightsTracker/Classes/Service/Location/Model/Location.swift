@@ -5,18 +5,32 @@
 //  Created by Андрей Чернышев on 15.07.2025.
 //
 
-struct Location {
+struct Location: Codable {
     let id: String
     let address: String
+    let coordinate: Coordinate
+    
+    init(
+        id: String,
+        address: String,
+        coordinate: Coordinate
+    ) {
+        self.id = id
+        self.address = address
+        self.coordinate = coordinate
+    }
     
     init?(json: [String: Any]) {
         guard
             let id = json["id"] as? String,
-            let address = json["address"] as? String
+            let address = json["address"] as? String,
+            let lat = json["lat"] as? Double,
+            let lon = json["lon"] as? Double
         else { return nil }
         
         self.id = id
         self.address = address
+        self.coordinate = Coordinate(lat: lat, lon: lon)
     }
 }
 

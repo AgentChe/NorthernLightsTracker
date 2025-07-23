@@ -106,3 +106,16 @@
 "SettingsLocation.CurrentLocation.Title" = "Your current location";
 "SettingsLocation.Recent.Title" = "Your recent searches";
 "SettingsLocation.Search.Placeholder" = "Type in new location...";
+
+// MARK: Now
+"Now.Updated" = "Updated %@";
+"Now.PeakTime" = "Peak time";
+"Now.KP" = "Kp index";
+"Now.CloudCover" = "Cloud cover";
+"Now.MapRoute.Title" = "Aurora map preview";
+"Now.MapRoute.Open" = "Open full map →";
+"Now.OpenTopLocations.Title" = "Top aurora spots right now";
+"Now.OpenTopLocations.Text" = "Explore the best viewing zones — updated in real time.";
+"Now.OpenTopLocations.See" = "See the full list →";
+"Now.NoTopLocations.Title" = "No visible auroras in the world right now";
+"Now.NoTopLocations.Text" = "Try again later — activity changes fast!";

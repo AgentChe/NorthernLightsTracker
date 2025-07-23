@@ -203,6 +203,18 @@
 		DED151722E2FA92F00155B13 /* SettingsLocationTableRecentTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151712E2FA92F00155B13 /* SettingsLocationTableRecentTitleCell.swift */; };
 		DED151762E2FA94F00155B13 /* SettingsLocationTableLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151752E2FA94F00155B13 /* SettingsLocationTableLocationCell.swift */; };
 		DED151782E2FAEF300155B13 /* SettingsLocationSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151772E2FAEF300155B13 /* SettingsLocationSearchField.swift */; };
+		DED1517B2E30DA3D00155B13 /* NowTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1517A2E30DA3D00155B13 /* NowTableView.swift */; };
+		DED1517D2E30DA4500155B13 /* NowTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1517C2E30DA4500155B13 /* NowTableElement.swift */; };
+		DED151802E30DA5100155B13 /* NowTableUpdatedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1517F2E30DA5100155B13 /* NowTableUpdatedCell.swift */; };
+		DED151822E30DA5700155B13 /* NowTableStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151812E30DA5700155B13 /* NowTableStatusCell.swift */; };
+		DED151842E30DAAB00155B13 /* NowTableIndicatorsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151832E30DAAB00155B13 /* NowTableIndicatorsCell.swift */; };
+		DED151862E30DAB400155B13 /* NowTableMapRouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151852E30DAB400155B13 /* NowTableMapRouteCell.swift */; };
+		DED151882E30DAC000155B13 /* NowTableCurrentLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151872E30DAC000155B13 /* NowTableCurrentLocationCell.swift */; };
+		DED1518A2E30DB0A00155B13 /* NowTableOpenTopLocationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151892E30DB0A00155B13 /* NowTableOpenTopLocationsCell.swift */; };
+		DED1518C2E30DB1400155B13 /* NowTableNoTopLocationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1518B2E30DB1400155B13 /* NowTableNoTopLocationsCell.swift */; };
+		DED1518F2E30F17C00155B13 /* NowPeakTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1518E2E30F17B00155B13 /* NowPeakTimeView.swift */; };
+		DED151912E30F56300155B13 /* NowKPCloudCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151902E30F56300155B13 /* NowKPCloudCoverView.swift */; };
+		DED151942E30FC8C00155B13 /* MapRoute.riv in Resources */ = {isa = PBXBuildFile; fileRef = DED151932E30FC8C00155B13 /* MapRoute.riv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -405,6 +417,18 @@
 		DED151712E2FA92F00155B13 /* SettingsLocationTableRecentTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocationTableRecentTitleCell.swift; sourceTree = "<group>"; };
 		DED151752E2FA94F00155B13 /* SettingsLocationTableLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocationTableLocationCell.swift; sourceTree = "<group>"; };
 		DED151772E2FAEF300155B13 /* SettingsLocationSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocationSearchField.swift; sourceTree = "<group>"; };
+		DED1517A2E30DA3D00155B13 /* NowTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTableView.swift; sourceTree = "<group>"; };
+		DED1517C2E30DA4500155B13 /* NowTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTableElement.swift; sourceTree = "<group>"; };
+		DED1517F2E30DA5100155B13 /* NowTableUpdatedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTableUpdatedCell.swift; sourceTree = "<group>"; };
+		DED151812E30DA5700155B13 /* NowTableStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTableStatusCell.swift; sourceTree = "<group>"; };
+		DED151832E30DAAB00155B13 /* NowTableIndicatorsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTableIndicatorsCell.swift; sourceTree = "<group>"; };
+		DED151852E30DAB400155B13 /* NowTableMapRouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTableMapRouteCell.swift; sourceTree = "<group>"; };
+		DED151872E30DAC000155B13 /* NowTableCurrentLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTableCurrentLocationCell.swift; sourceTree = "<group>"; };
+		DED151892E30DB0A00155B13 /* NowTableOpenTopLocationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTableOpenTopLocationsCell.swift; sourceTree = "<group>"; };
+		DED1518B2E30DB1400155B13 /* NowTableNoTopLocationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTableNoTopLocationsCell.swift; sourceTree = "<group>"; };
+		DED1518E2E30F17B00155B13 /* NowPeakTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPeakTimeView.swift; sourceTree = "<group>"; };
+		DED151902E30F56300155B13 /* NowKPCloudCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowKPCloudCoverView.swift; sourceTree = "<group>"; };
+		DED151932E30FC8C00155B13 /* MapRoute.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = MapRoute.riv; sourceTree = "<group>"; };
 		EB04B2FE1311D36ED8BA40F3 /* Pods-NorthernLightsTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorthernLightsTracker.release.xcconfig"; path = "Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -838,7 +862,6 @@
 			children = (
 				DE18FE7A2E2666CF008F207C /* AuroraNow.swift */,
 				DE18FE802E266AF0008F207C /* AuroraMapDetails.swift */,
-				DE18FE822E266B2B008F207C /* Coordinate.swift */,
 				DE18FE862E266CD7008F207C /* AuroraMapOval.swift */,
 				DE18FE8A2E266E25008F207C /* AuroraTopLocation.swift */,
 				DE18FE8C2E266E41008F207C /* PeakTime.swift */,
@@ -908,6 +931,7 @@
 		DE18FEB22E268BBB008F207C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DE18FE822E266B2B008F207C /* Coordinate.swift */,
 				DE18FEB62E268C0E008F207C /* PageInfo.swift */,
 				DE18FEB82E268C1E008F207C /* Page.swift */,
 				DE18FEBA2E268C33008F207C /* Location.swift */,
@@ -1242,6 +1266,7 @@
 		DED151512E2F8C9900155B13 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DED151792E30DA2200155B13 /* TableView */,
 				DED151522E2F8CA000155B13 /* NowTitleView.swift */,
 			);
 			path = Views;
@@ -1314,6 +1339,49 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		DED151792E30DA2200155B13 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DED1517E2E30DA4800155B13 /* Cells */,
+				DED1517A2E30DA3D00155B13 /* NowTableView.swift */,
+				DED1517C2E30DA4500155B13 /* NowTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DED1517E2E30DA4800155B13 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DED151922E30FC5E00155B13 /* MapRoute */,
+				DED1518D2E30F15D00155B13 /* Indicators */,
+				DED1517F2E30DA5100155B13 /* NowTableUpdatedCell.swift */,
+				DED151812E30DA5700155B13 /* NowTableStatusCell.swift */,
+				DED151872E30DAC000155B13 /* NowTableCurrentLocationCell.swift */,
+				DED151892E30DB0A00155B13 /* NowTableOpenTopLocationsCell.swift */,
+				DED1518B2E30DB1400155B13 /* NowTableNoTopLocationsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DED1518D2E30F15D00155B13 /* Indicators */ = {
+			isa = PBXGroup;
+			children = (
+				DED151832E30DAAB00155B13 /* NowTableIndicatorsCell.swift */,
+				DED1518E2E30F17B00155B13 /* NowPeakTimeView.swift */,
+				DED151902E30F56300155B13 /* NowKPCloudCoverView.swift */,
+			);
+			path = Indicators;
+			sourceTree = "<group>";
+		};
+		DED151922E30FC5E00155B13 /* MapRoute */ = {
+			isa = PBXGroup;
+			children = (
+				DED151932E30FC8C00155B13 /* MapRoute.riv */,
+				DED151852E30DAB400155B13 /* NowTableMapRouteCell.swift */,
+			);
+			path = MapRoute;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1382,6 +1450,7 @@
 				DE18FE622E265316008F207C /* IBMPlexSans-SemiBold.ttf in Resources */,
 				DE18FD242E25869A008F207C /* Assets.xcassets in Resources */,
 				DE18FD262E25869A008F207C /* LaunchScreen.storyboard in Resources */,
+				DED151942E30FC8C00155B13 /* MapRoute.riv in Resources */,
 				DE18FE602E265310008F207C /* IBMPlexSans-Regular.ttf in Resources */,
 				DE8C2E062E27CC1A009F2787 /* Onboarding.Sun.riv in Resources */,
 				DE8C2DFE2E27CB06009F2787 /* Onboarding.KP.riv in Resources */,
@@ -1471,20 +1540,26 @@
 				DE8C2E182E280117009F2787 /* OLocationViewModel.swift in Sources */,
 				DED151442E2F877000155B13 /* NowViewController.swift in Sources */,
 				DE18FE8D2E266E41008F207C /* PeakTime.swift in Sources */,
+				DED1518C2E30DB1400155B13 /* NowTableNoTopLocationsCell.swift in Sources */,
 				DE18FDE32E25879F008F207C /* ContentError.swift in Sources */,
+				DED151912E30F56300155B13 /* NowKPCloudCoverView.swift in Sources */,
 				DE18FE982E2683E7008F207C /* ForecastKP.swift in Sources */,
+				DED151822E30DA5700155B13 /* NowTableStatusCell.swift in Sources */,
 				DE18FE6A2E265E71008F207C /* ObtainProfileRequest.swift in Sources */,
 				DED151462E2F877800155B13 /* NowViewModel.swift in Sources */,
 				DED150F42E2A9E2100155B13 /* SolarListViewController.swift in Sources */,
 				DED1513E2E2E791D00155B13 /* ForecastHemisphericPowerCell.swift in Sources */,
+				DED151862E30DAB400155B13 /* NowTableMapRouteCell.swift in Sources */,
 				DE18FE792E2666BC008F207C /* AuroraManager.swift in Sources */,
 				DE18FDE72E25879F008F207C /* Fonts.swift in Sources */,
 				DED151172E2BC8D200155B13 /* SolarTableQuestionCell.swift in Sources */,
 				DE18FDE82E25879F008F207C /* ProfileManager.swift in Sources */,
+				DED1518A2E30DB0A00155B13 /* NowTableOpenTopLocationsCell.swift in Sources */,
 				DE18FDE92E25879F008F207C /* UIApplication+Extension.swift in Sources */,
 				DED151262E2CFF7200155B13 /* ForecastTableElement.swift in Sources */,
 				DED151702E2FA91B00155B13 /* SettingsLocationTableCurrentLocationCell.swift in Sources */,
 				DED150F82E2A9E2E00155B13 /* SolarListView.swift in Sources */,
+				DED151882E30DAC000155B13 /* NowTableCurrentLocationCell.swift in Sources */,
 				DE18FEBB2E268C33008F207C /* Location.swift in Sources */,
 				DE18FDEA2E25879F008F207C /* TextAttributes.swift in Sources */,
 				DED151632E2FA57700155B13 /* SettingsLocationViewController.swift in Sources */,
@@ -1540,6 +1615,7 @@
 				DE18FE0D2E25879F008F207C /* RxActivityIndicator.swift in Sources */,
 				DED1513C2E2E766800155B13 /* ForecastSolarWindCell.swift in Sources */,
 				DE18FE942E2682F5008F207C /* Forecast.swift in Sources */,
+				DED151802E30DA5100155B13 /* NowTableUpdatedCell.swift in Sources */,
 				DE18FE132E25879F008F207C /* ObservableRetrySingle.swift in Sources */,
 				DED151302E2E395C00155B13 /* ForecastExpandableTitleCell.swift in Sources */,
 				DE8C2E162E27E5E2009F2787 /* OLocationSearchField.swift in Sources */,
@@ -1566,6 +1642,7 @@
 				DED1516D2E2FA78A00155B13 /* SettingsLocationTableElement.swift in Sources */,
 				DED151032E2A9F5E00155B13 /* SolarListCollectionTemplateCell.swift in Sources */,
 				DE18FE1F2E25879F008F207C /* NavigationControllerSettings.swift in Sources */,
+				DED1518F2E30F17C00155B13 /* NowPeakTimeView.swift in Sources */,
 				DE18FE9E2E268630008F207C /* ForecastSolarWind.swift in Sources */,
 				DE18FE9C2E2685D9008F207C /* ForecastMoonPhase.swift in Sources */,
 				DE8C2E0E2E27DBE2009F2787 /* PushNotificationsQuery.swift in Sources */,
@@ -1585,6 +1662,7 @@
 				DE18FE832E266B2B008F207C /* Coordinate.swift in Sources */,
 				DE18FE2E2E25879F008F207C /* ObservableAndSingle+Extension.swift in Sources */,
 				DE18FEB72E268C0E008F207C /* PageInfo.swift in Sources */,
+				DED1517D2E30DA4500155B13 /* NowTableElement.swift in Sources */,
 				DE18FED42E27C019008F207C /* OSlideView.swift in Sources */,
 				DE18FE2F2E25879F008F207C /* IAPActionResult.swift in Sources */,
 				DED151292E2CFFBC00155B13 /* ForecastAuroraCell.swift in Sources */,
@@ -1593,6 +1671,7 @@
 				DED1510E2E2BC85500155B13 /* SolarTableView.swift in Sources */,
 				DE18FE342E25879F008F207C /* OnboardingViewController.swift in Sources */,
 				DE18FE352E25879F008F207C /* Collection+Extension.swift in Sources */,
+				DED151842E30DAAB00155B13 /* NowTableIndicatorsCell.swift in Sources */,
 				DE18FEC12E268D99008F207C /* LocationHistory.swift in Sources */,
 				DE18FE362E25879F008F207C /* RequestReview.swift in Sources */,
 				DE18FE7F2E266AB4008F207C /* ObtainAuroraMapDetailsRequest.swift in Sources */,
@@ -1613,6 +1692,7 @@
 				DE18FE852E266CB8008F207C /* ObtainAuroraMapOvalRequest.swift in Sources */,
 				DE18FECF2E27B7F0008F207C /* OAuroraView.swift in Sources */,
 				DE18FE462E25879F008F207C /* OnboardingView.swift in Sources */,
+				DED1517B2E30DA3D00155B13 /* NowTableView.swift in Sources */,
 				DE18FE472E25879F008F207C /* NavigationController.swift in Sources */,
 				DE8C2E1B2E2805E6009F2787 /* OLocationTableView.swift in Sources */,
 				DED151532E2F8CA000155B13 /* NowTitleView.swift in Sources */,

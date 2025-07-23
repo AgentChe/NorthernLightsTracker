@@ -26,8 +26,8 @@ final class OnboardingView: UIView {
             self?.combineData.setup(notificationsToken: notificationsToken)
             self?.scroll(from: .alerts, to: .location)
         },
-        .location: OLocationView { [weak self] geoId in
-            self?.combineData.setup(geoId: geoId)
+        .location: OLocationView { [weak self] location in
+            self?.combineData.setup(location: location)
             
             guard let data = self?.combineData.make() else { return }
             

@@ -9,6 +9,8 @@ import UIKit
 import RxSwift
 
 final class NowViewController: UIViewController {
+    var didOpenFullMap: (() -> Void)?
+    
     private lazy var mainView = NowView()
     
     private lazy var viewModel = NowViewModel()
@@ -23,12 +25,27 @@ final class NowViewController: UIViewController {
         super.viewDidLoad()
         
         let output = viewModel.configure(input: NowViewModel.Input(
-            didTapSettings: mainView.titleView.settingsButton.rx.tap.asSignal()
+            didTapSettings: mainView.titleView.settingsButton.rx.tap.asSignal(),
+            didTapLocation: mainView.titleView.didTap,
+            didTapOpenFullMap: mainView.tableView.didTapOpenFullMap,
+            didTapOpenTopLocations: mainView.tableView.didTapOpenTopLocations
         ))
         
         output.action
             .drive(Binder(self) { base, action in
                 base.action(action)
+            })
+            .disposed(by: disposeBag)
+        
+        output.currentLocation
+            .drive(Binder(mainView.titleView) { base, location in
+                base.setup(geo: location?.address ?? "")
+            })
+            .disposed(by: disposeBag)
+        
+        output.elements
+            .drive(Binder(mainView.tableView) { base, elements in
+                base.setup(elements: elements)
             })
             .disposed(by: disposeBag)
     }
@@ -62,6 +79,16 @@ private extension NowViewController {
         case .openSettings:
             let vc = SettingsViewController.make()
             navigationController?.pushViewController(vc, animated: true)
+        case .changeLocation:
+            let vc = SettingsLocationViewController.make()
+            navigationController?.pushViewController(vc, animated: true)
+        case .openFullMap:
+            didOpenFullMap?()
+        case .openTopLocations:
+            break // TODO
+        case .openPaygate:
+            let vc = PaygateViewController.make()
+            present(vc, animated: true)
         }
     }
 }

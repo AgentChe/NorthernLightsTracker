@@ -158,7 +158,7 @@ private extension SettingsLocationViewModel {
                 
                 func source() -> Single<Action> {
                     profileManager
-                        .update(geoId: location.id)
+                        .update(location: location)
                         .map { result -> Action in
                             guard result.success else {
                                 throw ContentError(.notContent)

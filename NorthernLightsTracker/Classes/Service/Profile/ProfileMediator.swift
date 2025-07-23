@@ -14,7 +14,7 @@ final class ProfileMediator {
     private lazy var didChangeProfileTrigger = PublishRelay<Profile>()
     private lazy var didChangeKpThresholdEnabledTrigger = PublishRelay<Bool?>()
     private lazy var didChangeCloudBreakEnabledTrigger = PublishRelay<Bool?>()
-    private lazy var didChangeGeoIdTrigger = PublishRelay<String?>()
+    private lazy var didChangeLocationTrigger = PublishRelay<Location?>()
     
     private init() {}
 }
@@ -33,8 +33,8 @@ extension ProfileMediator {
         didChangeCloudBreakEnabledTrigger.accept(cloudBreakEnabled)
     }
     
-    func update(geoId: String?) {
-        didChangeGeoIdTrigger.accept(geoId)
+    func update(location: Location?) {
+        didChangeLocationTrigger.accept(location)
     }
     
     var didChangeProfile: Signal<Profile> {
@@ -49,7 +49,7 @@ extension ProfileMediator {
         didChangeCloudBreakEnabledTrigger.asSignal()
     }
     
-    var didChangeGeoId: Signal<String?> {
-        didChangeGeoIdTrigger.asSignal()
+    var didChangeLocation: Signal<Location?> {
+        didChangeLocationTrigger.asSignal()
     }
 }
