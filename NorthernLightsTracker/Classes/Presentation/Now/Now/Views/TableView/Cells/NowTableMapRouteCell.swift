@@ -6,16 +6,12 @@
 //
 
 import UIKit
-import RiveRuntime
 
-// TODO: animation
 final class NowTableMapRouteCell: UITableViewCell {
     lazy var container = makeContainer()
     lazy var titleLabel = makeTitleLabel()
     lazy var openLabel = makeOpenLabel()
-    lazy var animationView = makeAnimationView()
-    
-    private lazy var animationVM = RiveViewModel(fileName: "MapRoute")
+    lazy var pictureView = makeImageView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -36,8 +32,6 @@ private extension NowTableMapRouteCell {
         contentView.backgroundColor = UIColor.clear
         
         selectionStyle = .none
-        
-        animationVM.setView(animationView)
     }
 }
 
@@ -63,10 +57,10 @@ private extension NowTableMapRouteCell {
         ])
         
         NSLayoutConstraint.activate([
-            animationView.widthAnchor.constraint(equalToConstant: 148.scale),
-            animationView.heightAnchor.constraint(equalToConstant: 148.scale),
-            animationView.centerYAnchor.constraint(equalTo: container.centerYAnchor),
-            animationView.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -16.scale)
+            pictureView.widthAnchor.constraint(equalToConstant: 148.scale),
+            pictureView.heightAnchor.constraint(equalToConstant: 96.scale),
+            pictureView.centerYAnchor.constraint(equalTo: container.centerYAnchor),
+            pictureView.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -16.scale)
         ])
     }
 }
@@ -111,9 +105,11 @@ private extension NowTableMapRouteCell {
         return view
     }
     
-    func makeAnimationView() -> RiveView {
-        let view = RiveView()
-        view.backgroundColor = UIColor.clear
+    func makeImageView() -> UIImageView {
+        let view = UIImageView()
+        view.contentMode = .scaleAspectFit
+        view.clipsToBounds = true
+        view.image = UIImage(named: "Now.OpenMap")
         view.translatesAutoresizingMaskIntoConstraints = false
         container.addSubview(view)
         return view

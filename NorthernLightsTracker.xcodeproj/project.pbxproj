@@ -129,6 +129,14 @@
 		DE18FED22E27B970008F207C /* Onboarding.Aurora.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE18FED12E27B970008F207C /* Onboarding.Aurora.riv */; };
 		DE18FED42E27C019008F207C /* OSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FED32E27C019008F207C /* OSlideView.swift */; };
 		DE18FED62E27C322008F207C /* GradientProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FED52E27C322008F207C /* GradientProgressView.swift */; };
+		DE26F1AE2E32928100AB830B /* TopLocationsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE26F1AD2E32928100AB830B /* TopLocationsCollectionView.swift */; };
+		DE26F1B02E3292EB00AB830B /* TopLocationsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE26F1AF2E3292EB00AB830B /* TopLocationsCollectionCell.swift */; };
+		DE26F1B22E3295DE00AB830B /* TopLocationsCollectionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE26F1B12E3295DE00AB830B /* TopLocationsCollectionElement.swift */; };
+		DE26F1B42E329ED800AB830B /* TopLocationsIndicatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE26F1B32E329ED800AB830B /* TopLocationsIndicatorsView.swift */; };
+		DE26F1B72E329EF300AB830B /* TopLocationsIndicatorFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE26F1B62E329EF300AB830B /* TopLocationsIndicatorFieldView.swift */; };
+		DE26F1B92E32AB4600AB830B /* TopLocationsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE26F1B82E32AB4600AB830B /* TopLocationsMapView.swift */; };
+		DE26F1BC2E32B06900AB830B /* TopLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE26F1BB2E32B06900AB830B /* TopLocationAnnotation.swift */; };
+		DE26F1BE2E32B5F600AB830B /* CalloutWithArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE26F1BD2E32B5F600AB830B /* CalloutWithArrowView.swift */; };
 		DE8C2DFE2E27CB06009F2787 /* Onboarding.KP.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE8C2DFD2E27CB06009F2787 /* Onboarding.KP.riv */; };
 		DE8C2E002E27CB10009F2787 /* OKPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2DFF2E27CB10009F2787 /* OKPView.swift */; };
 		DE8C2E042E27CBB5009F2787 /* OSunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E032E27CBB5009F2787 /* OSunView.swift */; };
@@ -214,7 +222,9 @@
 		DED1518C2E30DB1400155B13 /* NowTableNoTopLocationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1518B2E30DB1400155B13 /* NowTableNoTopLocationsCell.swift */; };
 		DED1518F2E30F17C00155B13 /* NowPeakTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1518E2E30F17B00155B13 /* NowPeakTimeView.swift */; };
 		DED151912E30F56300155B13 /* NowKPCloudCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151902E30F56300155B13 /* NowKPCloudCoverView.swift */; };
-		DED151942E30FC8C00155B13 /* MapRoute.riv in Resources */ = {isa = PBXBuildFile; fileRef = DED151932E30FC8C00155B13 /* MapRoute.riv */; };
+		DED151972E31172E00155B13 /* TopLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151962E31172E00155B13 /* TopLocationsViewController.swift */; };
+		DED151992E31173400155B13 /* TopLocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151982E31173400155B13 /* TopLocationsViewModel.swift */; };
+		DED1519B2E31173B00155B13 /* TopLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1519A2E31173B00155B13 /* TopLocationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -343,6 +353,14 @@
 		DE18FED12E27B970008F207C /* Onboarding.Aurora.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.Aurora.riv; sourceTree = "<group>"; };
 		DE18FED32E27C019008F207C /* OSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSlideView.swift; sourceTree = "<group>"; };
 		DE18FED52E27C322008F207C /* GradientProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientProgressView.swift; sourceTree = "<group>"; };
+		DE26F1AD2E32928100AB830B /* TopLocationsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsCollectionView.swift; sourceTree = "<group>"; };
+		DE26F1AF2E3292EB00AB830B /* TopLocationsCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsCollectionCell.swift; sourceTree = "<group>"; };
+		DE26F1B12E3295DE00AB830B /* TopLocationsCollectionElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsCollectionElement.swift; sourceTree = "<group>"; };
+		DE26F1B32E329ED800AB830B /* TopLocationsIndicatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsIndicatorsView.swift; sourceTree = "<group>"; };
+		DE26F1B62E329EF300AB830B /* TopLocationsIndicatorFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsIndicatorFieldView.swift; sourceTree = "<group>"; };
+		DE26F1B82E32AB4600AB830B /* TopLocationsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsMapView.swift; sourceTree = "<group>"; };
+		DE26F1BB2E32B06900AB830B /* TopLocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationAnnotation.swift; sourceTree = "<group>"; };
+		DE26F1BD2E32B5F600AB830B /* CalloutWithArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutWithArrowView.swift; sourceTree = "<group>"; };
 		DE8C2DFD2E27CB06009F2787 /* Onboarding.KP.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.KP.riv; sourceTree = "<group>"; };
 		DE8C2DFF2E27CB10009F2787 /* OKPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKPView.swift; sourceTree = "<group>"; };
 		DE8C2E032E27CBB5009F2787 /* OSunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSunView.swift; sourceTree = "<group>"; };
@@ -428,7 +446,9 @@
 		DED1518B2E30DB1400155B13 /* NowTableNoTopLocationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTableNoTopLocationsCell.swift; sourceTree = "<group>"; };
 		DED1518E2E30F17B00155B13 /* NowPeakTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPeakTimeView.swift; sourceTree = "<group>"; };
 		DED151902E30F56300155B13 /* NowKPCloudCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowKPCloudCoverView.swift; sourceTree = "<group>"; };
-		DED151932E30FC8C00155B13 /* MapRoute.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = MapRoute.riv; sourceTree = "<group>"; };
+		DED151962E31172E00155B13 /* TopLocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsViewController.swift; sourceTree = "<group>"; };
+		DED151982E31173400155B13 /* TopLocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsViewModel.swift; sourceTree = "<group>"; };
+		DED1519A2E31173B00155B13 /* TopLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsView.swift; sourceTree = "<group>"; };
 		EB04B2FE1311D36ED8BA40F3 /* Pods-NorthernLightsTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorthernLightsTracker.release.xcconfig"; path = "Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -971,6 +991,35 @@
 			path = Aurora;
 			sourceTree = "<group>";
 		};
+		DE26F1AC2E32927300AB830B /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				DE26F1AD2E32928100AB830B /* TopLocationsCollectionView.swift */,
+				DE26F1AF2E3292EB00AB830B /* TopLocationsCollectionCell.swift */,
+				DE26F1B12E3295DE00AB830B /* TopLocationsCollectionElement.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		DE26F1B52E329EDB00AB830B /* Indicators */ = {
+			isa = PBXGroup;
+			children = (
+				DE26F1B32E329ED800AB830B /* TopLocationsIndicatorsView.swift */,
+				DE26F1B62E329EF300AB830B /* TopLocationsIndicatorFieldView.swift */,
+			);
+			path = Indicators;
+			sourceTree = "<group>";
+		};
+		DE26F1BA2E32B06000AB830B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DE26F1B82E32AB4600AB830B /* TopLocationsMapView.swift */,
+				DE26F1BB2E32B06900AB830B /* TopLocationAnnotation.swift */,
+				DE26F1BD2E32B5F600AB830B /* CalloutWithArrowView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		DE8C2DFC2E27CAE5009F2787 /* KP */ = {
 			isa = PBXGroup;
 			children = (
@@ -1233,6 +1282,7 @@
 		DED151412E2F876000155B13 /* Now */ = {
 			isa = PBXGroup;
 			children = (
+				DED151952E31172200155B13 /* TopLocations */,
 				DED151612E2FA56A00155B13 /* SettingsLocation */,
 				DED151572E2F964600155B13 /* SettingsAlerts */,
 				DED151492E2F886300155B13 /* Settings */,
@@ -1352,11 +1402,11 @@
 		DED1517E2E30DA4800155B13 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				DED151922E30FC5E00155B13 /* MapRoute */,
 				DED1518D2E30F15D00155B13 /* Indicators */,
 				DED1517F2E30DA5100155B13 /* NowTableUpdatedCell.swift */,
 				DED151812E30DA5700155B13 /* NowTableStatusCell.swift */,
 				DED151872E30DAC000155B13 /* NowTableCurrentLocationCell.swift */,
+				DED151852E30DAB400155B13 /* NowTableMapRouteCell.swift */,
 				DED151892E30DB0A00155B13 /* NowTableOpenTopLocationsCell.swift */,
 				DED1518B2E30DB1400155B13 /* NowTableNoTopLocationsCell.swift */,
 			);
@@ -1373,13 +1423,25 @@
 			path = Indicators;
 			sourceTree = "<group>";
 		};
-		DED151922E30FC5E00155B13 /* MapRoute */ = {
+		DED151952E31172200155B13 /* TopLocations */ = {
 			isa = PBXGroup;
 			children = (
-				DED151932E30FC8C00155B13 /* MapRoute.riv */,
-				DED151852E30DAB400155B13 /* NowTableMapRouteCell.swift */,
+				DED1519C2E311A1400155B13 /* Views */,
+				DED151962E31172E00155B13 /* TopLocationsViewController.swift */,
+				DED151982E31173400155B13 /* TopLocationsViewModel.swift */,
+				DED1519A2E31173B00155B13 /* TopLocationsView.swift */,
 			);
-			path = MapRoute;
+			path = TopLocations;
+			sourceTree = "<group>";
+		};
+		DED1519C2E311A1400155B13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE26F1BA2E32B06000AB830B /* Map */,
+				DE26F1B52E329EDB00AB830B /* Indicators */,
+				DE26F1AC2E32927300AB830B /* Collection */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1450,7 +1512,6 @@
 				DE18FE622E265316008F207C /* IBMPlexSans-SemiBold.ttf in Resources */,
 				DE18FD242E25869A008F207C /* Assets.xcassets in Resources */,
 				DE18FD262E25869A008F207C /* LaunchScreen.storyboard in Resources */,
-				DED151942E30FC8C00155B13 /* MapRoute.riv in Resources */,
 				DE18FE602E265310008F207C /* IBMPlexSans-Regular.ttf in Resources */,
 				DE8C2E062E27CC1A009F2787 /* Onboarding.Sun.riv in Resources */,
 				DE8C2DFE2E27CB06009F2787 /* Onboarding.KP.riv in Resources */,
@@ -1534,6 +1595,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE26F1B92E32AB4600AB830B /* TopLocationsMapView.swift in Sources */,
 				DE8C2E222E2813D2009F2787 /* OnboardingViewModel.swift in Sources */,
 				DE18FDE22E25879F008F207C /* PaygateProductButton.swift in Sources */,
 				DED151192E2BC8DE00155B13 /* SolarTableAnswerCell.swift in Sources */,
@@ -1557,6 +1619,7 @@
 				DED1518A2E30DB0A00155B13 /* NowTableOpenTopLocationsCell.swift in Sources */,
 				DE18FDE92E25879F008F207C /* UIApplication+Extension.swift in Sources */,
 				DED151262E2CFF7200155B13 /* ForecastTableElement.swift in Sources */,
+				DED1519B2E31173B00155B13 /* TopLocationsView.swift in Sources */,
 				DED151702E2FA91B00155B13 /* SettingsLocationTableCurrentLocationCell.swift in Sources */,
 				DED150F82E2A9E2E00155B13 /* SolarListView.swift in Sources */,
 				DED151882E30DAC000155B13 /* NowTableCurrentLocationCell.swift in Sources */,
@@ -1571,6 +1634,7 @@
 				DE18FEA82E2689FE008F207C /* ObtainSolarTemplatesRequest.swift in Sources */,
 				DE8C2E102E27DE72009F2787 /* LocationAuthorizationQuery.swift in Sources */,
 				DE18FE872E266CD7008F207C /* AuroraMapOval.swift in Sources */,
+				DE26F1BE2E32B5F600AB830B /* CalloutWithArrowView.swift in Sources */,
 				DE18FDF02E25879F008F207C /* GlobalDefinitions.swift in Sources */,
 				DED1511E2E2CFE2500155B13 /* ForecastViewModel.swift in Sources */,
 				DE18FEB02E268B4F008F207C /* ObtainSolarRequest.swift in Sources */,
@@ -1584,6 +1648,7 @@
 				DE18FDF72E25879F008F207C /* PurchaseValidationObserver.swift in Sources */,
 				DE18FDF82E25879F008F207C /* APIFormDataRequestBody.swift in Sources */,
 				DED151482E2F877E00155B13 /* NowView.swift in Sources */,
+				DE26F1B22E3295DE00AB830B /* TopLocationsCollectionElement.swift in Sources */,
 				DED151562E2F8ED900155B13 /* SettingsButton.swift in Sources */,
 				DE18FEAA2E268A47008F207C /* Solar.swift in Sources */,
 				DE18FDF92E25879F008F207C /* Appearance.swift in Sources */,
@@ -1598,6 +1663,7 @@
 				DE18FE052E25879F008F207C /* AmplitudeManager.swift in Sources */,
 				DE18FE962E268340008F207C /* ForecastAurora.swift in Sources */,
 				DED151242E2CFF6C00155B13 /* ForecastTableView.swift in Sources */,
+				DE26F1B72E329EF300AB830B /* TopLocationsIndicatorFieldView.swift in Sources */,
 				DE18FE062E25879F008F207C /* IAPProduct.swift in Sources */,
 				DE18FEB52E268BC8008F207C /* LocationManager.swift in Sources */,
 				DE18FE072E25879F008F207C /* IAPError.swift in Sources */,
@@ -1611,8 +1677,10 @@
 				DE18FE892E266DFA008F207C /* ObtainAuroraTopsRequest.swift in Sources */,
 				DE18FE092E25879F008F207C /* UIColor+Extension.swift in Sources */,
 				DE18FE0A2E25879F008F207C /* RequestResult.swift in Sources */,
+				DE26F1AE2E32928100AB830B /* TopLocationsCollectionView.swift in Sources */,
 				DE8C2E0B2E27CE59009F2787 /* OAlertsView.swift in Sources */,
 				DE18FE0D2E25879F008F207C /* RxActivityIndicator.swift in Sources */,
+				DED151972E31172E00155B13 /* TopLocationsViewController.swift in Sources */,
 				DED1513C2E2E766800155B13 /* ForecastSolarWindCell.swift in Sources */,
 				DE18FE942E2682F5008F207C /* Forecast.swift in Sources */,
 				DED151802E30DA5100155B13 /* NowTableUpdatedCell.swift in Sources */,
@@ -1621,6 +1689,7 @@
 				DE8C2E162E27E5E2009F2787 /* OLocationSearchField.swift in Sources */,
 				DE8C2E002E27CB10009F2787 /* OKPView.swift in Sources */,
 				DE18FE172E25879F008F207C /* TryAgainView.swift in Sources */,
+				DE26F1BC2E32B06900AB830B /* TopLocationAnnotation.swift in Sources */,
 				DED151782E2FAEF300155B13 /* SettingsLocationSearchField.swift in Sources */,
 				DE18FE7B2E2666CF008F207C /* AuroraNow.swift in Sources */,
 				DE18FE182E25879F008F207C /* XOREncryption.swift in Sources */,
@@ -1654,9 +1723,11 @@
 				DE18FE9A2E268537008F207C /* ForecastCloudCover.swift in Sources */,
 				DE18FE232E25879F008F207C /* TakePhoto.swift in Sources */,
 				DED1513A2E2E710B00155B13 /* ForecastMoonPhaseCell.swift in Sources */,
+				DED151992E31173400155B13 /* TopLocationsViewModel.swift in Sources */,
 				DE18FE242E25879F008F207C /* PaygateViewController.swift in Sources */,
 				DED1514F2E2F888300155B13 /* SettingsView.swift in Sources */,
 				DE18FE2C2E25879F008F207C /* PaygateViewModel.swift in Sources */,
+				DE26F1B42E329ED800AB830B /* TopLocationsIndicatorsView.swift in Sources */,
 				DED1515B2E2F965E00155B13 /* SettingsAlertsViewModel.swift in Sources */,
 				DE18FE2D2E25879F008F207C /* UIView+RxExtension.swift in Sources */,
 				DE18FE832E266B2B008F207C /* Coordinate.swift in Sources */,
@@ -1678,6 +1749,7 @@
 				DE18FE372E25879F008F207C /* ChoosePhotoFromGallery.swift in Sources */,
 				DE18FE382E25879F008F207C /* IAPErrorHelper.swift in Sources */,
 				DE18FE392E25879F008F207C /* ScreenSize.swift in Sources */,
+				DE26F1B02E3292EB00AB830B /* TopLocationsCollectionCell.swift in Sources */,
 				DED151652E2FA57D00155B13 /* SettingsLocationViewModel.swift in Sources */,
 				DE18FE3A2E25879F008F207C /* Weak.swift in Sources */,
 				DE18FE3B2E25879F008F207C /* SplashViewController.swift in Sources */,

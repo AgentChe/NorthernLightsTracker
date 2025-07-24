@@ -119,3 +119,9 @@
 "Now.OpenTopLocations.See" = "See the full list →";
 "Now.NoTopLocations.Title" = "No visible auroras in the world right now";
 "Now.NoTopLocations.Text" = "Try again later — activity changes fast!";
+
+// MARK: TopLocations
+"TopLocations.Title" = "Top world locations";
+"TopLocations.Indicators.KP" = "Kp index";
+"TopLocations.Indicators.CloudCover" = "Cloud cover";
+"TopLocations.Indicators.PeakTime" = "Peak time";

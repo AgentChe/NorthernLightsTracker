@@ -85,7 +85,8 @@ private extension NowViewController {
         case .openFullMap:
             didOpenFullMap?()
         case .openTopLocations:
-            break // TODO
+            let vc = TopLocationsViewController.make()
+            navigationController?.pushViewController(vc, animated: true)
         case .openPaygate:
             let vc = PaygateViewController.make()
             present(vc, animated: true)
