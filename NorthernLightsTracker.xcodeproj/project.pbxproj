@@ -137,6 +137,10 @@
 		DE26F1B92E32AB4600AB830B /* TopLocationsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE26F1B82E32AB4600AB830B /* TopLocationsMapView.swift */; };
 		DE26F1BC2E32B06900AB830B /* TopLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE26F1BB2E32B06900AB830B /* TopLocationAnnotation.swift */; };
 		DE26F1BE2E32B5F600AB830B /* CalloutWithArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE26F1BD2E32B5F600AB830B /* CalloutWithArrowView.swift */; };
+		DE5841CC2E3771D300DD2933 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841CB2E3771D300DD2933 /* MapViewController.swift */; };
+		DE5841CE2E3771DB00DD2933 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841CD2E3771DB00DD2933 /* MapView.swift */; };
+		DE5841D02E3771E900DD2933 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841CF2E3771E900DD2933 /* MapCoordinator.swift */; };
+		DE5841D62E3773EF00DD2933 /* MapTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841D52E3773EF00DD2933 /* MapTabView.swift */; };
 		DE8C2DFE2E27CB06009F2787 /* Onboarding.KP.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE8C2DFD2E27CB06009F2787 /* Onboarding.KP.riv */; };
 		DE8C2E002E27CB10009F2787 /* OKPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2DFF2E27CB10009F2787 /* OKPView.swift */; };
 		DE8C2E042E27CBB5009F2787 /* OSunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E032E27CBB5009F2787 /* OSunView.swift */; };
@@ -361,6 +365,10 @@
 		DE26F1B82E32AB4600AB830B /* TopLocationsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsMapView.swift; sourceTree = "<group>"; };
 		DE26F1BB2E32B06900AB830B /* TopLocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationAnnotation.swift; sourceTree = "<group>"; };
 		DE26F1BD2E32B5F600AB830B /* CalloutWithArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutWithArrowView.swift; sourceTree = "<group>"; };
+		DE5841CB2E3771D300DD2933 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DE5841CD2E3771DB00DD2933 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DE5841CF2E3771E900DD2933 /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		DE5841D52E3773EF00DD2933 /* MapTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabView.swift; sourceTree = "<group>"; };
 		DE8C2DFD2E27CB06009F2787 /* Onboarding.KP.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.KP.riv; sourceTree = "<group>"; };
 		DE8C2DFF2E27CB10009F2787 /* OKPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKPView.swift; sourceTree = "<group>"; };
 		DE8C2E032E27CBB5009F2787 /* OSunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSunView.swift; sourceTree = "<group>"; };
@@ -737,6 +745,7 @@
 		DE18FDBA2E25879F008F207C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DE5841CA2E3771CA00DD2933 /* Map */,
 				DED151412E2F876000155B13 /* Now */,
 				DED1511A2E2CFE1300155B13 /* Forecast */,
 				DED150F12E2A9E0900155B13 /* Solar */,
@@ -1018,6 +1027,25 @@
 				DE26F1BD2E32B5F600AB830B /* CalloutWithArrowView.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		DE5841CA2E3771CA00DD2933 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DE5841D12E3773D500DD2933 /* Views */,
+				DE5841CB2E3771D300DD2933 /* MapViewController.swift */,
+				DE5841CD2E3771DB00DD2933 /* MapView.swift */,
+				DE5841CF2E3771E900DD2933 /* MapCoordinator.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		DE5841D12E3773D500DD2933 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE5841D52E3773EF00DD2933 /* MapTabView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		DE8C2DFC2E27CAE5009F2787 /* KP */ = {
@@ -1708,6 +1736,7 @@
 				DE18FE742E26636C008F207C /* PushNotificationsModel.swift in Sources */,
 				DED150EE2E2A7FFC00155B13 /* MainTabItemButton.swift in Sources */,
 				DE18FE1E2E25879F008F207C /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
+				DE5841D02E3771E900DD2933 /* MapCoordinator.swift in Sources */,
 				DED1516D2E2FA78A00155B13 /* SettingsLocationTableElement.swift in Sources */,
 				DED151032E2A9F5E00155B13 /* SolarListCollectionTemplateCell.swift in Sources */,
 				DE18FE1F2E25879F008F207C /* NavigationControllerSettings.swift in Sources */,
@@ -1719,6 +1748,7 @@
 				DE8C2E202E2812FC009F2787 /* OnboardingCombineData.swift in Sources */,
 				DED151402E2E7BDA00155B13 /* ForecastPlanetaryACell.swift in Sources */,
 				DE18FE202E25879F008F207C /* Scalable.swift in Sources */,
+				DE5841CE2E3771DB00DD2933 /* MapView.swift in Sources */,
 				DED151202E2CFE2900155B13 /* ForecastView.swift in Sources */,
 				DE18FE9A2E268537008F207C /* ForecastCloudCover.swift in Sources */,
 				DE18FE232E25879F008F207C /* TakePhoto.swift in Sources */,
@@ -1760,6 +1790,8 @@
 				DE18FE412E25879F008F207C /* PaygateActionsView.swift in Sources */,
 				DE18FEA62E268938008F207C /* SolarTemplate.swift in Sources */,
 				DE18FE422E25879F008F207C /* SplashViewModel.swift in Sources */,
+				DE5841CC2E3771D300DD2933 /* MapViewController.swift in Sources */,
+				DE5841D62E3773EF00DD2933 /* MapTabView.swift in Sources */,
 				DE18FE442E25879F008F207C /* PaygateBestOfferView.swift in Sources */,
 				DE18FE852E266CB8008F207C /* ObtainAuroraMapOvalRequest.swift in Sources */,
 				DE18FECF2E27B7F0008F207C /* OAuroraView.swift in Sources */,

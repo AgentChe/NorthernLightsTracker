@@ -9,7 +9,7 @@ import UIKit
 
 final class MainViewCoordinator {
     lazy var nowVC = NowViewController.make()
-    lazy var mapVC = UIViewController()
+    lazy var mapVC = MapViewController.make()
     lazy var forecastVC = ForecastViewController.make()
     lazy var solarVC = SolarListViewController.make()
     
@@ -22,7 +22,10 @@ final class MainViewCoordinator {
         self.parentVC = parentVC
         self.container = container
     }
-    
+}
+
+// MARK: Public
+extension MainViewCoordinator {
     func change(tab: MainTabItemButton.Tab) {
         switch tab {
         case .now:

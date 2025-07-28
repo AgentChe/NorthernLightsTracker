@@ -125,3 +125,7 @@
 "TopLocations.Indicators.KP" = "Kp index";
 "TopLocations.Indicators.CloudCover" = "Cloud cover";
 "TopLocations.Indicators.PeakTime" = "Peak time";
+
+// MARK: Map
+"Map.Tab.RealWorldMap" = "Real-world map";
+"Map.Tab.AuroraOvalLayer" = "Aurora oval layer";
