@@ -129,3 +129,7 @@
 // MARK: Map
 "Map.Tab.RealWorldMap" = "Real-world map";
 "Map.Tab.AuroraOvalLayer" = "Aurora oval layer";
+
+// MARK: AuroraOvalLayer
+"AuroraOvalLayer.North" = "Northern Hemisphere";
+"AuroraOvalLayer.South" = "Southern Hemisphere";

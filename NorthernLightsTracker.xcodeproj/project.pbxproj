@@ -141,6 +141,12 @@
 		DE5841CE2E3771DB00DD2933 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841CD2E3771DB00DD2933 /* MapView.swift */; };
 		DE5841D02E3771E900DD2933 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841CF2E3771E900DD2933 /* MapCoordinator.swift */; };
 		DE5841D62E3773EF00DD2933 /* MapTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841D52E3773EF00DD2933 /* MapTabView.swift */; };
+		DE5841DB2E3784EB00DD2933 /* AuroraOvalLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841DA2E3784EB00DD2933 /* AuroraOvalLayerViewController.swift */; };
+		DE5841DD2E3784F200DD2933 /* AuroraOvalLayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841DC2E3784F200DD2933 /* AuroraOvalLayerViewModel.swift */; };
+		DE5841DF2E3784F500DD2933 /* AuroraOvalLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841DE2E3784F500DD2933 /* AuroraOvalLayerView.swift */; };
+		DE5841E32E37854A00DD2933 /* AuroraOvalLayerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841E22E37854A00DD2933 /* AuroraOvalLayerTableView.swift */; };
+		DE5841E52E37854F00DD2933 /* AuroraOvalLayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841E42E37854F00DD2933 /* AuroraOvalLayerCell.swift */; };
+		DE5841E72E37865900DD2933 /* AuroraOvalLayerTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841E62E37865900DD2933 /* AuroraOvalLayerTableElement.swift */; };
 		DE8C2DFE2E27CB06009F2787 /* Onboarding.KP.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE8C2DFD2E27CB06009F2787 /* Onboarding.KP.riv */; };
 		DE8C2E002E27CB10009F2787 /* OKPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2DFF2E27CB10009F2787 /* OKPView.swift */; };
 		DE8C2E042E27CBB5009F2787 /* OSunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E032E27CBB5009F2787 /* OSunView.swift */; };
@@ -369,6 +375,12 @@
 		DE5841CD2E3771DB00DD2933 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DE5841CF2E3771E900DD2933 /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
 		DE5841D52E3773EF00DD2933 /* MapTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabView.swift; sourceTree = "<group>"; };
+		DE5841DA2E3784EB00DD2933 /* AuroraOvalLayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraOvalLayerViewController.swift; sourceTree = "<group>"; };
+		DE5841DC2E3784F200DD2933 /* AuroraOvalLayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraOvalLayerViewModel.swift; sourceTree = "<group>"; };
+		DE5841DE2E3784F500DD2933 /* AuroraOvalLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraOvalLayerView.swift; sourceTree = "<group>"; };
+		DE5841E22E37854A00DD2933 /* AuroraOvalLayerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraOvalLayerTableView.swift; sourceTree = "<group>"; };
+		DE5841E42E37854F00DD2933 /* AuroraOvalLayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraOvalLayerCell.swift; sourceTree = "<group>"; };
+		DE5841E62E37865900DD2933 /* AuroraOvalLayerTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraOvalLayerTableElement.swift; sourceTree = "<group>"; };
 		DE8C2DFD2E27CB06009F2787 /* Onboarding.KP.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.KP.riv; sourceTree = "<group>"; };
 		DE8C2DFF2E27CB10009F2787 /* OKPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKPView.swift; sourceTree = "<group>"; };
 		DE8C2E032E27CBB5009F2787 /* OSunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSunView.swift; sourceTree = "<group>"; };
@@ -1032,10 +1044,8 @@
 		DE5841CA2E3771CA00DD2933 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				DE5841D12E3773D500DD2933 /* Views */,
-				DE5841CB2E3771D300DD2933 /* MapViewController.swift */,
-				DE5841CD2E3771DB00DD2933 /* MapView.swift */,
-				DE5841CF2E3771E900DD2933 /* MapCoordinator.swift */,
+				DE5841D92E3784DD00DD2933 /* AuroraOvalLayer */,
+				DE5841D82E37849800DD2933 /* Map */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -1046,6 +1056,46 @@
 				DE5841D52E3773EF00DD2933 /* MapTabView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DE5841D82E37849800DD2933 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DE5841D12E3773D500DD2933 /* Views */,
+				DE5841CB2E3771D300DD2933 /* MapViewController.swift */,
+				DE5841CD2E3771DB00DD2933 /* MapView.swift */,
+				DE5841CF2E3771E900DD2933 /* MapCoordinator.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		DE5841D92E3784DD00DD2933 /* AuroraOvalLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DE5841E02E37853D00DD2933 /* Views */,
+				DE5841DA2E3784EB00DD2933 /* AuroraOvalLayerViewController.swift */,
+				DE5841DC2E3784F200DD2933 /* AuroraOvalLayerViewModel.swift */,
+				DE5841DE2E3784F500DD2933 /* AuroraOvalLayerView.swift */,
+			);
+			path = AuroraOvalLayer;
+			sourceTree = "<group>";
+		};
+		DE5841E02E37853D00DD2933 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE5841E12E37854200DD2933 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE5841E12E37854200DD2933 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE5841E22E37854A00DD2933 /* AuroraOvalLayerTableView.swift */,
+				DE5841E42E37854F00DD2933 /* AuroraOvalLayerCell.swift */,
+				DE5841E62E37865900DD2933 /* AuroraOvalLayerTableElement.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		DE8C2DFC2E27CAE5009F2787 /* KP */ = {
@@ -1671,6 +1721,7 @@
 				DED150E82E2A7FE400155B13 /* MainView.swift in Sources */,
 				DE18FDF32E25879F008F207C /* TryAgainViewController.swift in Sources */,
 				DE18FEC62E269140008F207C /* GradientButton.swift in Sources */,
+				DE5841E72E37865900DD2933 /* AuroraOvalLayerTableElement.swift in Sources */,
 				DE18FDF42E25879F008F207C /* PaygateInfoView.swift in Sources */,
 				DE18FEBD2E268D04008F207C /* SearchLocationsRequest.swift in Sources */,
 				DE18FDF72E25879F008F207C /* PurchaseValidationObserver.swift in Sources */,
@@ -1716,6 +1767,7 @@
 				DED151302E2E395C00155B13 /* ForecastExpandableTitleCell.swift in Sources */,
 				DE8C2E162E27E5E2009F2787 /* OLocationSearchField.swift in Sources */,
 				DE8C2E002E27CB10009F2787 /* OKPView.swift in Sources */,
+				DE5841DF2E3784F500DD2933 /* AuroraOvalLayerView.swift in Sources */,
 				DE18FE172E25879F008F207C /* TryAgainView.swift in Sources */,
 				DE26F1BC2E32B06900AB830B /* TopLocationAnnotation.swift in Sources */,
 				DED151782E2FAEF300155B13 /* SettingsLocationSearchField.swift in Sources */,
@@ -1737,6 +1789,7 @@
 				DED150EE2E2A7FFC00155B13 /* MainTabItemButton.swift in Sources */,
 				DE18FE1E2E25879F008F207C /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				DE5841D02E3771E900DD2933 /* MapCoordinator.swift in Sources */,
+				DE5841DD2E3784F200DD2933 /* AuroraOvalLayerViewModel.swift in Sources */,
 				DED1516D2E2FA78A00155B13 /* SettingsLocationTableElement.swift in Sources */,
 				DED151032E2A9F5E00155B13 /* SolarListCollectionTemplateCell.swift in Sources */,
 				DE18FE1F2E25879F008F207C /* NavigationControllerSettings.swift in Sources */,
@@ -1744,6 +1797,7 @@
 				DE18FE9E2E268630008F207C /* ForecastSolarWind.swift in Sources */,
 				DE18FE9C2E2685D9008F207C /* ForecastMoonPhase.swift in Sources */,
 				DE8C2E0E2E27DBE2009F2787 /* PushNotificationsQuery.swift in Sources */,
+				DE5841E52E37854F00DD2933 /* AuroraOvalLayerCell.swift in Sources */,
 				DED151152E2BC87D00155B13 /* SolarTableImageCell.swift in Sources */,
 				DE8C2E202E2812FC009F2787 /* OnboardingCombineData.swift in Sources */,
 				DED151402E2E7BDA00155B13 /* ForecastPlanetaryACell.swift in Sources */,
@@ -1767,10 +1821,12 @@
 				DE18FED42E27C019008F207C /* OSlideView.swift in Sources */,
 				DE18FE2F2E25879F008F207C /* IAPActionResult.swift in Sources */,
 				DED151292E2CFFBC00155B13 /* ForecastAuroraCell.swift in Sources */,
+				DE5841DB2E3784EB00DD2933 /* AuroraOvalLayerViewController.swift in Sources */,
 				DE18FE322E25879F008F207C /* ProfileBindingRequest.swift in Sources */,
 				DED1515D2E2F966100155B13 /* SettingsAlertsView.swift in Sources */,
 				DED1510E2E2BC85500155B13 /* SolarTableView.swift in Sources */,
 				DE18FE342E25879F008F207C /* OnboardingViewController.swift in Sources */,
+				DE5841E32E37854A00DD2933 /* AuroraOvalLayerTableView.swift in Sources */,
 				DE18FE352E25879F008F207C /* Collection+Extension.swift in Sources */,
 				DED151842E30DAAB00155B13 /* NowTableIndicatorsCell.swift in Sources */,
 				DE18FEC12E268D99008F207C /* LocationHistory.swift in Sources */,
