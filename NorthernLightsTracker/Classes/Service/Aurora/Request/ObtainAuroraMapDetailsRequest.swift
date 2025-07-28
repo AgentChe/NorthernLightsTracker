@@ -14,7 +14,7 @@ struct ObtainAuroraMapDetailsRequest: APIRequestBody {
     let lon: Double
     
     var url: String {
-        GlobalDefinitions.domain + "/api/v1/aurora/map/details"
+        GlobalDefinitions.domain + "/api/v1/aurora/map/location"
     }
     
     var method: HTTPMethod {

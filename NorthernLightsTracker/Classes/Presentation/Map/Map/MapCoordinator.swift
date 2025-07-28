@@ -8,7 +8,7 @@
 import UIKit
 
 final class MapCoordinator {
-    lazy var realWorldMapVC = UIViewController()
+    lazy var realWorldMapVC = RealWorldMapViewController.make()
     lazy var auroraOvalLayerVC = AuroraOvalLayerViewController.make()
     
     private weak var parentVC: UIViewController?

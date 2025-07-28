@@ -28,4 +28,13 @@ final class TopLocationAnnotation: NSObject, MKAnnotation {
         }
         self.subtitle = parts.joined(separator: ", ")
     }
+    
+    init(mapDetails: AuroraMapDetails) {
+        self.coordinate = CLLocationCoordinate2D(
+            latitude: mapDetails.coordinate.lat,
+            longitude: mapDetails.coordinate.lon
+        )
+        self.title = String(format: "RealWorldMap.Annotation.Title".localized, mapDetails.auroraPercent)
+        self.subtitle = mapDetails.locationName
+    }
 }

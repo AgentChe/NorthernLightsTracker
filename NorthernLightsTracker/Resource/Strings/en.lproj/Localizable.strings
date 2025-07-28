@@ -133,3 +133,6 @@
 // MARK: AuroraOvalLayer
 "AuroraOvalLayer.North" = "Northern Hemisphere";
 "AuroraOvalLayer.South" = "Southern Hemisphere";
+
+// MARK: RealWorldMap
+"RealWorldMap.Annotation.Title" = "Aurora probability %i%%";

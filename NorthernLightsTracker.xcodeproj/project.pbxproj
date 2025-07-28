@@ -147,6 +147,10 @@
 		DE5841E32E37854A00DD2933 /* AuroraOvalLayerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841E22E37854A00DD2933 /* AuroraOvalLayerTableView.swift */; };
 		DE5841E52E37854F00DD2933 /* AuroraOvalLayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841E42E37854F00DD2933 /* AuroraOvalLayerCell.swift */; };
 		DE5841E72E37865900DD2933 /* AuroraOvalLayerTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841E62E37865900DD2933 /* AuroraOvalLayerTableElement.swift */; };
+		DE5841EA2E378EFC00DD2933 /* RealWorldMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841E92E378EFC00DD2933 /* RealWorldMapViewController.swift */; };
+		DE5841EC2E378F0100DD2933 /* RealWorldMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841EB2E378F0100DD2933 /* RealWorldMapViewModel.swift */; };
+		DE5841EE2E378F0400DD2933 /* RealWorldMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841ED2E378F0400DD2933 /* RealWorldMapView.swift */; };
+		DE5841F12E37907200DD2933 /* RWMMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5841F02E37907200DD2933 /* RWMMapView.swift */; };
 		DE8C2DFE2E27CB06009F2787 /* Onboarding.KP.riv in Resources */ = {isa = PBXBuildFile; fileRef = DE8C2DFD2E27CB06009F2787 /* Onboarding.KP.riv */; };
 		DE8C2E002E27CB10009F2787 /* OKPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2DFF2E27CB10009F2787 /* OKPView.swift */; };
 		DE8C2E042E27CBB5009F2787 /* OSunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C2E032E27CBB5009F2787 /* OSunView.swift */; };
@@ -381,6 +385,10 @@
 		DE5841E22E37854A00DD2933 /* AuroraOvalLayerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraOvalLayerTableView.swift; sourceTree = "<group>"; };
 		DE5841E42E37854F00DD2933 /* AuroraOvalLayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraOvalLayerCell.swift; sourceTree = "<group>"; };
 		DE5841E62E37865900DD2933 /* AuroraOvalLayerTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraOvalLayerTableElement.swift; sourceTree = "<group>"; };
+		DE5841E92E378EFC00DD2933 /* RealWorldMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealWorldMapViewController.swift; sourceTree = "<group>"; };
+		DE5841EB2E378F0100DD2933 /* RealWorldMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealWorldMapViewModel.swift; sourceTree = "<group>"; };
+		DE5841ED2E378F0400DD2933 /* RealWorldMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealWorldMapView.swift; sourceTree = "<group>"; };
+		DE5841F02E37907200DD2933 /* RWMMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWMMapView.swift; sourceTree = "<group>"; };
 		DE8C2DFD2E27CB06009F2787 /* Onboarding.KP.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onboarding.KP.riv; sourceTree = "<group>"; };
 		DE8C2DFF2E27CB10009F2787 /* OKPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKPView.swift; sourceTree = "<group>"; };
 		DE8C2E032E27CBB5009F2787 /* OSunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSunView.swift; sourceTree = "<group>"; };
@@ -1044,6 +1052,7 @@
 		DE5841CA2E3771CA00DD2933 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				DE5841E82E378EEE00DD2933 /* RealWorldMap */,
 				DE5841D92E3784DD00DD2933 /* AuroraOvalLayer */,
 				DE5841D82E37849800DD2933 /* Map */,
 			);
@@ -1096,6 +1105,25 @@
 				DE5841E62E37865900DD2933 /* AuroraOvalLayerTableElement.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		DE5841E82E378EEE00DD2933 /* RealWorldMap */ = {
+			isa = PBXGroup;
+			children = (
+				DE5841EF2E37905D00DD2933 /* Views */,
+				DE5841E92E378EFC00DD2933 /* RealWorldMapViewController.swift */,
+				DE5841EB2E378F0100DD2933 /* RealWorldMapViewModel.swift */,
+				DE5841ED2E378F0400DD2933 /* RealWorldMapView.swift */,
+			);
+			path = RealWorldMap;
+			sourceTree = "<group>";
+		};
+		DE5841EF2E37905D00DD2933 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE5841F02E37907200DD2933 /* RWMMapView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		DE8C2DFC2E27CAE5009F2787 /* KP */ = {
@@ -1705,6 +1733,7 @@
 				DE18FDEA2E25879F008F207C /* TextAttributes.swift in Sources */,
 				DED151632E2FA57700155B13 /* SettingsLocationViewController.swift in Sources */,
 				DE18FDEB2E25879F008F207C /* GradientView.swift in Sources */,
+				DE5841EA2E378EFC00DD2933 /* RealWorldMapViewController.swift in Sources */,
 				DE18FDEC2E25879F008F207C /* Currency.swift in Sources */,
 				DE18FDEE2E25879F008F207C /* PaygateInteractor.swift in Sources */,
 				DE18FDEF2E25879F008F207C /* NetworkError.swift in Sources */,
@@ -1817,6 +1846,7 @@
 				DE18FE832E266B2B008F207C /* Coordinate.swift in Sources */,
 				DE18FE2E2E25879F008F207C /* ObservableAndSingle+Extension.swift in Sources */,
 				DE18FEB72E268C0E008F207C /* PageInfo.swift in Sources */,
+				DE5841F12E37907200DD2933 /* RWMMapView.swift in Sources */,
 				DED1517D2E30DA4500155B13 /* NowTableElement.swift in Sources */,
 				DE18FED42E27C019008F207C /* OSlideView.swift in Sources */,
 				DE18FE2F2E25879F008F207C /* IAPActionResult.swift in Sources */,
@@ -1852,12 +1882,14 @@
 				DE18FE852E266CB8008F207C /* ObtainAuroraMapOvalRequest.swift in Sources */,
 				DE18FECF2E27B7F0008F207C /* OAuroraView.swift in Sources */,
 				DE18FE462E25879F008F207C /* OnboardingView.swift in Sources */,
+				DE5841EE2E378F0400DD2933 /* RealWorldMapView.swift in Sources */,
 				DED1517B2E30DA3D00155B13 /* NowTableView.swift in Sources */,
 				DE18FE472E25879F008F207C /* NavigationController.swift in Sources */,
 				DE8C2E1B2E2805E6009F2787 /* OLocationTableView.swift in Sources */,
 				DED151532E2F8CA000155B13 /* NowTitleView.swift in Sources */,
 				DED150F62E2A9E2A00155B13 /* SolarListViewModel.swift in Sources */,
 				DE18FEA22E2686E7008F207C /* ForecastPlanetaryA.swift in Sources */,
+				DE5841EC2E378F0100DD2933 /* RealWorldMapViewModel.swift in Sources */,
 				DED1514B2E2F887B00155B13 /* SettingsViewController.swift in Sources */,
 				DED150E62E2A7FE000155B13 /* MainViewController.swift in Sources */,
 				DE8C2E042E27CBB5009F2787 /* OSunView.swift in Sources */,
@@ -1919,9 +1951,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7FN7933CDF;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NorthernLightsTracker/Info.plist;
@@ -1938,9 +1972,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = akosnt17.aienglish2.dev.NorthernLightsTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = navisapps.autocheck.ru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Autocheck Development Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1957,9 +1992,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7FN7933CDF;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NorthernLightsTracker/Info.plist;
@@ -1976,9 +2013,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = akosnt17.aienglish2.dev.NorthernLightsTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = navisapps.autocheck.ru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Autocheck Development Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
