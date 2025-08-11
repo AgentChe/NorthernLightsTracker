@@ -55,9 +55,9 @@ extension TopLocationsCollectionCell {
                 
                 if (kp >= 0) && (kp <= 3) {
                     return Constants.red
-                } else if (kp >= 4) && (kp <= 5) {
+                } else if (kp > 3) && (kp <= 5) {
                     return Constants.yellow
-                } else if (kp >= 6) && (kp <= 9) {
+                } else if (kp > 5) && (kp <= 9) {
                     return Constants.green
                 }
                 
