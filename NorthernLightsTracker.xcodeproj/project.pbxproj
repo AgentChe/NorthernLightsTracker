@@ -239,6 +239,12 @@
 		DED151972E31172E00155B13 /* TopLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151962E31172E00155B13 /* TopLocationsViewController.swift */; };
 		DED151992E31173400155B13 /* TopLocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED151982E31173400155B13 /* TopLocationsViewModel.swift */; };
 		DED1519B2E31173B00155B13 /* TopLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1519A2E31173B00155B13 /* TopLocationsView.swift */; };
+		DEF9685F2E4B27040071CDD2 /* AuroraPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF9685E2E4B27040071CDD2 /* AuroraPoint.swift */; };
+		DEF968612E4B27F90071CDD2 /* ObtainRealTimeAuroraPointsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF968602E4B27F90071CDD2 /* ObtainRealTimeAuroraPointsRequest.swift */; };
+		DEF968652E4B297F0071CDD2 /* AuroraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF968642E4B297F0071CDD2 /* AuroraCell.swift */; };
+		DEF968672E4B299F0071CDD2 /* AuroraHeatmapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF968662E4B299F0071CDD2 /* AuroraHeatmapOverlay.swift */; };
+		DEF968692E4B2B7C0071CDD2 /* AuroraHeatmapRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF968682E4B2B7C0071CDD2 /* AuroraHeatmapRenderer.swift */; };
+		DEF9686B2E4B2B900071CDD2 /* AuroraHeatmapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF9686A2E4B2B900071CDD2 /* AuroraHeatmapController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -477,6 +483,12 @@
 		DED151962E31172E00155B13 /* TopLocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsViewController.swift; sourceTree = "<group>"; };
 		DED151982E31173400155B13 /* TopLocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsViewModel.swift; sourceTree = "<group>"; };
 		DED1519A2E31173B00155B13 /* TopLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLocationsView.swift; sourceTree = "<group>"; };
+		DEF9685E2E4B27040071CDD2 /* AuroraPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraPoint.swift; sourceTree = "<group>"; };
+		DEF968602E4B27F90071CDD2 /* ObtainRealTimeAuroraPointsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainRealTimeAuroraPointsRequest.swift; sourceTree = "<group>"; };
+		DEF968642E4B297F0071CDD2 /* AuroraCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraCell.swift; sourceTree = "<group>"; };
+		DEF968662E4B299F0071CDD2 /* AuroraHeatmapOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraHeatmapOverlay.swift; sourceTree = "<group>"; };
+		DEF968682E4B2B7C0071CDD2 /* AuroraHeatmapRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraHeatmapRenderer.swift; sourceTree = "<group>"; };
+		DEF9686A2E4B2B900071CDD2 /* AuroraHeatmapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraHeatmapController.swift; sourceTree = "<group>"; };
 		EB04B2FE1311D36ED8BA40F3 /* Pods-NorthernLightsTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorthernLightsTracker.release.xcconfig"; path = "Target Support Files/Pods-NorthernLightsTracker/Pods-NorthernLightsTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -914,6 +926,7 @@
 				DE18FE862E266CD7008F207C /* AuroraMapOval.swift */,
 				DE18FE8A2E266E25008F207C /* AuroraTopLocation.swift */,
 				DE18FE8C2E266E41008F207C /* PeakTime.swift */,
+				DEF9685E2E4B27040071CDD2 /* AuroraPoint.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -925,6 +938,7 @@
 				DE18FE7E2E266AB4008F207C /* ObtainAuroraMapDetailsRequest.swift */,
 				DE18FE842E266CB8008F207C /* ObtainAuroraMapOvalRequest.swift */,
 				DE18FE882E266DFA008F207C /* ObtainAuroraTopsRequest.swift */,
+				DEF968602E4B27F90071CDD2 /* ObtainRealTimeAuroraPointsRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1121,7 +1135,7 @@
 		DE5841EF2E37905D00DD2933 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DE5841F02E37907200DD2933 /* RWMMapView.swift */,
+				DEF968622E4B295C0071CDD2 /* Map */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1550,6 +1564,26 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DEF968622E4B295C0071CDD2 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DEF968632E4B29670071CDD2 /* Aurora */,
+				DE5841F02E37907200DD2933 /* RWMMapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		DEF968632E4B29670071CDD2 /* Aurora */ = {
+			isa = PBXGroup;
+			children = (
+				DEF968642E4B297F0071CDD2 /* AuroraCell.swift */,
+				DEF968662E4B299F0071CDD2 /* AuroraHeatmapOverlay.swift */,
+				DEF968682E4B2B7C0071CDD2 /* AuroraHeatmapRenderer.swift */,
+				DEF9686A2E4B2B900071CDD2 /* AuroraHeatmapController.swift */,
+			);
+			path = Aurora;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1719,6 +1753,7 @@
 				DED1513E2E2E791D00155B13 /* ForecastHemisphericPowerCell.swift in Sources */,
 				DED151862E30DAB400155B13 /* NowTableMapRouteCell.swift in Sources */,
 				DE18FE792E2666BC008F207C /* AuroraManager.swift in Sources */,
+				DEF968612E4B27F90071CDD2 /* ObtainRealTimeAuroraPointsRequest.swift in Sources */,
 				DE18FDE72E25879F008F207C /* Fonts.swift in Sources */,
 				DED151172E2BC8D200155B13 /* SolarTableQuestionCell.swift in Sources */,
 				DE18FDE82E25879F008F207C /* ProfileManager.swift in Sources */,
@@ -1730,13 +1765,16 @@
 				DED150F82E2A9E2E00155B13 /* SolarListView.swift in Sources */,
 				DED151882E30DAC000155B13 /* NowTableCurrentLocationCell.swift in Sources */,
 				DE18FEBB2E268C33008F207C /* Location.swift in Sources */,
+				DEF9686B2E4B2B900071CDD2 /* AuroraHeatmapController.swift in Sources */,
 				DE18FDEA2E25879F008F207C /* TextAttributes.swift in Sources */,
 				DED151632E2FA57700155B13 /* SettingsLocationViewController.swift in Sources */,
+				DEF968672E4B299F0071CDD2 /* AuroraHeatmapOverlay.swift in Sources */,
 				DE18FDEB2E25879F008F207C /* GradientView.swift in Sources */,
 				DE5841EA2E378EFC00DD2933 /* RealWorldMapViewController.swift in Sources */,
 				DE18FDEC2E25879F008F207C /* Currency.swift in Sources */,
 				DE18FDEE2E25879F008F207C /* PaygateInteractor.swift in Sources */,
 				DE18FDEF2E25879F008F207C /* NetworkError.swift in Sources */,
+				DEF9685F2E4B27040071CDD2 /* AuroraPoint.swift in Sources */,
 				DED1512E2E2E2E9400155B13 /* ForecastExpandableTitleView.swift in Sources */,
 				DE18FEA82E2689FE008F207C /* ObtainSolarTemplatesRequest.swift in Sources */,
 				DE8C2E102E27DE72009F2787 /* LocationAuthorizationQuery.swift in Sources */,
@@ -1829,6 +1867,7 @@
 				DE5841E52E37854F00DD2933 /* AuroraOvalLayerCell.swift in Sources */,
 				DED151152E2BC87D00155B13 /* SolarTableImageCell.swift in Sources */,
 				DE8C2E202E2812FC009F2787 /* OnboardingCombineData.swift in Sources */,
+				DEF968652E4B297F0071CDD2 /* AuroraCell.swift in Sources */,
 				DED151402E2E7BDA00155B13 /* ForecastPlanetaryACell.swift in Sources */,
 				DE18FE202E25879F008F207C /* Scalable.swift in Sources */,
 				DE5841CE2E3771DB00DD2933 /* MapView.swift in Sources */,
@@ -1906,6 +1945,7 @@
 				DE18FE4D2E25879F008F207C /* SplashView.swift in Sources */,
 				DE18FE4E2E25879F008F207C /* PaddingTextField.swift in Sources */,
 				DE18FE512E25879F008F207C /* UITapGestureRecognizer+Extension.swift in Sources */,
+				DEF968692E4B2B7C0071CDD2 /* AuroraHeatmapRenderer.swift in Sources */,
 				DE18FE6C2E265EB6008F207C /* ProfileMediator.swift in Sources */,
 				DE8C2E132E27E002009F2787 /* OLocationView.swift in Sources */,
 				DE18FE662E265B8F008F207C /* Profile.swift in Sources */,

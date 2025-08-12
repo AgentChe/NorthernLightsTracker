@@ -12,6 +12,7 @@ protocol AuroraManagerProtocol {
     func obtainAuroraMapDetails(coordinate: Coordinate) -> Single<AuroraMapDetails?>
     func obtainAuroraMapOval() -> Single<AuroraMapOval?>
     func obtainAuroraTopLocations() -> Single<[AuroraTopLocation]>
+    func obtainRealTimeAuroraPoints() -> Single<[AuroraPoint]>
 }
 
 final class AuroraManager {
@@ -66,5 +67,16 @@ extension AuroraManager: AuroraManagerProtocol {
         return restAPITransport
             .callServerApi(requestBody: request)
             .map { AuroraTopLocation.map(response: $0) }
+    }
+    
+    func obtainRealTimeAuroraPoints() -> Single<[AuroraPoint]> {
+        let request = ObtainRealTimeAuroraPointsRequest(
+            anonymousId: sessionManager.anonymousId,
+            internalId: sessionManager.internalId
+        )
+        
+        return restAPITransport
+            .callServerApi(requestBody: request)
+            .map { AuroraPoint.make(response: $0) }
     }
 }

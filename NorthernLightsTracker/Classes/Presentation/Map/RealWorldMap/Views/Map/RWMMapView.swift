@@ -15,6 +15,10 @@ final class RWMMapView: UIView {
     
     private lazy var didTapCoordinateTrigger = PublishRelay<Coordinate>()
     
+    private lazy var aurora = AuroraHeatmapController(mapView: mapView)
+    
+    private lazy var disposeBag = DisposeBag()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -80,6 +84,13 @@ extension RWMMapView: MKMapViewDelegate {
 
         return av
     }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        if let overlay = overlay as? AuroraHeatmapOverlay {
+            return AuroraHeatmapRenderer(overlay: overlay, cells: overlay.cells)
+        }
+        return MKOverlayRenderer(overlay: overlay)
+    }
 }
 
 // MARK: UIGestureRecognizerDelegate
@@ -97,6 +108,14 @@ private extension RWMMapView {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleMapTap(_:)))
         tapGesture.delegate = self
         mapView.addGestureRecognizer(tapGesture)
+        
+        let period = Int(ceil(AuroraHeatmapController.Constants.refreshSeconds))
+        Observable<Int>.interval(.seconds(period), scheduler: MainScheduler.instance)
+            .startWith(0)
+            .bind(to: Binder(self) { base, _ in
+                base.aurora.refresh()
+            })
+            .disposed(by: disposeBag)
     }
     
     @objc
