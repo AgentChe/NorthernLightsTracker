@@ -31,7 +31,6 @@
 		DE18FDFD2E25879F008F207C /* SplashReceiptValidationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FDB02E25879F008F207C /* SplashReceiptValidationObserver.swift */; };
 		DE18FE022E25879F008F207C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD4E2E25879F008F207C /* String+Extension.swift */; };
 		DE18FE042E25879F008F207C /* PaygateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FDAC2E25879F008F207C /* PaygateView.swift */; };
-		DE18FE052E25879F008F207C /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD3C2E25879F008F207C /* AmplitudeManager.swift */; };
 		DE18FE062E25879F008F207C /* IAPProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FDC62E25879F008F207C /* IAPProduct.swift */; };
 		DE18FE072E25879F008F207C /* IAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FDC22E25879F008F207C /* IAPError.swift */; };
 		DE18FE082E25879F008F207C /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FDC82E25879F008F207C /* IAPManager.swift */; };
@@ -255,7 +254,6 @@
 		DE18FD1C2E25869A008F207C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE18FD1D2E25869A008F207C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE18FD332E25879A008F207C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DE18FD3C2E25879F008F207C /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
 		DE18FD3E2E25879F008F207C /* ChoosePhotoFromGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePhotoFromGallery.swift; sourceTree = "<group>"; };
 		DE18FD3F2E25879F008F207C /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DE18FD402E25879F008F207C /* RxActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxActivityIndicator.swift; sourceTree = "<group>"; };
@@ -576,14 +574,6 @@
 			path = Strings;
 			sourceTree = "<group>";
 		};
-		DE18FD3D2E25879F008F207C /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				DE18FD3C2E25879F008F207C /* AmplitudeManager.swift */,
-			);
-			path = Analytics;
-			sourceTree = "<group>";
-		};
 		DE18FD422E25879F008F207C /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -675,7 +665,6 @@
 			isa = PBXGroup;
 			children = (
 				DE18FE712E26636C008F207C /* PushNotifications */,
-				DE18FD3D2E25879F008F207C /* Analytics */,
 				DE18FD422E25879F008F207C /* Components */,
 				DE18FD4B2E25879F008F207C /* CustomViews */,
 				DE18FD552E25879F008F207C /* Extension */,
@@ -1806,7 +1795,6 @@
 				DE18FE8B2E266E25008F207C /* AuroraTopLocation.swift in Sources */,
 				DE18FE042E25879F008F207C /* PaygateView.swift in Sources */,
 				DED151012E2A9F5300155B13 /* SolarListCollectionTitleCell.swift in Sources */,
-				DE18FE052E25879F008F207C /* AmplitudeManager.swift in Sources */,
 				DE18FE962E268340008F207C /* ForecastAurora.swift in Sources */,
 				DED151242E2CFF6C00155B13 /* ForecastTableView.swift in Sources */,
 				DE26F1B72E329EF300AB830B /* TopLocationsIndicatorFieldView.swift in Sources */,
