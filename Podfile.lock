@@ -1,6 +1,5 @@
 PODS:
   - Alamofire (5.10.2)
-  - Amplitude-iOS (4.10.0)
   - DGCharts (5.1.0):
     - DGCharts/Core (= 5.1.0)
   - DGCharts/Core (5.1.0)
@@ -128,7 +127,6 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - Amplitude-iOS
   - DGCharts
   - Firebase/Analytics
   - Firebase/Messaging
@@ -143,7 +141,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - Amplitude-iOS
     - DGCharts
     - Firebase
     - FirebaseAnalytics
@@ -176,7 +173,6 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
-  Amplitude-iOS: 7d8cdc3408ba35c2e68368fc7c692cd104606b94
   DGCharts: 1c6daf585b6cfc78807af44ea690d357c410627f
   Firebase: d99ac19b909cd2c548339c2241ecd0d1599ab02e
   FirebaseAnalytics: 6433dfd311ba78084fc93bdfc145e8cb75740eae
@@ -199,6 +195,6 @@ SPEC CHECKSUMS:
   SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
   Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
 
-PODFILE CHECKSUM: 079dc3659dd432a1e9118155b11b5cd175ca0f3d
+PODFILE CHECKSUM: 9d653d09ac9b7cc06c51bde1bb7e707a62b7a1fd
 
 COCOAPODS: 1.16.2
